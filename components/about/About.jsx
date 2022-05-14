@@ -12,16 +12,17 @@ const About = () => {
       <AboutWrapper>
         <ParagraphWrapper>
           <p>
-            A web developer and designer attending the graphic design
-            program of LISAA (L'Institut Supérieur des Arts Appliqués) in Paris,
-            France.
+            A web developer and designer attending the graphic design program of
+            LISAA (L\&#39Institut Supérieur des Arts Appliqués) in Paris, France.
           </p>
           <p>
-            Born and raised in Vancouver, Canada with an interest
-            in visual beauty.
+            Born and raised in Vancouver, Canada with an interest in visual
+            beauty.
           </p>
           <p>
-            My hobbies include dance, yoga, poetry, and the finer things in life. And I hold a great love for pigeons, cats, rats, and capybaras. 
+            My hobbies include dance, yoga, poetry, and the finer things in
+            life. And I hold a great love for pigeons, cats, rats, and
+            capybaras.
           </p>
         </ParagraphWrapper>
         <ImageWrapper>
