@@ -9,17 +9,17 @@ const BannerWrapper = styled.div`
   height: 100vh;
 `;
 
-const Hero = () => {
+const Loading = () => {
   return (
     <BannerWrapper>
-      <NameBanner speed={5} text={'April Tao'} />
-      <NameBanner speed={10} text={'Development'} />
-      <NameBanner speed={5} text={'Design'} />
-      <NameBanner speed={10} text={'April Tao'} />
-      <NameBanner speed={5} text={'Development'} />
-      <NameBanner speed={10} text={'Design'} />
+      <NameBanner speed={5} text={'Loading'} />
+      <NameBanner speed={10} text={'Loading'} />
+      <NameBanner speed={5} text={'Loading'} />
+      <NameBanner speed={10} text={'Loading'} />
+      <NameBanner speed={5} text={'Loading'} />
+      <NameBanner speed={10} text={'Loading'} />
     </BannerWrapper>
   );
 };
 
-export default Hero;
+export default Loading;

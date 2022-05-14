@@ -7,7 +7,7 @@ import {
 
 const About = () => {
   return (
-    <section>
+    <section id='about'>
       <h1>About Me</h1>
       <AboutWrapper>
         <ParagraphWrapper>

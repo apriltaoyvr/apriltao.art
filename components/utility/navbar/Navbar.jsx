@@ -63,10 +63,10 @@ const Navbar = () => {
           <TabLink href='#'>Home</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#'>About</TabLink>
+          <TabLink href='#projects'>Work</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#'>Projects</TabLink>
+          <TabLink href='#about'>About</TabLink>
         </Tab>
         <Tab>
           <TabLink href='#'>Contact</TabLink>

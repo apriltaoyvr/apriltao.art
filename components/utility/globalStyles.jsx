@@ -132,6 +132,10 @@ const Global = createGlobalStyle`
     color: var(--accent);
     text-decoration: none;
   }
+
+  section {
+    padding: 5rem 0;
+  }
 `;
 
 export default Global;

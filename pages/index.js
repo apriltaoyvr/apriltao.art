@@ -1,6 +1,6 @@
 /* Libs */
 import Head from 'next/head'
-import { Suspense } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
@@ -20,18 +20,25 @@ export async function getServerSideProps({ locale }) {
 }
 
 export default function Home() {
-  return (
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  const handleLoading = () => {
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
+  }, [])
+
+  return !isLoading ? (
     <>
-      <Head>
-        <title>April Tao</title>
-        <meta name="description" content="Web design, development, and modelling" />
-      </Head>
-      <Suspense fallback={<Loading/>}>
-        <Navbar/>
-        <Hero/>
-        <Work/>
-        <About />
-      </Suspense>
+      <Navbar />
+      <Hero />
+      <Work />
+      <About />
     </>
+
+  ) : (< Loading />
   )
 }
