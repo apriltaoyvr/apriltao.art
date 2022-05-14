@@ -25,8 +25,8 @@ export const ImageWrapper = styled.figure`
   display: flex;
   margin: 1rem;
   width: 314px;
-  background: var(--accent);
-  border: 7px solid #9580ff;
+  background: hsla(250, 100%, 75%, 0.25);
+  border: 5px solid #9580ff;
 `;
 
 export const StyledImage = styled(Image)`

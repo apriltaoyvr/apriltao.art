@@ -61,6 +61,7 @@ const Global = createGlobalStyle`
     --bg: hsl(234, 14%, 13%);
     --fg: hsl(60, 30%, 96%);
     --accent: hsl(250, 100%, 75%);
+    --disabled: hsl(230, 15%, 50%);
   }
 
   body {

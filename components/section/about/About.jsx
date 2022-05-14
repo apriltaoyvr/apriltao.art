@@ -13,7 +13,8 @@ const About = () => {
         <ParagraphWrapper>
           <p>
             A web developer and designer attending the graphic design program of
-            LISAA (L\&#39Institut Supérieur des Arts Appliqués) in Paris, France.
+            LISAA (L&apos;Institut Supérieur des Arts Appliqués) in Paris,
+            France.
           </p>
           <p>
             Born and raised in Vancouver, Canada with an interest in visual
