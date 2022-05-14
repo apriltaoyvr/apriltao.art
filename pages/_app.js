@@ -1,10 +1,10 @@
 import { appWithTranslation } from 'next-i18next';
-import GlobalStyle from '../components/globalStyles';
+import Global from '../components/globalStyles';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
+      <Global />
       <Component {...pageProps} />
     </>
   )

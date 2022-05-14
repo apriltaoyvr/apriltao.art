@@ -2,6 +2,10 @@
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+/* Components */
+import Hero from '../components/hero/Hero';
+import About from '../components/about/About'
+
 /* next-i18next */
 export async function getServerSideProps({ locale }) {
   return {
@@ -18,8 +22,9 @@ export default function Home() {
       <Head>
         <title>April Tao</title>
         <meta name="description" content="Web design, development, and modelling" />
-        <link rel="icon" href="" />
       </Head>
+      <Hero/>
+      <About/>
     </>
   )
 }
