@@ -5,8 +5,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>April Tao</title>
           <meta name="description" content="Web design, development, and modelling" />
-          <link rel="icon" href="" />
+          <link rel="icon" href="../public/static/image/heart.svg" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
