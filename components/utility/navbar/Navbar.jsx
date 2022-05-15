@@ -1,16 +1,21 @@
 /* TODO: Language menu, socials, etc. */
 import styled from 'styled-components';
 import Link from 'next/link';
+import { CircleFlag } from 'react-circle-flags';
 
-/* Dracula UI Tabs */
 const StyledNav = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 3;
 
+  display: flex;
+  align-content: center;
+
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--disabled);
+
+
   &:hover {
     border-color: var(--accent);
   }
@@ -63,7 +68,7 @@ const Navbar = () => {
           <TabLink href='#'>Home</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#projects'>Work</TabLink>
+          <TabLink href='#projects'>Projects</TabLink>
         </Tab>
         <Tab>
           <TabLink href='#about'>About</TabLink>
@@ -72,7 +77,6 @@ const Navbar = () => {
           <TabLink href='#'>Contact</TabLink>
         </Tab>
       </Tabs>
-      <div></div>
     </StyledNav>
   );
 };

@@ -20,25 +20,12 @@ export async function getServerSideProps({ locale }) {
 }
 
 export default function Home() {
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  const handleLoading = () => {
-    setIsLoading(false);
-  }
-
-  useEffect(() => {
-    window.addEventListener("load", handleLoading);
-    return () => window.removeEventListener("load", handleLoading);
-  }, [])
-
-  return !isLoading ? (
+  return (
     <>
       <Navbar />
       <Hero />
       <Work />
       <About />
     </>
-
-  ) : (< Loading />
   )
 }
