@@ -1,12 +1,13 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const WorkWrapper = styled.section`
+export const WorkWrapper = styled(motion.section)`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const ProjectWrapper = styled.div`
+export const ProjectWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr;
   max-width: 80%;
@@ -19,7 +20,7 @@ export const ProjectWrapper = styled.div`
   }
 `;
 
-export const StyledLink = styled.div`
+export const StyledLink = styled(motion.div)`
   filter: opacity(0.9);
   &:hover {
     filter: opacity(1);

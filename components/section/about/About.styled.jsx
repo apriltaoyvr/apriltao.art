@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-export const StyledSection = styled.section`
+export const StyledSection = styled(motion.section)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 `;
 
-export const AboutWrapper = styled.div`
+export const AboutWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -20,7 +21,7 @@ export const AboutWrapper = styled.div`
   }
 `;
 
-export const ParagraphWrapper = styled.div`
+export const ParagraphWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   margin-top: 16px;
@@ -29,7 +30,7 @@ export const ParagraphWrapper = styled.div`
   text-align: justify;
 `;
 
-export const ImageWrapper = styled.figure`
+export const ImageWrapper = styled(motion.figure)`
   display: flex;
   margin: 16px;
   width: 19.625rem;
@@ -42,18 +43,18 @@ export const StyledImage = styled(Image)`
   filter: opacity(0.8);
 `;
 
-export const SkillWrapper = styled.div`
+export const SkillWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(1, 250px);
   gap: 1rem;
-  justify-items: center;
+  justify-content: center;
   list-style: none;
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(3, 250px);
   }
 `;
 
-export const StyledCard = styled.div`
+export const StyledCard = styled(motion.div)`
   border: 1px solid var(--accent);
   padding: 1rem;
   width: 250px;

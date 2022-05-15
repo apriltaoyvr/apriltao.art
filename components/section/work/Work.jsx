@@ -1,23 +1,28 @@
-import { Suspense } from 'react';
 import { useTranslation } from 'next-i18next';
+import { motion } from 'framer-motion';
 
 /* Components */
-import Loading from '../../utility/loading/Loading';
 import VideoLink from './VideoLink';
 import ImageLink from './ImageLink';
 import { WorkWrapper, ProjectWrapper } from './Work.styled';
+import { slideContainer, slideItem, fadeContainer, fadeItem } from '../../utility/framer';
 
 const Projects = () => {
   const { t } = useTranslation('common');
 
   return (
-    <WorkWrapper id='projects'>
-      <hgroup>
-        <h1>{t('projects.title')}</h1>
-        <h2>{t('projects.subtitle')}</h2>
-      </hgroup>
-      <ProjectWrapper>
-        <Suspense fallback={<Loading />}>
+    <WorkWrapper
+      id='projects'
+      variants={slideContainer}
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+    >
+      <motion.hgroup variants={slideItem}>
+        <motion.h1 variants={slideItem}>{t('projects.title')}</motion.h1>
+        <motion.h2 variants={slideItem}>{t('projects.subtitle')}</motion.h2>
+      </motion.hgroup>
+      <ProjectWrapper variants={slideItem}>
           <VideoLink
             href='https://www.ambrosialab.it'
             video='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570265/April%20Tao/Projects/AmbrosiaLab/2022-05-14_16-16-35_skywsw.mp4'
@@ -31,7 +36,6 @@ const Projects = () => {
             href='https://github.com/apriltaoyvr/dracula-foundry'
             image='https://user-images.githubusercontent.com/95392008/147394179-6777840b-3554-4e9c-b4c3-50cd99616ee2.png'
           />
-        </Suspense>
       </ProjectWrapper>
     </WorkWrapper>
   );

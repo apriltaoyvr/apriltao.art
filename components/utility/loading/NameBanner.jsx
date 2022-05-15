@@ -5,7 +5,7 @@ import { NameWrapper, HollowName, StyledName } from './Loading.styled';
 
 const NameBanner = ({speed, text}) => {
   return (
-    <Marquee gradientColor={[29, 29, 38]} speed={speed} >
+    <Marquee gradientColor={[29, 29, 38]} speed={speed} pauseOnHover={true}>
       <NameWrapper>
         <HollowName>{text}</HollowName>
         <StyledName>{text}</StyledName>
