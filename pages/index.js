@@ -27,10 +27,6 @@ export async function getServerSideProps({ locale }) {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>April Tao</title>
-        <meta name="description" content="Web design, development, and modelling" />
-      </Head>
       <Navbar />
       <Hero />
       <Work />
