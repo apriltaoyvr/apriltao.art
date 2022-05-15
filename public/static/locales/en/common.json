@@ -3,11 +3,11 @@
     "home": "Home",
     "projects": "Projects",
     "about": "About",
-    "Contact": "Contact"
+    "contact": "Contact"
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Web design and Development"
+    "subtitle": "Web Design and Development"
   },
   "about": {
     "title": "About Me",
@@ -17,5 +17,14 @@
       "My hobbies include dance, yoga, poetry, and the finer things in life. And I hold a great love for pigeons, cats, rats, and capybaras."
     ],
     "skills": "Skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch"
+  },
+  "marquee": {
+    "development": "Development",
+    "design": "Design",
+    "loading": "Loading"
   }
 }

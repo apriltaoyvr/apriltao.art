@@ -1,23 +1,19 @@
-import NameBanner from './NameBanner';
-import styled from 'styled-components';
+import { useTranslation } from 'next-i18next';
 
-const BannerWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  height: 100vh;
-`;
+import NameBanner from './NameBanner';
+import BannerWrapper from './Loading.styled';
 
 const Loading = () => {
+  const { t } = useTranslation('common');
+
   return (
     <BannerWrapper>
-      <NameBanner speed={5} text={'Loading'} />
-      <NameBanner speed={10} text={'Loading'} />
-      <NameBanner speed={5} text={'Loading'} />
-      <NameBanner speed={10} text={'Loading'} />
-      <NameBanner speed={5} text={'Loading'} />
-      <NameBanner speed={10} text={'Loading'} />
+      <NameBanner speed={5} text={t('marquee.loading')} />
+      <NameBanner speed={10} text={t('marquee.loading')} />
+      <NameBanner speed={5} text={t('marquee.loading')} />
+      <NameBanner speed={10} text={t('marquee.loading')} />
+      <NameBanner speed={5} text={t('marquee.loading')} />
+      <NameBanner speed={10} text={t('marquee.loading')} />
     </BannerWrapper>
   );
 };
