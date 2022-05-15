@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
 
 import { NameWrapper, HollowName, StyledName } from './Loading.styled';

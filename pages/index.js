@@ -27,11 +27,14 @@ export async function getServerSideProps({ locale }) {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>April Tao</title>
+      </Head>
       <Navbar />
       <Hero />
       <Work />
       <About />
-      <Contact/>
+      <Contact />
     </>
   )
 }
