@@ -1,20 +1,20 @@
 /* TODO: Language menu, socials, etc. */
 import styled from 'styled-components';
 import Link from 'next/link';
-import { CircleFlag } from 'react-circle-flags';
+import LangMenu from './LangMenu';
 
 const StyledNav = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 3;
-
+  
   display: flex;
   align-content: center;
+  justify-content: space-between;
 
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--disabled);
-
 
   &:hover {
     border-color: var(--accent);
@@ -77,6 +77,7 @@ const Navbar = () => {
           <TabLink href='#'>Contact</TabLink>
         </Tab>
       </Tabs>
+      <LangMenu/>
     </StyledNav>
   );
 };
