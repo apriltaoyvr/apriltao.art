@@ -33,7 +33,7 @@ export const ImageWrapper = styled.figure`
   display: flex;
   margin: 16px;
   width: 19.625rem;
-  border: .125rem solid #9580ff;
+  border: 0.125rem solid #9580ff;
   transition: all 0.2s ease-in-out;
   box-shadow: 7px 7px var(--bg), 7px 7px 0 1px var(--accent);
 `;

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 const SocialWrapper = styled.div`
   display: flex;
@@ -29,8 +30,12 @@ const Contact = () => {
         <h2>{t('contact.subtitle')}</h2>
       </hgroup>
       <SocialWrapper>
-        <FontAwesomeIcon icon='fa-brands fa-github' size='5x' />
-        <FontAwesomeIcon icon='fa-brands fa-behance' size='5x' />
+        <Link href='https://github.com/apriltaoyvr/apriltao.art' passHref>
+          <FontAwesomeIcon icon='fa-brands fa-github' size='5x' />
+        </Link>
+        <Link href='https://github.com/apriltaoyvr/apriltao.art' passHref>
+          <FontAwesomeIcon icon='fa-brands fa-behance' size='5x' />
+        </Link>
       </SocialWrapper>
     </section>
   );
