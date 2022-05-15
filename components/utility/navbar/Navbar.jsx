@@ -7,10 +7,12 @@ const StyledNav = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 3;
-  
+  transition: 0.2s ease-in-out;
+
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding: 0.5rem 0;
 
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
@@ -68,10 +70,10 @@ const Navbar = () => {
           <TabLink href='#'>Home</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#projects'>Projects</TabLink>
+          <TabLink href='#about'>About</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#about'>About</TabLink>
+          <TabLink href='#projects'>Projects</TabLink>
         </Tab>
         <Tab>
           <TabLink href='#'>Contact</TabLink>

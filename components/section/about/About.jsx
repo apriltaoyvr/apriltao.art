@@ -4,6 +4,7 @@ import {
   ImageWrapper,
   StyledImage,
 } from './About.styled';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -12,9 +13,9 @@ const About = () => {
       <AboutWrapper>
         <ParagraphWrapper>
           <p>
-            A web developer and designer attending the graphic design program of
-            LISAA (L&apos;Institut Supérieur des Arts Appliqués) in Paris,
-            France.
+            A web <span> developer</span> and <span>designer</span> attending
+            the graphic design program of{' '}
+            <Link href='https://www.lisaa.com'>LISAA</Link> in Paris, France.
           </p>
           <p>
             Born and raised in Vancouver, Canada with an interest in visual
@@ -28,9 +29,9 @@ const About = () => {
         </ParagraphWrapper>
         <ImageWrapper>
           <StyledImage
-            src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652506175/April%20Tao/Images/_R281949_xfjj2v.jpg'
-            width={314}
-            height={419}
+            src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png'
+            width={400}
+            height={600}
             alt='A photo of myself'
           />
         </ImageWrapper>

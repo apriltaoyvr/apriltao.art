@@ -128,7 +128,7 @@ const Global = createGlobalStyle`
     font-size: 18px;
   }
 
-  a, span, em {
+  a, span, em, strong {
     color: var(--accent);
     text-decoration: none;
   }

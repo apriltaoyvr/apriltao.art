@@ -1,7 +1,13 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
-import { LangWrapper, StyledMenu, OptionWrapper, Divider, Flag } from './LangMenu.styled';
+import {
+  LangWrapper,
+  StyledMenu,
+  OptionWrapper,
+  Divider,
+  Flag,
+} from './LangMenu.styled';
 
 const countryCodes = {
   en: 'us',
@@ -42,11 +48,13 @@ const LangMenu = () => {
       ) : (
         ''
       )}
-      <Flag
-        countryCode={`${countryCodes[router.locale]}`}
-        height='25'
-        onClick={toggleMenu}
-      />
+      <OptionWrapper>
+        <Flag
+          countryCode={`${countryCodes[router.locale]}`}
+          height='25'
+          onClick={toggleMenu}
+        />
+      </OptionWrapper>
     </LangWrapper>
   );
 };
