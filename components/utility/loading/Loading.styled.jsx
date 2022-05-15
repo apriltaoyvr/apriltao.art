@@ -16,8 +16,7 @@ export const NameWrapper = styled(motion.hgroup)`
   gap: 2rem;
   padding: 0 2rem 0 2rem;
   text-transform: uppercase;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
 `;
 
 export const StyledName = styled(motion.h1)`
