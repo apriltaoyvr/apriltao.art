@@ -10,7 +10,8 @@ import {
   Divider,
   Flag,
 } from './LangMenu.styled';
-import { fadeItem } from '../framer';
+
+const MotionLink = motion(Link, { forwardMotionProps: true });
 
 const countryCodes = {
   en: 'us',
@@ -40,17 +41,17 @@ const LangMenu = () => {
               {Object.entries(countryCodes)
                 .filter(([key]) => key !== router.locale)
                 .map(([key, value], index) => (
-                  <motion.a
+                  <MotionLink
                     href={`/`}
-                    key={key}
                     locale={key}
+                    key={key}
                     passHref
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.25 * index }}
                   >
                     <Flag countryCode={value} height='25' onClick={closeMenu} />
-                  </motion.a>
+                  </MotionLink>
                 ))}
             </OptionWrapper>
             <Divider

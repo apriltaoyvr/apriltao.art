@@ -25,10 +25,10 @@ const Navbar = () => {
             <TabLink href='#'>{t('navigation.home')}</TabLink>
           </Tab>
           <Tab>
-            <TabLink href='#about'>{t('navigation.about')}</TabLink>
+            <TabLink href='#projects'>{t('navigation.projects')}</TabLink>
           </Tab>
           <Tab>
-            <TabLink href='#projects'>{t('navigation.projects')}</TabLink>
+            <TabLink href='#about'>{t('navigation.about')}</TabLink>
           </Tab>
           <Tab>
             <TabLink href='#contact'>{t('navigation.contact')}</TabLink>
