@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 import {
   StyledSection,
@@ -11,25 +11,18 @@ import {
 import SkillCard from './SkillCard';
 
 const About = () => {
+  const { t } = useTranslation('common');
+
   return (
     <StyledSection id='about'>
-      <h1>About Me</h1>
+      <h1>{t('about.title')}</h1>
       <AboutWrapper>
         <ParagraphWrapper>
-          <p>
-            A web <span> developer</span> and <span>designer</span> attending
-            the graphic design program of{' '}
-            <Link href='https://www.lisaa.com'>LISAA</Link> in Paris, France.
-          </p>
-          <p>
-            Born and raised in Vancouver, Canada with an interest in visual
-            beauty.
-          </p>
-          <p>
-            My hobbies include dance, yoga, poetry, and the finer things in
-            life. And I hold a great love for pigeons, cats, rats, and
-            capybaras.
-          </p>
+          {t('about.bio', { returnObjects: true }).map(
+            (paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            )
+          )}
         </ParagraphWrapper>
         <ImageWrapper>
           <StyledImage
@@ -40,7 +33,7 @@ const About = () => {
           />
         </ImageWrapper>
       </AboutWrapper>
-      <h2>Skills</h2>
+      <h2>{t('about.skills')}</h2>
       <SkillWrapper>
         <SkillCard skill='NextJS' />
         <SkillCard skill='ReactJS' />

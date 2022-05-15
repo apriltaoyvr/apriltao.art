@@ -1,3 +1,30 @@
 {
-  
+  "navigation": {
+    "home": "Home",
+    "projects": "Progetti",
+    "about": "Su di me",
+    "contact": "Contattarmi"
+  },
+  "projects": {
+    "title": "Progetti",
+    "subtitle": "Design e sviluppo web"
+  },
+  "about": {
+    "title": "Su di me",
+    "bio": [
+      "Sviluppatore web e designer che frequenta il programma di grafica del LISAA (L'Institut Supérieur des Arts Appliqués) di Parigi, Francia.",
+      "Nato e cresciuto a Vancouver, in Canada, con un interesse per la bellezza visiva.",
+      "I miei hobby sono la danza, lo yoga, la poesia e le cose belle della vita. Inoltre, nutro un grande amore per i piccioni, i gatti, i ratti e i capibara."
+    ],
+    "skills": "Competenza"
+  },
+  "contact": {
+    "title": "Contattarmi",
+    "subtitle": "Mettiamoci in contatto"
+  },
+  "marquee": {
+    "development": "Sviluppo",
+    "design": "Design",
+    "loading": "Caricamento"
+  }
 }

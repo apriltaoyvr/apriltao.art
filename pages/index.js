@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Head>
         <title>April Tao</title>
-        <meta name="description" content="Web design, development, and modelling" />
+        <meta name="description" content="Web design and development" />
       </Head>
       <Navbar />
       <Hero />

@@ -44,10 +44,13 @@ export const StyledImage = styled(Image)`
 
 export const SkillWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(1, 250px);
   gap: 1rem;
   justify-items: center;
   list-style: none;
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 250px);
+  }
 `;
 
 export const StyledCard = styled.div`
