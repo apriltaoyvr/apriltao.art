@@ -16,7 +16,6 @@
     "framer-motion": "^6.3.3",
     "next": "12.1.4",
     "next-i18next": "^11.0.0",
-    "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-circle-flags": "^0.0.17",
     "react-dom": "^18.1.0",
@@ -25,6 +24,7 @@
   },
   "devDependencies": {
     "eslint": "8.12.0",
-    "eslint-config-next": "12.1.4"
+    "eslint-config-next": "12.1.4",
+    "prettier": "^2.6.2"
   }
 }
