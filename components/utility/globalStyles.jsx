@@ -92,6 +92,7 @@ const Global = createGlobalStyle`
   h1, h2, h3, h4 {
     text-align: center;
     color: var(--accent);
+    margin-bottom: 1rem;
   }
   
   h1 {

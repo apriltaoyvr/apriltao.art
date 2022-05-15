@@ -1,14 +1,18 @@
+import Link from 'next/link';
+
 import {
+  StyledSection,
   AboutWrapper,
   ParagraphWrapper,
   ImageWrapper,
   StyledImage,
+  SkillWrapper,
 } from './About.styled';
-import Link from 'next/link';
+import SkillCard from './SkillCard';
 
 const About = () => {
   return (
-    <section id='about'>
+    <StyledSection id='about'>
       <h1>About Me</h1>
       <AboutWrapper>
         <ParagraphWrapper>
@@ -37,16 +41,15 @@ const About = () => {
         </ImageWrapper>
       </AboutWrapper>
       <h2>Skills</h2>
-      <ul>
-        <li>ReactJS</li>
-        <li>NextJS</li>
-        <li>Styled Components</li>
-        <li>Sass</li>
-        <li>Figma</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Premiere</li>
-      </ul>
-    </section>
+      <SkillWrapper>
+        <SkillCard skill='NextJS' />
+        <SkillCard skill='ReactJS' />
+        <SkillCard skill='Styled Components' />
+        <SkillCard skill='Sass' />
+        <SkillCard skill='Adobe Photoshop' />
+        <SkillCard skill='Adobe Premiere' />
+      </SkillWrapper>
+    </StyledSection>
   );
 };
 

@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import { StyledVideo } from './Work.styled';
+import { StyledLink } from './Work.styled';
 
 const VideoLink = ({ href, video }) => {
   return (
-    <StyledVideo>
+    <StyledLink>
       <Link href={href} passHref>
         <video src={video} autoPlay muted loop></video>
       </Link>
-    </StyledVideo>
+    </StyledLink>
   );
 };
 
