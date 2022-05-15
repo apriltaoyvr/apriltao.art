@@ -9,8 +9,9 @@ export const StyledNav = styled.nav`
 
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);

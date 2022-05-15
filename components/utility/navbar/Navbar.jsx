@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { StyledNav, Tabs, Tab, TabLink } from './Navbar.styled';
 import LangMenu from './LangMenu';
@@ -19,6 +20,7 @@ const Navbar = () => {
 
   return (
     <StyledNav>
+      {/* <FontAwesomeIcon icon='fa-solid fa-bars' size='xl'/> */}
       <div>
         <Tabs>
           <Tab>

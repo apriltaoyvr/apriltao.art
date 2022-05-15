@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 export const LangWrapper = styled(motion.div)`
   display: flex;
+  gap: 1rem;
 `;
 
 export const OptionWrapper = styled(motion.div)`
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem;
   gap: 0.5rem;
 `;
 
@@ -31,4 +31,5 @@ export const StyledMenu = styled(motion.div)`
   display: flex;
   flex-direction: row;
   transition: all 0.3s ease-out;
+  gap: 1rem;
 `;
