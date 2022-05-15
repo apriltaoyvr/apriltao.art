@@ -13,7 +13,7 @@ import Navbar from '../components/utility/navbar/Navbar';
 import Hero from '../components/section/hero/Hero';
 import Work from '../components/section/work/Work'
 import About from '../components/section/about/About'
-import Contact from '../components/section/Contact/Contact'
+import Contact from '../components/section/contact/Contact'
 
 /* next-i18next */
 export async function getServerSideProps({ locale }) {
