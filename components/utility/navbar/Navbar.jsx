@@ -1,9 +1,20 @@
 import { useTranslation } from 'next-i18next';
+import { useState } from 'react';
+
 import { StyledNav, Tabs, Tab, TabLink } from './Navbar.styled';
 import LangMenu from './LangMenu';
 
 const Navbar = () => {
   const { t } = useTranslation('common');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeNav = () => {
+    setIsOpen(false);
+  };
 
   return (
     <StyledNav>

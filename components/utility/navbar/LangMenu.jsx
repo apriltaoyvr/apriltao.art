@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import {
   LangWrapper,
   StyledMenu,
@@ -8,6 +10,7 @@ import {
   Divider,
   Flag,
 } from './LangMenu.styled';
+import { fadeItem } from '../framer';
 
 const countryCodes = {
   en: 'us',
@@ -36,13 +39,25 @@ const LangMenu = () => {
             <OptionWrapper>
               {Object.entries(countryCodes)
                 .filter(([key]) => key !== router.locale)
-                .map(([key, value]) => (
-                  <Link href={`/`} key={key} locale={key} passHref>
+                .map(([key, value], index) => (
+                  <motion.a
+                    href={`/`}
+                    key={key}
+                    locale={key}
+                    passHref
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.25 * index }}
+                  >
                     <Flag countryCode={value} height='25' onClick={closeMenu} />
-                  </Link>
+                  </motion.a>
                 ))}
             </OptionWrapper>
-            <Divider />
+            <Divider
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.1 }}
+            />
           </StyledMenu>
         </>
       ) : (

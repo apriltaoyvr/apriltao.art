@@ -45,14 +45,14 @@ const Contact = () => {
           passHref
           variants={fadeItem}
         >
-          <FontAwesomeIcon icon='fa-brands fa-github' size='5x' />
+          <FontAwesomeIcon icon='fa-brands fa-github' size='3x' />
         </MotionLink>
         <MotionLink
           href='https://github.com/apriltaoyvr/apriltao.art'
           passHref
           variants={fadeItem}
         >
-          <FontAwesomeIcon icon='fa-brands fa-behance' size='5x' />
+          <FontAwesomeIcon icon='fa-brands fa-behance' size='3x' />
         </MotionLink>
       </SocialWrapper>
     </motion.section>

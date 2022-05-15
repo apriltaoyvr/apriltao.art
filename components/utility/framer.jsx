@@ -30,8 +30,8 @@ export const fadeContainer = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 2,
-      staggerChildren: 3,
+      duration: 1,
+      staggerChildren: 2,
     },
   },
 };
