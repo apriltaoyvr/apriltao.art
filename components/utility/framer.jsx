@@ -6,7 +6,8 @@ export const slideContainer = {
     transition: {
       type: 'spring',
       stiffness: 25,
-      staggerChildren: 1,
+      duration: 1,
+      staggerChildren: 1.25,
     },
   },
 };
@@ -19,6 +20,7 @@ export const slideItem = {
     transition: {
       type: 'spring',
       stiffness: 25,
+      duration: 1
     },
   },
 };
@@ -28,8 +30,8 @@ export const fadeContainer = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 1,
-      staggerChildren: 1,
+      duration: 2,
+      staggerChildren: 3,
     },
   },
 };
@@ -38,5 +40,6 @@ export const fadeItem = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
+    delay: 1,
   },
 };

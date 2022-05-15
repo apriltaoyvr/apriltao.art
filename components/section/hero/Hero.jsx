@@ -7,7 +7,10 @@ const Hero = () => {
   const { t } = useTranslation('common');
 
   return (
-    <BannerWrapper>
+    <BannerWrapper 
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 2}}>
       <NameBanner speed={5} text={'April Tao'} />
       <NameBanner speed={10} text={t('marquee.development')} />
       <NameBanner speed={5} text={t('marquee.design')} />
