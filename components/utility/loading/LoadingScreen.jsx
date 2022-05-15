@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next';
 
 import NameBanner from './NameBanner';
-import BannerWrapper from './Loading.styled';
+import { BannerWrapper } from './Loading.styled';
 
-const Loading = () => {
+const LoadingScreen = () => {
   const { t } = useTranslation('common');
 
   return (
@@ -18,4 +18,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default LoadingScreen;
