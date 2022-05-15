@@ -37,7 +37,7 @@ const LangMenu = () => {
               {Object.entries(countryCodes)
                 .filter(([key]) => key !== router.locale)
                 .map(([key, value]) => (
-                  <Link href={`/`} key={key} locale={key}>
+                  <Link href={`/`} key={key} locale={key} passHref>
                     <Flag countryCode={value} height='25' onClick={closeMenu} />
                   </Link>
                 ))}
