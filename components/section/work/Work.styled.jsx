@@ -1,0 +1,28 @@
+import styled from 'styled-components';
+
+export const WorkWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ProjectWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 80%;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+export const StyledLink = styled.div`
+  filter: opacity(0.9);
+  &:hover {
+    filter: opacity(1);
+    cursor: pointer;
+  }
+`;

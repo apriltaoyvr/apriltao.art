@@ -1,1 +1,21 @@
-{}
+{
+  "navigation": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "About",
+    "Contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Dessin et développement web"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": [
+      "A web developer and designer attending the graphic design program of LISAA (L'Institut Supérieur des Arts Appliqués) in Paris, France.",
+      "Born and raised in Vancouver, Canada with an interest in visual beauty.",
+      "My hobbies include dance, yoga, poetry, and the finer things in life. And I hold a great love for pigeons, cats, rats, and capybaras."
+    ],
+    "skills": "Compétences"
+  }
+}
