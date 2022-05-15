@@ -36,8 +36,8 @@ const Contact = () => {
       whileInView='visible'
     >
       <motion.hgroup variants={fadeItem}>
-        <motion.h1 variants={fadeItem}>{t('contact.title')}</motion.h1>
-        <motion.h2 variants={fadeItem}>{t('contact.subtitle')}</motion.h2>
+        <motion.h2 variants={fadeItem}>{t('contact.title')}</motion.h2>
+        <motion.h3 variants={fadeItem}>{t('contact.subtitle')}</motion.h3>
       </motion.hgroup>
       <SocialWrapper>
         <MotionLink

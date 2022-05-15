@@ -5,7 +5,6 @@ export const BannerWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   height: 100vh;
 `;
 
@@ -17,6 +16,8 @@ export const NameWrapper = styled(motion.hgroup)`
   gap: 2rem;
   padding: 0 2rem 0 2rem;
   text-transform: uppercase;
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 export const StyledName = styled(motion.h1)`

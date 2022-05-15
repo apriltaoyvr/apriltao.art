@@ -47,6 +47,7 @@ const Global = createGlobalStyle`
   */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    text-overflow: ellipsis;
   }
   /*
     9. Create a root stacking context
@@ -104,29 +105,34 @@ const Global = createGlobalStyle`
   h2 {
     font-family: 'Vartek';
     font-weight: bolder;
-    font-size: 64px;
-    color: transparent;
-    -webkit-text-stroke: 1.5px var(--accent);
+    font-size: 60px;
   }
 
   h3 {
     font-family: 'Vartek';
     font-weight: bold;
-    font-size: 50px;
+    font-size: 48px;
     color: transparent;
     -webkit-text-stroke: 1.5px var(--accent);
   }
 
   h4 {
-    font-size: 32px;
-  }
+    font-family: 'Vartek';
+    font-size: 34px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--accent);
+}
 
   h5 {
     font-size: 24px;
   }
 
+  h6 {
+    font-size: 20px;
+  }
+
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   a, span, em, strong {

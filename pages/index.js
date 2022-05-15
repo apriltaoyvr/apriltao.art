@@ -14,6 +14,7 @@ import Hero from '../components/section/hero/Hero';
 import Work from '../components/section/work/Work'
 import About from '../components/section/about/About'
 import Contact from '../components/section/contact/Contact'
+import LoadingScreen from '../components/utility/loading/LoadingScreen';
 
 /* next-i18next */
 export async function getServerSideProps({ locale }) {

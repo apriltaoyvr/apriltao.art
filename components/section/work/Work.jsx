@@ -19,8 +19,8 @@ const Projects = () => {
       viewport={{ once: true }}
     >
       <motion.hgroup variants={slideItem}>
-        <motion.h1 variants={slideItem}>{t('projects.title')}</motion.h1>
-        <motion.h2 variants={slideItem}>{t('projects.subtitle')}</motion.h2>
+        <motion.h2 variants={slideItem}>{t('projects.title')}</motion.h2>
+        <motion.h4 variants={slideItem}>{t('projects.subtitle')}</motion.h4>
       </motion.hgroup>
       <ProjectWrapper variants={slideItem}>
           <VideoLink

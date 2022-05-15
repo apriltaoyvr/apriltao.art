@@ -24,7 +24,7 @@ const About = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        <motion.h1 variants={slideItem}>{t('about.title')}</motion.h1>
+        <motion.h2 variants={slideItem}>{t('about.title')}</motion.h2>
         <AboutWrapper variants={slideItem}>
           <ParagraphWrapper variants={slideItem}>
             {t('about.bio', { returnObjects: true }).map((paragraph, index) => (
@@ -41,7 +41,7 @@ const About = () => {
             />
           </ImageWrapper>
         </AboutWrapper>
-        <motion.h2 variants={slideItem}>{t('about.skills')}</motion.h2>
+        <motion.h3 variants={slideItem}>{t('about.skills')}</motion.h3>
         <SkillWrapper variants={slideItem}>
           <SkillCard skill='NextJS' variants={slideItem} />
           <SkillCard skill='ReactJS' variants={slideItem} />
