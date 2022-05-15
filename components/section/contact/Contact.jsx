@@ -34,13 +34,12 @@ const Contact = () => {
       variants={fadeContainer}
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true }}
     >
-      <motion.hgroup variants={fadeContainer}>
+      <motion.hgroup variants={fadeItem}>
         <motion.h1 variants={fadeItem}>{t('contact.title')}</motion.h1>
         <motion.h2 variants={fadeItem}>{t('contact.subtitle')}</motion.h2>
       </motion.hgroup>
-      <SocialWrapper variants={fadeContainer}>
+      <SocialWrapper>
         <MotionLink
           href='https://github.com/apriltaoyvr/apriltao.art'
           passHref

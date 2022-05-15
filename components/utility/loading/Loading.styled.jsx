@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const BannerWrapper = styled.div`
+export const BannerWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,7 @@ export const BannerWrapper = styled.div`
   height: 100vh;
 `;
 
-export const NameWrapper = styled.hgroup`
+export const NameWrapper = styled(motion.hgroup)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,12 +19,12 @@ export const NameWrapper = styled.hgroup`
   text-transform: uppercase;
 `;
 
-export const StyledName = styled.h1`
+export const StyledName = styled(motion.h1)`
   font-size: 120px;
   color: var(--accent);
 `;
 
-export const HollowName = styled.h1`
+export const HollowName = styled(motion.h1)`
   font-size: 120px;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--accent);

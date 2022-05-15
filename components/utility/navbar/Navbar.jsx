@@ -18,7 +18,7 @@ const Navbar = () => {
           <TabLink href='#projects'>{t('navigation.projects')}</TabLink>
         </Tab>
         <Tab>
-          <TabLink href='#'>{t('navigation.contact')}</TabLink>
+          <TabLink href='#contact'>{t('navigation.contact')}</TabLink>
         </Tab>
       </Tabs>
       <LangMenu />
