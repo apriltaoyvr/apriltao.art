@@ -12,7 +12,7 @@ export const ProjectWrapper = styled(motion.div)`
   grid-template-columns: 1fr;
   max-width: 80%;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 2rem;
   
   @media screen and (min-width: 1200px) {

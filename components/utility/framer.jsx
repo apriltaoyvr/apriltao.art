@@ -46,6 +46,12 @@ export const fadeContainer = {
       staggerChildren: 0.45,
     },
   },
+  exit: {
+    opacity: 0,
+    transition: {
+      staggerChildren: 0.45,
+    },
+  },
 };
 
 export const fadeItem = {
