@@ -6,7 +6,7 @@ const SkillCard = ({ skill, index }) => {
   return (
     <StyledCard
       whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.9 }}
+      whileTap={{ scale: 1 }}
       variants={slideItem}
     >
       <motion.li>{skill}</motion.li>

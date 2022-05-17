@@ -5,7 +5,11 @@ import { fadeItem } from '../../utility/framer';
 
 const ContactIcon = ({ href, icon }) => {
   return (
-    <motion.div variants={fadeItem}>
+    <motion.div
+      variants={fadeItem}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
       <Link href={href} icon={icon} passHref>
         <FontAwesomeIcon icon={`fa-brands fa-${icon}`} size='3x' />
       </Link>
