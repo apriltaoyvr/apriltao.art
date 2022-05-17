@@ -44,7 +44,7 @@ export const CaptionWrapper = styled(motion.figcaption)`
     hsla(234, 14%, 13%, 0.75),
     hsla(0, 0%, 0%, 0)
   );
-  text-shadow: 0 2 2px hsla(234, 14%, 13%, 0.75);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
 
   & h6 {
     padding: 1rem;
@@ -52,14 +52,13 @@ export const CaptionWrapper = styled(motion.figcaption)`
 `;
 
 export const ImageWrapper = styled(motion.figure)`
-  width: 395px;
-  height: 525px;
+  aspect-ratio: 79 / 105;
   margin: 1rem;
   border: 2px solid var(--accent);
 
   background: url(https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg);
   background-size: contain;
-  box-shadow: 7px 7px var(--bg), 7px 7px 0 0.0625rem var(--accent);
+  box-shadow: 7px 7px var(--bg), 7px 7px 0 1px var(--accent);
 
   &:hover ${CaptionWrapper} {
     visibility: visible;
@@ -72,15 +71,16 @@ export const SkillWrapper = styled(motion.div)`
   gap: 16px;
   justify-content: center;
   list-style: none;
+
   @media screen and (min-width: 75rem) {
     grid-template-columns: repeat(3, 15.625rem);
   }
 `;
 
 export const StyledCard = styled(motion.div)`
-  border: 0.0625rem solid var(--accent);
-  padding: 16px;
-  width: 15.625rem;
+  border: 1px solid var(--accent);
+  padding: 1rem;
+  width: 250px;
   text-align: center;
   animation: fadeIn ${(props) => props.delay};
 `;
