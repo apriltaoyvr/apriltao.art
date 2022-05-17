@@ -47,7 +47,7 @@ export const ImageWrapper = styled(motion.figure)`
 `;
 
 export const StyledImage = styled(Image)`
-  filter: opacity(0.8);
+  filter: opacity(0.9);
   transition: all 0.2s ease-in-out;
 
   &:hover {
