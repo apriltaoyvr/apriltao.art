@@ -32,8 +32,8 @@ const Navbar = () => {
         <ClosedNav
           initial={{ y: '-75%', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: '-500%', opacity: 0 }}
-          transition={{ duration: 0.2 }}
+          exit={{ y: '-200%', opacity: 0 }}
+          transition={{ duration: 0.1 }}
           key='closed'
         >
           <FontAwesomeIcon

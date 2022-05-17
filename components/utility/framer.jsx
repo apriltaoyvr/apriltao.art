@@ -37,39 +37,26 @@ export const slideItem = {
   },
 };
 
-export const slideRightContainer = {
-  hidden: { opacity: 0, x: 100 },
+export const slideDownContainer = {
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    x: 0,
     transition: {
       type: 'spring',
       stiffness: 25,
-      staggerChildren: 0.5,
+      staggerChildren: 0.75,
     },
   },
 };
 
-export const fadeContainer = {
-  hidden: { opacity: 0 },
+export const slideDownItem = {
+  hidden: { opacity: 0, y: -10 },
   visible: {
     opacity: 1,
+    y: 0,
     transition: {
-      staggerChildren: 0.45,
+      type: 'spring',
+      stiffness: 100,
     },
-  },
-  exit: {
-    opacity: 0,
-    transition: {
-      staggerChildren: 0.45,
-    },
-  },
-};
-
-export const fadeItem = {
-  hidden: { opacity: 0 },
-  visible: {
-    delay: 0.5,
-    opacity: 1,
   },
 };
