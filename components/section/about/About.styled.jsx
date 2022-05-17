@@ -31,27 +31,38 @@ export const ParagraphWrapper = styled(motion.div)`
   text-align: justify;
 `;
 
-export const ImageWrapper = styled(motion.figure)`
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr;
-  width: 100%;
-  place-items: center;
-  margin: 1rem;
+export const CaptionWrapper = styled(motion.figcaption)`
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
 
-  width: 314px;
-  border: 2px solid var(--accent);
-  
-  transition: all 0.2s ease-in-out;
-  box-shadow: 7px 7px var(--bg), 7px 7px 0 0.0625rem var(--accent);
+  visibility: hidden;
+  text-align: center;
+
+  background: linear-gradient(
+    0deg,
+    hsla(234, 14%, 13%, 0.75),
+    hsla(0, 0%, 0%, 0)
+  );
+  text-shadow: 0 2 2px hsla(234, 14%, 13%, 0.75);
+
+  & h6 {
+    padding: 1rem;
+  }
 `;
 
-export const StyledImage = styled(Image)`
-  filter: opacity(0.9);
-  transition: all 0.2s ease-in-out;
+export const ImageWrapper = styled(motion.figure)`
+  width: 395px;
+  height: 525px;
+  margin: 1rem;
+  border: 2px solid var(--accent);
 
-  &:hover {
-    filter: opacity(1);
+  background: url(https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg);
+  background-size: contain;
+  box-shadow: 7px 7px var(--bg), 7px 7px 0 0.0625rem var(--accent);
+
+  &:hover ${CaptionWrapper} {
+    visibility: visible;
   }
 `;
 

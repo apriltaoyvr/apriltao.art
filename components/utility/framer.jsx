@@ -37,7 +37,7 @@ export const slideItem = {
   },
 };
 
-export const slideDownContainer = {
+export const langContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -49,11 +49,34 @@ export const slideDownContainer = {
   },
 };
 
-export const slideDownItem = {
+export const langChild = {
   hidden: { opacity: 0, y: -10 },
   visible: {
     opacity: 1,
     y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+    },
+  },
+};
+
+export const fadeContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 25,
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+export const fadeItem = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
     transition: {
       type: 'spring',
       stiffness: 100,

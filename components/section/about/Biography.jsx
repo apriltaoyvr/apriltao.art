@@ -7,6 +7,7 @@ import {
   ParagraphWrapper,
   ImageWrapper,
   StyledImage,
+  CaptionWrapper,
 } from './About.styled';
 
 const Biography = () => {
@@ -25,16 +26,11 @@ const Biography = () => {
           {t('about.bio', { returnObjects: true }).map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <p>{t('about.photoCredit')}</p>
         </ParagraphWrapper>
-        <ImageWrapper>
-          <StyledImage
-            variants={slideItem}
-            src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg'
-            width={450}
-            height={600}
-            alt='A photo of myself'
-          />
+        <ImageWrapper variants={slideItem}>
+          <CaptionWrapper>
+            <motion.h6>{t('about.photoCredit')}</motion.h6>
+          </CaptionWrapper>
         </ImageWrapper>
       </AboutWrapper>
     </motion.article>

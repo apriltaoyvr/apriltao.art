@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { slideDownContainer, slideDownItem } from '../../../utility/framer';
+import { langContainer, langChild } from '../../../utility/framer';
 
 import {
   LangWrapper,
@@ -37,7 +37,7 @@ const LangMenu = () => {
         <>
           <StyledMenu>
             <OptionWrapper
-              variants={slideDownContainer}
+              variants={langContainer}
               initial='hidden'
               whileInView='visible'
             >
@@ -45,7 +45,7 @@ const LangMenu = () => {
                 .filter(([key]) => key !== router.locale)
                 .map(([key, value], index) => (
                   <Link href={`/`} locale={key} key={key} passHref>
-                    <motion.div variants={slideDownItem}>
+                    <motion.div variants={langChild}>
                       <Flag
                         countryCode={value}
                         height='25'
