@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
+
+import { slideContainer, slideItem } from '../../utility/framer';
 import {
   AboutWrapper,
   ParagraphWrapper,
   ImageWrapper,
   StyledImage,
 } from './About.styled';
-
-import { slideContainer, slideItem } from '../../utility/framer';
 
 const Biography = () => {
   const { t } = useTranslation('common');
@@ -27,17 +27,7 @@ const Biography = () => {
           ))}
           <p>{t('about.photoCredit')}</p>
         </ParagraphWrapper>
-        <ImageWrapper
-          drag
-          dragConstraints={{
-            top: -10,
-            left: -10,
-            right: 10,
-            bottom: 10,
-          }}
-          dragElastic={0.7}
-          dragPropagation
-        >
+        <ImageWrapper>
           <StyledImage
             variants={slideItem}
             src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg'
