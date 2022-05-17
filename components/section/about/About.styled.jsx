@@ -42,6 +42,7 @@ export const ImageWrapper = styled(motion.figure)`
 
 export const StyledImage = styled(Image)`
   filter: opacity(0.8);
+  user-drag: none;
 `;
 
 export const SkillWrapper = styled(motion.div)`
@@ -56,8 +57,9 @@ export const SkillWrapper = styled(motion.div)`
 `;
 
 export const StyledCard = styled(motion.div)`
-  border: .0625rem solid var(--accent);
+  border: 0.0625rem solid var(--accent);
   padding: 16px;
   width: 15.625rem;
   text-align: center;
+  animation: fadeIn ${(props) => props.delay};
 `;

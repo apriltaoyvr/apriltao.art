@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-
 import { fadeContainer, fadeItem } from '../../utility/framer';
+
+import ContactIcon from './ContactIcon';
 
 const SocialWrapper = styled(motion.div)`
   display: flex;
@@ -23,8 +22,6 @@ const SocialWrapper = styled(motion.div)`
   }
 `;
 
-const MotionLink = motion(Link);
-
 const Contact = () => {
   const { t } = useTranslation('common');
 
@@ -35,25 +32,19 @@ const Contact = () => {
       initial='hidden'
       whileInView='visible'
     >
-      <motion.hgroup variants={fadeItem}>
+      <motion.hgroup>
         <motion.h2 variants={fadeItem}>{t('contact.title')}</motion.h2>
         <motion.h3 variants={fadeItem}>{t('contact.subtitle')}</motion.h3>
       </motion.hgroup>
       <SocialWrapper>
-        <MotionLink
+        <ContactIcon
           href='https://github.com/apriltaoyvr/apriltao.art'
-          passHref
-          variants={fadeItem}
-        >
-          <FontAwesomeIcon icon='fa-brands fa-github' size='3x' />
-        </MotionLink>
-        <MotionLink
+          icon='github'
+        />
+        <ContactIcon
           href='https://github.com/apriltaoyvr/apriltao.art'
-          passHref
-          variants={fadeItem}
-        >
-          <FontAwesomeIcon icon='fa-brands fa-behance' size='3x' />
-        </MotionLink>
+          icon='behance'
+        />
       </SocialWrapper>
     </motion.section>
   );

@@ -94,7 +94,8 @@ const Global = createGlobalStyle`
     text-align: center;
     color: var(--accent);
     margin-bottom: 1rem;
-  }
+    user-select: none;  
+  } 
   
   h1 {
     font-family: 'Vartek';

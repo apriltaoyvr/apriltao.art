@@ -5,24 +5,31 @@ import { motion } from 'framer-motion';
 import VideoLink from './VideoLink';
 import ImageLink from './ImageLink';
 import { WorkWrapper, ProjectWrapper } from './Work.styled';
-import { slideContainer, slideItem } from '../../utility/framer';
+import {
+  slideContainer,
+  slideSubContainer, 
+  slideItem,
+} from '../../utility/framer';
 
 const Projects = () => {
   const { t } = useTranslation('common');
 
   return (
-    <WorkWrapper
-      id='projects'
-      variants={slideContainer}
-      initial='hidden'
-      whileInView='visible'
-      viewport={{ once: true }}
-    >
-      <motion.hgroup variants={slideItem}>
+    <WorkWrapper id='projects'>
+      <motion.hgroup
+        variants={slideContainer}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+      >
         <motion.h2 variants={slideItem}>{t('projects.title')}</motion.h2>
         <motion.h4 variants={slideItem}>{t('projects.subtitle')}</motion.h4>
       </motion.hgroup>
-      <ProjectWrapper variants={slideItem}>
+      <ProjectWrapper
+        variants={slideSubContainer}
+        initial='hidden'
+        whileInView='visible'
+      >
         <VideoLink
           href='https://www.ambrosialab.it'
           video='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570265/April%20Tao/Projects/AmbrosiaLab/2022-05-14_16-16-35_skywsw.mp4'

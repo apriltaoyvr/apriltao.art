@@ -22,6 +22,7 @@ export const ProjectWrapper = styled(motion.div)`
 
 export const StyledLink = styled(motion.div)`
   filter: opacity(0.9);
+  
   &:hover {
     filter: opacity(1);
     cursor: pointer;
