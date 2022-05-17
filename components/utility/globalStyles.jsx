@@ -145,16 +145,6 @@ const Global = createGlobalStyle`
   section {
     padding: 5rem 0;
   }
-
-  /* Keyframes */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    } 
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 export default Global;

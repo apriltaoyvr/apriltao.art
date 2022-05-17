@@ -26,7 +26,7 @@ export const slideSubContainer = {
 };
 
 export const slideItem = {
-  hidden: { opacity: 0, y: 100 },
+  hidden: { opacity: 0, y: 200 },
   visible: {
     opacity: 1,
     y: 0,
@@ -41,9 +41,8 @@ export const langContainer = {
   hidden: {
     transition: {
       type: 'spring',
-      stiffness: 25,
-      delay: 1.25,
-      staggerChildren: 0.25,
+      delay: 1,
+      staggerChildren: 0.5,
     },
   },
   visible: {

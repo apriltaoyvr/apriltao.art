@@ -63,22 +63,22 @@ const Navbar = () => {
             </div>
             <ContentWrapper>
               <Tabs>
-                <Tab>
+                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <TabLink onClick={closeNav} href='#'>
                     {t('navigation.home')}
                   </TabLink>
                 </Tab>
-                <Tab>
+                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <TabLink onClick={closeNav} href='#projects'>
                     {t('navigation.projects')}
                   </TabLink>
                 </Tab>
-                <Tab>
+                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <TabLink onClick={closeNav} href='#about'>
                     {t('navigation.about')}
                   </TabLink>
                 </Tab>
-                <Tab>
+                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <TabLink onClick={closeNav} href='#contact'>
                     {t('navigation.contact')}
                   </TabLink>

@@ -13,7 +13,7 @@ const SocialWrapper = styled(motion.div)`
   padding: 2rem;
 
   & svg {
-    transition: color 0.2s ease-in-out;
+    transition: color 0.5s ease-in-out;
 
     &:hover {
       color: var(--accent);

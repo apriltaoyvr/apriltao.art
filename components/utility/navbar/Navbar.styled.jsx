@@ -48,7 +48,7 @@ export const OpenNav = styled(motion.div)`
   }
 `;
 
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,8 +73,8 @@ export const Tabs = styled(motion.ul)`
 
 export const Tab = styled(motion.li)`
   position: relative;
-  transition: all 0.2s ease-in-out;
   font-size: 24px;
+  transition: color 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
     font-size: 36px;
