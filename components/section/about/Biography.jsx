@@ -24,6 +24,7 @@ const Biography = () => {
           {t('about.bio', { returnObjects: true }).map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
+          <p>{t('about.photoCredit')}</p>
         </ParagraphWrapper>
         <ImageWrapper>
           <StyledImage

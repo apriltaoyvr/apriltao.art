@@ -32,17 +32,27 @@ export const ParagraphWrapper = styled(motion.div)`
 `;
 
 export const ImageWrapper = styled(motion.figure)`
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  width: 100%;
+  place-items: center;
   margin: 1rem;
+
   width: 314px;
   border: 2px solid var(--accent);
+  
   transition: all 0.2s ease-in-out;
-  box-shadow: 7px 7px var(--bg), 7px 7px 0 .0625rem var(--accent);
+  box-shadow: 7px 7px var(--bg), 7px 7px 0 0.0625rem var(--accent);
 `;
 
 export const StyledImage = styled(Image)`
   filter: opacity(0.8);
-  user-drag: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: opacity(1);
+  }
 `;
 
 export const SkillWrapper = styled(motion.div)`
