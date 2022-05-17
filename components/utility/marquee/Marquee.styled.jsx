@@ -8,7 +8,7 @@ export const BannerWrapper = styled(motion.div)`
   height: 100vh;
 `;
 
-export const NameWrapper = styled(motion.hgroup)`
+export const TextWrapper = styled(motion.hgroup)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,16 +16,15 @@ export const NameWrapper = styled(motion.hgroup)`
   gap: 2rem;
   padding: 0 2rem 0 2rem;
   text-transform: uppercase;
-  overflow: hidden;
 `;
 
-export const StyledName = styled(motion.h1)`
-  font-size: 120px;
+export const SolidText = styled(motion.h1)`
+  font-size: 5rem;
   color: var(--accent);
 `;
 
-export const HollowName = styled(motion.h1)`
-  font-size: 120px;
+export const HollowText = styled(motion.h1)`
+  font-size: 5rem;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--accent);
 `;
