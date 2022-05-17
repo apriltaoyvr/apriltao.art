@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { langContainer, langChild } from '../../../utility/framer';
 
 import {
@@ -33,38 +33,44 @@ const LangMenu = () => {
 
   return (
     <LangWrapper>
-      {isOpen ? (
-        <>
-          <StyledMenu>
-            <OptionWrapper
-              variants={langContainer}
-              initial='hidden'
-              whileInView='visible'
-            >
-              {Object.entries(countryCodes)
-                .filter(([key]) => key !== router.locale)
-                .map(([key, value], index) => (
-                  <Link href={`/`} locale={key} key={key} passHref>
-                    <motion.div variants={langChild}>
-                      <Flag
-                        countryCode={value}
-                        height='25'
-                        onClick={closeMenu}
-                      />
+      <MotionConfig reducedMotion='user'>
+        <AnimatePresence>
+          {isOpen ? (
+            <StyledMenu>
+              <OptionWrapper
+                variants={langContainer}
+                initial='hidden'
+                animate='visible'
+                exit='hidden'
+                key='lang-container'
+              >
+                {Object.entries(countryCodes)
+                  .filter(([key]) => key !== router.locale)
+                  .map(([key, value], index) => (
+                    <motion.div variants={langChild} key={key}>
+                      <Link href={`/`} locale={key} key={key} passHref>
+                        <Flag
+                          countryCode={value}
+                          height='25'
+                          onClick={closeMenu}
+                        />
+                      </Link>
                     </motion.div>
-                  </Link>
-                ))}
-            </OptionWrapper>
-            <Divider
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.2 }}
-            />
-          </StyledMenu>
-        </>
-      ) : (
-        ''
-      )}
+                  ))}
+              </OptionWrapper>
+              <Divider
+                key='divider'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              />
+            </StyledMenu>
+          ) : (
+            ''
+          )}
+        </AnimatePresence>
+      </MotionConfig>
       <OptionWrapper>
         <Flag
           countryCode={`${countryCodes[router.locale]}`}

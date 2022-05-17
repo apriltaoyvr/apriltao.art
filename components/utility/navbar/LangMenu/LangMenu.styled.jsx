@@ -9,7 +9,7 @@ export const LangWrapper = styled(motion.div)`
 
 export const OptionWrapper = styled(motion.div)`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 0.5rem;
 `;
 
