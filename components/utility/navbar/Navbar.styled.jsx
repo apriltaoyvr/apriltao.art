@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
-export const StyledNav = styled.nav`
+/* Unopened Nav*/
+export const ClosedNav = styled(motion.nav)`
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -11,7 +13,7 @@ export const StyledNav = styled.nav`
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
@@ -22,33 +24,64 @@ export const StyledNav = styled.nav`
   }
 `;
 
-export const Tabs = styled.ul`
+/* Open Nav */
+export const OpenNav = styled(motion.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+
+  background: hsla(234, 14%, 13%, 0.1);
+  border-right: 1px solid var(--accent);
+  backdrop-filter: blur(8px);
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    border: none;
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+`;
+
+export const LangHolder = styled(motion.footer)`
+  align-self: center;
+`;
+
+
+export const Tabs = styled(motion.ul)`
   display: inline-flex;
+  flex-direction: column;
   list-style: none;
   padding: 1rem;
   gap: 1rem;
+  padding: 2rem;
+  height: 100%;
 `;
 
-export const Tab = styled.li`
-  padding: 0;
+export const Tab = styled(motion.li)`
   position: relative;
   transition: all 0.2s ease-in-out;
+  font-size: 24px;
 
-  &:after {
-    background: transparent;
-    bottom: -1px;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: scaleX(0.75);
-    transition: all 0.2s ease-in-out;
-    width: 100%;
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
   }
 
   & a {
-    color: var(--disabled);
+    color: var(--fg);
   }
 
   &:hover a {
@@ -60,3 +93,4 @@ export const TabLink = styled(Link)`
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 `;
+

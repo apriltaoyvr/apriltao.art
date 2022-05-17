@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { fadeContainer, fadeItem } from '../../utility/framer';
+import { fadeContainer, fadeItem } from '../../../utility/framer';
 
 import {
   LangWrapper,

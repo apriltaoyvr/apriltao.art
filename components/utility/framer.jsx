@@ -19,7 +19,7 @@ export const slideSubContainer = {
     transition: {
       type: 'spring',
       stiffness: 25,
-      delay: 1,
+      delay: 0.5,
       staggerChildren: 0.5,
     },
   },
@@ -37,6 +37,18 @@ export const slideItem = {
   },
 };
 
+export const slideRightContainer = {
+  hidden: { opacity: 0, x: 100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 25,
+      staggerChildren: 0.5,
+    },
+  },
+};
 
 export const fadeContainer = {
   hidden: { opacity: 0 },
