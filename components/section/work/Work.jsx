@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import VideoLink from './VideoLink';
 import ImageLink from './ImageLink';
 import { WorkWrapper, ProjectWrapper } from './Work.styled';
-import { slideContainer, slideItem, fadeContainer, fadeItem } from '../../utility/framer';
+import { slideContainer, slideItem } from '../../utility/framer';
 
 const Projects = () => {
   const { t } = useTranslation('common');
