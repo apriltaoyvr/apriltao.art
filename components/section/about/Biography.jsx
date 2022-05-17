@@ -30,7 +30,7 @@ const Biography = () => {
         <ImageWrapper>
           <StyledImage
             variants={slideItem}
-            src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png'
+            src='https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg'
             width={400}
             height={600}
             alt='A photo of myself'
