@@ -16,6 +16,7 @@ export const TextWrapper = styled(motion.hgroup)`
   gap: 2rem;
   padding: 0 2rem 0 2rem;
   text-transform: uppercase;
+  overflow: hidden;
 `;
 
 export const SolidText = styled(motion.h1)`
