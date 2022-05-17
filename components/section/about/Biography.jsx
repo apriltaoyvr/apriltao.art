@@ -17,6 +17,7 @@ const Biography = () => {
       variants={slideContainer}
       initial='hidden'
       whileInView='visible'
+      viewport={{ once: true }}
     >
       <motion.h2 variants={slideItem}>{t('about.title')}</motion.h2>
       <AboutWrapper variants={slideItem}>
