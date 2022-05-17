@@ -16,6 +16,7 @@ export const OptionWrapper = styled(motion.div)`
 export const Flag = styled(CircleFlag)`
   align-self: center;
   background: transparent;
+  animation: fadeIn ${props => props.delay};
 
   &:hover {
     cursor: pointer;

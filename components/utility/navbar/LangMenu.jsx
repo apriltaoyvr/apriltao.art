@@ -11,7 +11,6 @@ import {
   Flag,
 } from './LangMenu.styled';
 
-const MotionLink = motion(Link, { forwardMotionProps: true });
 
 const countryCodes = {
   en: 'us',
@@ -41,23 +40,20 @@ const LangMenu = () => {
               {Object.entries(countryCodes)
                 .filter(([key]) => key !== router.locale)
                 .map(([key, value], index) => (
-                  <MotionLink
-                    href={`/`}
-                    locale={key}
-                    key={key}
-                    passHref
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.25 * index }}
-                  >
-                    <Flag countryCode={value} height='25' onClick={closeMenu} />
-                  </MotionLink>
+                  <Link href={`/`} locale={key} key={key} passHref>
+                    <Flag
+                      countryCode={value}
+                      height='25'
+                      onClick={closeMenu}
+                      delay={`${(index + 1) * 0.5}s`}
+                    />
+                  </Link>
                 ))}
             </OptionWrapper>
             <Divider
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.1 }}
+              transition={{ duration: 0.5 }}
             />
           </StyledMenu>
         </>
@@ -69,6 +65,7 @@ const LangMenu = () => {
           countryCode={`${countryCodes[router.locale]}`}
           height='25'
           onClick={toggleMenu}
+          delay={`0s`}
         />
       </OptionWrapper>
     </LangWrapper>

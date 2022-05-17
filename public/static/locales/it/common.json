@@ -15,8 +15,18 @@
       "Sviluppatore web e designer che frequenta il programma di grafica del LISAA (L'Institut Supérieur des Arts Appliqués) di Parigi, Francia.",
       "Nato e cresciuto a Vancouver, in Canada, con un interesse per la bellezza visiva.",
       "I miei hobby sono la danza, lo yoga, la poesia e le cose belle della vita. Inoltre, nutro un grande amore per i piccioni, i gatti, i ratti e i capibara."
-    ],
-    "skills": "Competenza"
+    ]
+  },
+  "skills": {
+    "title": "Competenza",
+    "skillList": [
+      "NextJS",
+      "ReactJS",
+      "Styled Components",
+      "Sass",
+      "Adobe Photoshop",
+      "Adobe Premiere"
+    ]
   },
   "contact": {
     "title": "Contattarmi",

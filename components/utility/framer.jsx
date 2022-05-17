@@ -6,7 +6,6 @@ export const slideContainer = {
     transition: {
       type: 'spring',
       stiffness: 25,
-      duration: 1,
       staggerChildren: 1.25,
     },
   },
@@ -20,7 +19,6 @@ export const slideItem = {
     transition: {
       type: 'spring',
       stiffness: 25,
-      duration: 1
     },
   },
 };
