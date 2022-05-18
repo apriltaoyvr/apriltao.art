@@ -24,13 +24,13 @@ export const TextWrapper = styled(motion.hgroup)`
 `;
 
 export const SolidText = styled(motion.h1)`
-  font-size: 8rem;
+  font-size: 5.5rem;
   overflow: hidden;
   color: var(--accent);
 `;
 
 export const HollowText = styled(motion.h1)`
-  font-size: 8rem;
+  font-size: 5.5rem;
   overflow: hidden;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--accent);
