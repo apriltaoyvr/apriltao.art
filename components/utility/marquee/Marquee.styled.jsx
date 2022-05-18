@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import Marquee from 'react-fast-marquee';
+
+export const StyledMarquee = styled(Marquee)`
+  overflow: hidden;
+`;
 
 export const BannerWrapper = styled(motion.div)`
   display: flex;
@@ -16,7 +21,6 @@ export const TextWrapper = styled(motion.hgroup)`
   gap: 2rem;
   padding: 0 2rem 0 2rem;
   text-transform: uppercase;
-  overflow: hidden;
 `;
 
 export const SolidText = styled(motion.h1)`

@@ -1,10 +1,13 @@
-import Marquee from 'react-fast-marquee';
-
-import { TextWrapper, HollowText, SolidText } from './Marquee.styled';
+import {
+  StyledMarquee,
+  TextWrapper,
+  HollowText,
+  SolidText,
+} from './Marquee.styled';
 
 const MarqueeText = ({ speed, text }) => {
   return (
-    <Marquee gradientColor={[29, 29, 38]} speed={speed} pauseOnHover={true}>
+    <StyledMarquee gradientColor={[29, 29, 38]} speed={speed} pauseOnHover={true}>
       <TextWrapper>
         <HollowText>{text}</HollowText>
         <SolidText>{text}</SolidText>
@@ -15,7 +18,7 @@ const MarqueeText = ({ speed, text }) => {
         <HollowText>{text}</HollowText>
         <SolidText>{text}</SolidText>
       </TextWrapper>
-    </Marquee>
+    </StyledMarquee>
   );
 };
 
