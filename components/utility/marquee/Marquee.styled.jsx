@@ -21,7 +21,8 @@ export const TextWrapper = styled(motion.hgroup)`
   padding: 0 2rem;
   gap: 1rem;
   text-transform: uppercase;
-  @media screen and (min-width: 1600px) {
+
+  @media screen and (min-width: 1920px) {
     gap: 2rem;
   }
 `;
@@ -42,7 +43,7 @@ export const HollowText = styled(motion.h1)`
   color: transparent;
   -webkit-text-stroke: 1.5px var(--accent);
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1920px) {
     font-size: 9rem;
   }
 `;
