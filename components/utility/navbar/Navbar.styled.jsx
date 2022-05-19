@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+/* FA Icons */
+export const StyledIcon = styled(FontAwesomeIcon)`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 /* Unopened Nav*/
 export const ClosedNav = styled(motion.nav)`
@@ -48,6 +56,7 @@ export const OpenNav = styled(motion.div)`
   }
 `;
 
+/* Wrappers */
 export const ContentWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
@@ -60,7 +69,7 @@ export const LangHolder = styled(motion.footer)`
   align-self: center;
 `;
 
-
+/* Nav Links */
 export const Tabs = styled(motion.ul)`
   display: inline-flex;
   flex-direction: column;
@@ -93,4 +102,3 @@ export const TabLink = styled(Link)`
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 `;
-

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AnimatePresence, MotionConfig } from 'framer-motion';
 
 import {
+  StyledIcon,
   ClosedNav,
   OpenNav,
   Tabs,
@@ -37,11 +38,7 @@ const Navbar = () => {
             transition={{ duration: 0.1 }}
             key='closed'
           >
-            <FontAwesomeIcon
-              icon='fa-solid fa-bars'
-              size='xl'
-              onClick={toggleNav}
-            />
+            <StyledIcon icon='fa-solid fa-bars' size='xl' onClick={toggleNav} />
             <footer>
               <LangMenu />
             </footer>
@@ -55,30 +52,26 @@ const Navbar = () => {
             key='open'
           >
             <div>
-              <FontAwesomeIcon
-                icon='fa-solid fa-x'
-                size='xl'
-                onClick={toggleNav}
-              />
+              <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
             </div>
             <ContentWrapper>
               <Tabs>
-                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Tab whileTap={{ scale: 0.9 }}>
                   <TabLink onClick={closeNav} href='#'>
                     {t('navigation.home')}
                   </TabLink>
                 </Tab>
-                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Tab whileTap={{ scale: 0.9 }}>
                   <TabLink onClick={closeNav} href='#projects'>
                     {t('navigation.projects')}
                   </TabLink>
                 </Tab>
-                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Tab whileTap={{ scale: 0.9 }}>
                   <TabLink onClick={closeNav} href='#about'>
                     {t('navigation.about')}
                   </TabLink>
                 </Tab>
-                <Tab whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Tab whileTap={{ scale: 0.9 }}>
                   <TabLink onClick={closeNav} href='#contact'>
                     {t('navigation.contact')}
                   </TabLink>

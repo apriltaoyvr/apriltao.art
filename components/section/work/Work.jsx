@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { motion, MotionConfig } from 'framer-motion';
+import Link from 'next/link';
 
 /* Components */
 import VideoLink from './VideoLink';
@@ -7,7 +8,7 @@ import ImageLink from './ImageLink';
 import { WorkWrapper, ProjectWrapper } from './Work.styled';
 import {
   slideContainer,
-  slideSubContainer, 
+  slideSubContainer,
   slideItem,
 } from '../../utility/framer';
 
@@ -23,7 +24,9 @@ const Projects = () => {
           whileInView='visible'
           viewport={{ once: true }}
         >
-          <motion.h2 variants={slideItem}>{t('projects.title')}</motion.h2>
+          <motion.h2 variants={slideItem}>
+            <Link href={'#projects'}>{t('projects.title')}</Link>
+          </motion.h2>
           <motion.h4 variants={slideItem}>{t('projects.subtitle')}</motion.h4>
         </motion.hgroup>
         <ProjectWrapper

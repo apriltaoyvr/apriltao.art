@@ -19,6 +19,11 @@ const Global = createGlobalStyle`
   */
   html, body {
     height: 100%;
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion) {
+      scroll-behavior: auto;
+    }
   }
   /*
     Typographic tweaks!

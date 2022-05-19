@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import { slideContainer, slideItem } from '../../utility/framer';
 import {
@@ -20,7 +21,9 @@ const Biography = () => {
       whileInView='visible'
       viewport={{ once: true }}
     >
-      <motion.h2 variants={slideItem}>{t('about.title')}</motion.h2>
+      <motion.h2 variants={slideItem}>
+        <Link href={'#about'}>{t('about.title')}</Link>
+      </motion.h2>
       <AboutWrapper variants={slideItem}>
         <ParagraphWrapper variants={slideItem}>
           {t('about.bio', { returnObjects: true }).map((paragraph, index) => (
