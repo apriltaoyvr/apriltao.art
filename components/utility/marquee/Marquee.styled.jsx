@@ -32,7 +32,7 @@ export const SolidText = styled(motion.h1)`
   overflow: hidden;
   color: var(--accent);
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1920px) {
     font-size: 9rem;
   }
 `;
