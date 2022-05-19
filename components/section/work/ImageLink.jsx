@@ -9,7 +9,7 @@ const ImageLink = ({ href, image, alt, title }) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
     >
-      <a href={href} passHref target='_blank' rel='noreferrer'>
+      <a href={href} passHref>
         <Image src={image} alt={alt} width={1000} height={550} />
       </a>
     </LinkWrapper>

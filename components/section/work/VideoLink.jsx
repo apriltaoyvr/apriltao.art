@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const VideoLink = ({ href, video }) => {
   return (
     <LinkWrapper variants={slideItem}>
-      <a href={href} passHref target='_blank' rel='noreferrer'>
+      <a href={href} passHref>
         <motion.video
           src={video}
           autoPlay
@@ -13,7 +13,7 @@ const VideoLink = ({ href, video }) => {
           loop
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
-        ></motion.video>
+        />
       </a>
     </LinkWrapper>
   );
