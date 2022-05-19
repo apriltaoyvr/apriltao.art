@@ -36,7 +36,6 @@ export const CaptionWrapper = styled(motion.figcaption)`
   align-items: flex-end;
   height: 100%;
 
-  visibility: hidden;
   text-align: center;
 
   background: linear-gradient(
@@ -59,10 +58,6 @@ export const ImageWrapper = styled(motion.figure)`
   background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
   background-size: contain;
   box-shadow: 7px 7px var(--bg), 7px 7px 0 1px var(--accent);
-
-  &:hover ${CaptionWrapper} {
-    visibility: visible;
-  }
 `;
 
 export const SkillWrapper = styled(motion.div)`
@@ -82,5 +77,4 @@ export const StyledCard = styled(motion.div)`
   padding: 1rem;
   width: 250px;
   text-align: center;
-  animation: fadeIn ${(props) => props.delay};
 `;

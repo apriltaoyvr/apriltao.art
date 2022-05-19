@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { LinkWrapper } from './Work.styled';
+import { LinkWrapper} from './Work.styled';
 import { slideItem } from '../../utility/framer';
 
 const ImageLink = ({ href, image, alt, title }) => {
   return (
     <LinkWrapper
       variants={slideItem}
-      whileHover={{ scale: 1.05 }}
+      whileHover={{scale: 1.05}}
       whileTap={{ scale: 0.9 }}
     >
       <a href={href} passHref>

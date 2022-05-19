@@ -66,6 +66,7 @@ const Global = createGlobalStyle`
   /** Global Styles **/
   :root {
     --bg: hsl(234, 14%, 13%);
+    --bgSecondary: hsl(230, 15%, 30%);
     --fg: hsl(60, 30%, 96%);
     --accent: hsl(250, 100%, 75%);
     --disabled: hsl(230, 15%, 50%);

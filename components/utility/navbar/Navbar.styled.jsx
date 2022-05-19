@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* FA Icons */
 export const StyledIcon = styled(FontAwesomeIcon)`
+  color: var(--fg);
   &:hover {
     cursor: pointer;
   }
@@ -25,7 +26,7 @@ export const ClosedNav = styled(motion.nav)`
 
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
-  border-bottom: 1px solid var(--disabled);
+  border-bottom: 1px solid var(--bgSecondary);
 
   &:hover {
     border-color: var(--accent);
