@@ -56,7 +56,7 @@ export const ImageWrapper = styled(motion.figure)`
   margin: 1rem;
   border: 2px solid var(--accent);
 
-  background: url(https://res.cloudinary.com/dsbhmynmq/image/upload/v1652768579/April%20Tao/Images/_R281949_getmvp.jpg);
+  background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
   background-size: contain;
   box-shadow: 7px 7px var(--bg), 7px 7px 0 1px var(--accent);
 
