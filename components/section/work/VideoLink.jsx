@@ -1,12 +1,11 @@
-import Link from 'next/link';
-import { StyledLink } from './Work.styled';
+import { LinkWrapper } from './Work.styled';
 import { slideItem } from '../../utility/framer';
 import { motion } from 'framer-motion';
 
 const VideoLink = ({ href, video }) => {
   return (
-    <StyledLink variants={slideItem}>
-      <Link href={href} passHref>
+    <LinkWrapper variants={slideItem}>
+      <a href={href} passHref target='_blank' rel='noreferrer'>
         <motion.video
           src={video}
           autoPlay
@@ -15,8 +14,8 @@ const VideoLink = ({ href, video }) => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
         ></motion.video>
-      </Link>
-    </StyledLink>
+      </a>
+    </LinkWrapper>
   );
 };
 

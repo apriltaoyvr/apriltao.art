@@ -20,7 +20,7 @@ export const ProjectWrapper = styled(motion.div)`
   }
 `;
 
-export const StyledLink = styled(motion.div)`
+export const LinkWrapper = styled(motion.div)`
   filter: opacity(0.9);
   
   &:hover {
