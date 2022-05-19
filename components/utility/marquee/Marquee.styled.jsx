@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Marquee from 'react-fast-marquee';
 
-export const StyledMarquee = styled(Marquee)`
-  overflow: hidden;
-  user-select: none;
-`;
-
-export const BannerWrapper = styled(motion.div)`
+export const StyledMarquee = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+`;
+
+export const MarqueeLine = styled(Marquee)`
+  overflow: hidden;
+  user-select: none;
 `;
 
 export const TextWrapper = styled(motion.hgroup)`

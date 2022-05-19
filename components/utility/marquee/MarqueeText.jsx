@@ -1,5 +1,5 @@
 import {
-  StyledMarquee,
+  MarqueeLine,
   TextWrapper,
   HollowText,
   SolidText,
@@ -7,7 +7,7 @@ import {
 
 const MarqueeText = ({ speed, text }) => {
   return (
-    <StyledMarquee
+    <MarqueeLine
       gradientColor={[29, 29, 38]}
       speed={speed}
       pauseOnHover={true}
@@ -22,7 +22,7 @@ const MarqueeText = ({ speed, text }) => {
         <HollowText aria-hidden='true'>{text}</HollowText>
         <SolidText aria-hidden='true'>{text}</SolidText>
       </TextWrapper>
-    </StyledMarquee>
+    </MarqueeLine>
   );
 };
 
