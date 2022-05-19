@@ -42,7 +42,7 @@ export const langContainer = {
     transition: {
       type: 'spring',
       delay: 1,
-      staggerChildren: 0.5,
+      staggerChildren: 0.25,
     },
   },
   visible: {
