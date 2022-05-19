@@ -74,7 +74,6 @@ const Global = createGlobalStyle`
 
   /* Scrollbar */
   ::-webkit-scrollbar {
-    display: none;
   }
 
   /* Font Import */
@@ -95,7 +94,6 @@ const Global = createGlobalStyle`
     text-align: center;
     color: var(--accent);
     margin-bottom: 1rem;
-    user-select: none;  
   } 
   
   h1 {

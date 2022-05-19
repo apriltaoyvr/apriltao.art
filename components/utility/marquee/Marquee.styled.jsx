@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee';
 
 export const StyledMarquee = styled(Marquee)`
   overflow: hidden;
+  user-select: none;
 `;
 
 export const BannerWrapper = styled(motion.div)`
