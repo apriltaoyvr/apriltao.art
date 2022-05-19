@@ -79,6 +79,12 @@ const Global = createGlobalStyle`
 
   /* Scrollbar */
   ::-webkit-scrollbar {
+    background: var(--bg);
+    width: 5px;
+
+    &-thumb  {
+      background: var(--accent);
+    }
   }
 
   /* Font Import */
