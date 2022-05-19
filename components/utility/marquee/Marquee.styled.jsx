@@ -19,7 +19,6 @@ export const TextWrapper = styled(motion.hgroup)`
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 0 2rem;
   gap: 1rem;
   text-transform: uppercase;
 
