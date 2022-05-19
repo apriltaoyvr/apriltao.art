@@ -52,7 +52,7 @@ export const CaptionWrapper = styled(motion.figcaption)`
 `;
 
 export const ImageWrapper = styled(motion.figure)`
-  aspect-ratio: 79 / 105;
+  aspect-ratio: 1749 / 2737;
   margin: 1rem;
   border: 2px solid var(--accent);
 
