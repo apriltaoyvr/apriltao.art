@@ -38,11 +38,11 @@ const Contact = () => {
       </motion.hgroup>
       <SocialWrapper>
         <ContactIcon
-          href='https://github.com/apriltaoyvr/apriltao.art'
+          href='https://github.com/apriltaoyvr'
           icon='github'
         />
         <ContactIcon
-          href='https://github.com/apriltaoyvr/apriltao.art'
+          href='https://www.behance.net/apriltaoyvr'
           icon='behance'
         />
       </SocialWrapper>
