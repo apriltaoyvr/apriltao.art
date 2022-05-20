@@ -13,7 +13,7 @@ library.add(faGithub, faBehance, faBars, faX);
 /* Components */
 import Navbar from '../components/utility/navbar/Navbar';
 import Hero from '../components/section/hero/Hero';
-import Work from '../components/section/work/Work'
+import Projects from '../components/section/projects/Projects'
 import About from '../components/section/about/About'
 import Contact from '../components/section/contact/Contact'
 
@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <Work />
+      <Projects />
       <About />
       <Contact />
     </>
