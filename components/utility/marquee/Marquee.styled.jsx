@@ -20,6 +20,7 @@ export const TextWrapper = styled(motion.hgroup)`
   justify-content: center;
   width: 100%;
   gap: 1rem;
+  padding: 0 0.5rem;
   text-transform: uppercase;
 
   @media screen and (min-width: 1920px) {
