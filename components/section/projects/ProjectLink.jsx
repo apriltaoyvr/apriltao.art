@@ -23,7 +23,7 @@ const ProjectLink = ({ href, src, video, alt }) => {
               alt={alt}
               width={1000}
               height={550}
-              sizes='25vw'
+              sizes='50vw'
               layout='responsive'
             />
           </motion.div>
