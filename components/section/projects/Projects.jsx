@@ -56,6 +56,7 @@ const Projects = () => {
             title='Dracula Foundry'
             href='https://github.com/apriltaoyvr/dracula-foundry'
             src='https://user-images.githubusercontent.com/95392008/147394179-6777840b-3554-4e9c-b4c3-50cd99616ee2.png'
+            alt='A screenshot of Dracula Foundry in FoundryVTT'
           />
         </ProjectWrapper>
       </WorkWrapper>

@@ -6,7 +6,7 @@ import { slideItem } from '../../utility/framer';
 const ProjectLink = ({ href, src, video, alt }) => {
   return (
     <LinkWrapper variants={slideItem}>
-      <a href={href} passHref>
+      <motion.a href={href} passHref>
         {video ? (
           <motion.video
             src={src}
@@ -17,9 +17,18 @@ const ProjectLink = ({ href, src, video, alt }) => {
             whileTap={{ scale: 0.9 }}
           />
         ) : (
-          <Image src={src} alt={alt} width={1000} height={550} />
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+            <Image
+              src={src}
+              alt={alt}
+              width={1000}
+              height={550}
+              sizes='25vw'
+              layout='responsive'
+            />
+          </motion.div>
         )}
-      </a>
+      </motion.a>
     </LinkWrapper>
   );
 };
