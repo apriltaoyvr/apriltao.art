@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AnimatePresence, MotionConfig } from 'framer-motion';
 
 import {
@@ -57,16 +56,16 @@ const Navbar = () => {
             <ContentWrapper>
               <Tabs>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
-                  <TabLink href='#'>{t('navigation.home')}</TabLink>
+                  <TabLink href='/'>{t('navigation.home')}</TabLink>
                 </Tab>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
-                  <TabLink href='#projects'>{t('navigation.projects')}</TabLink>
+                  <TabLink href='/#projects'>{t('navigation.projects')}</TabLink>
                 </Tab>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
-                  <TabLink href='#about'>{t('navigation.about')}</TabLink>
+                  <TabLink href='/#about'>{t('navigation.about')}</TabLink>
                 </Tab>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
-                  <TabLink href='#contact'>{t('navigation.contact')}</TabLink>
+                  <TabLink href='/#contact'>{t('navigation.contact')}</TabLink>
                 </Tab>
               </Tabs>
               <LangHolder>

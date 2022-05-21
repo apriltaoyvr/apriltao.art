@@ -46,8 +46,8 @@ const LangMenu = () => {
               >
                 {Object.entries(countryCodes)
                   .filter(([key]) => key !== router.locale)
-                  .map(([key, value], index) => (
-                    <motion.div variants={langChild} key={key}>
+                  .map(([key, value]) => (
+                    <motion.div variants={langChild} key={key} whileTap={{ scale: 0.95 }}>
                       <Link href={`/`} locale={key} key={key} passHref>
                         <Flag
                           countryCode={value}
@@ -71,7 +71,7 @@ const LangMenu = () => {
           )}
         </AnimatePresence>
       </MotionConfig>
-      <OptionWrapper>
+      <OptionWrapper whileTap={{ scale: 0.95 }}>
         <Flag
           countryCode={`${countryCodes[router.locale]}`}
           height='25'
