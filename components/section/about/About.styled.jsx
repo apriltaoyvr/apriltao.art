@@ -73,7 +73,7 @@ export const SkillWrapper = styled(motion.div)`
 `;
 
 export const StyledCard = styled(motion.div)`
-  border: 1px solid var(--accent);
+  border: 1px solid var(--disabled);
   padding: 1rem;
   width: 250px;
   text-align: center;
