@@ -29,22 +29,14 @@ export const TextWrapper = styled(motion.hgroup)`
 `;
 
 export const SolidText = styled(motion.h1)`
-  font-size: 5.5rem;
+  font-size: clamp(5.5rem, 5.1538rem + 1.5385vw, 9rem);
   overflow: hidden;
   color: var(--accent);
-
-  @media screen and (min-width: 1920px) {
-    font-size: 9rem;
-  }
 `;
 
 export const HollowText = styled(motion.h1)`
-  font-size: 5.5rem;
+  font-size: clamp(5.5rem, 5.1538rem + 1.5385vw, 9rem);
   overflow: hidden;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--accent);
-
-  @media screen and (min-width: 1920px) {
-    font-size: 9rem;
-  }
 `;
