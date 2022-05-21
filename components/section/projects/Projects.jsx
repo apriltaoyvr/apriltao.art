@@ -49,8 +49,7 @@ const Projects = () => {
           <ProjectLink
             title='Levels 101'
             href='https://github.com/apriltaoyvr/levels-101'
-            src='https://user-images.githubusercontent.com/95392008/147842446-6e528d8a-11cf-43c1-badb-0619289acc0f.mp4'
-            video
+            src='https://user-images.githubusercontent.com/95392008/147842087-944ae2e6-5dd2-40f8-b6c8-8ea8e7aef1c1.png'
           />
           <ProjectLink
             title='Dracula Foundry'
