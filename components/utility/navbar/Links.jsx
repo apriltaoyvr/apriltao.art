@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import { Tabs, Tab, TabLink } from './Navbar.styled';
+import { Tabs, Tab, TabLink } from './index.styled';
 
 const Links = ({ closeNav }) => {
   const { t } = useTranslation('common');

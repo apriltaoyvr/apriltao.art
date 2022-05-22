@@ -1,4 +1,4 @@
-import { StyledBackdrop } from './Toggle.styled';
+import { StyledBackdrop } from '../index.styled';
 
 const Backdrop = ({ children, onClick }) => {
   return (

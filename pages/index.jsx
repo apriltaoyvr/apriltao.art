@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
-import Navbar from '../components/utility/navbar/Navbar';
+import Navbar from '../components/utility/navbar/index';
 import Hero from '../components/section/hero/Hero';
 import Projects from '../components/section/projects/Projects';
 import About from '../components/section/about/About';

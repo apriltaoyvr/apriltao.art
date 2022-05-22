@@ -1,4 +1,4 @@
-import { StyledModal } from './Toggle.styled';
+import { StyledModal } from '../index.styled';
 import Backdrop from './Backdrop';
 
 const Modal = ({ handleClose, children }) => {

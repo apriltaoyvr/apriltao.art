@@ -5,9 +5,9 @@ import { useTranslation } from 'next-i18next';
 
 /* Components */
 import Modal from './Modal';
-import ThemeItem from './ThemeItem';
-import { WindowIcon, ContentWrapper, ThemeGrid } from './Toggle.styled';
-import { StyledIcon } from '../Navbar.styled';
+import ThemeItem from './Modal/ThemeItem';
+import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
+import { StyledIcon } from '../index.styled';
 
 /* Themes */
 import { dracula, pink, nordDark } from '../../../styles/Themes';

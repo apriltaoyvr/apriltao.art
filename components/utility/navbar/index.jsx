@@ -9,11 +9,11 @@ import {
   StyledHeader,
   StyledFooter,
   LangHolder,
-} from './Navbar.styled';
+} from './index.styled';
 
-import LangMenu from './Lang/Menu';
+import LangMenu from './Lang';
 import Links from './Links';
-import ThemeToggle from './Theme/Toggle';
+import ThemeToggle from './Theme';
 
 const Navbar = ({ setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);

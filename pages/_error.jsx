@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
 }
 
 /* Components */
-import Navbar from '../components/utility/navbar/Navbar';
+import Navbar from '../components/utility/navbar/index';
 
 /* Styles */
 const StyledError = styled.main`

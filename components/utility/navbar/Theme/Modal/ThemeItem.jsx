@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ThemeIcon } from './Toggle.styled';
+import { ThemeIcon } from '../index.styled';
 
 const ThemeItem = (props) => {
   const setTheme = (color) => {

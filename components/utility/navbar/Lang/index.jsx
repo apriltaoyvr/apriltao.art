@@ -10,7 +10,7 @@ import {
   OptionWrapper,
   Divider,
   Flag,
-} from './Menu.styled';
+} from './index.styled';
 
 const countryCodes = {
   en: 'us',
