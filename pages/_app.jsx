@@ -14,9 +14,18 @@ import {
   faX,
   faArrowLeftLong,
   faPalette,
+  faCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faGithub, faBehance, faBars, faX, faArrowLeftLong, faPalette);
+library.add(
+  faGithub,
+  faBehance,
+  faBars,
+  faX,
+  faArrowLeftLong,
+  faPalette,
+  faCircle
+);
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(purple);

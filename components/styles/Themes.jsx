@@ -68,6 +68,20 @@ export const pink = {
   },
 };
 
+export const red = {
+  main: {
+    fg: 'hsl(60, 30%, 96%)',
+    bg: 'hsl(234, 14%, 13%)',
+    bgSecondary: 'hsl(230, 15%, 30%)',
+    bgTertiary: 'hsl(230, 15%, 50%)',
+    accent: 'hsl(10, 100%, 75%)',
+    accentSecondary: 'hsl(10, 100%, 90%)',
+  },
+  nav: {
+    bg: 'hsla(234, 14%, 13%, 0.75)',
+  },
+};
+
 export const yellow = {
   main: {
     fg: 'hsl(60, 30%, 96%)',

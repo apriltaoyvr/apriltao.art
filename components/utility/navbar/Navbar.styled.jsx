@@ -6,7 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* FA Icons */
 export const StyledIcon = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.main.fg};
+  transition: color 0.15s ease-in-out;
+
   &:hover {
+    color: ${({ theme }) => theme.main.accent};
     cursor: pointer;
   }
 `;
@@ -69,6 +72,18 @@ export const ContentWrapper = styled(motion.div)`
   justify-content: space-between;
   align-items: center;
   height: 100%;
+`;
+
+export const StyledHeader = styled(motion.header)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const StyledFooter = styled(motion.footer)`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 `;
 
 export const LangHolder = styled(motion.footer)`
