@@ -41,5 +41,6 @@
     "design": "Dessin",
     "loading": "Chargement de la page"
   },
-  "error": "Page non trouvée"
+  "utility.error": "Page non trouvée",
+  "utility.themes": "Thèmes"
 }

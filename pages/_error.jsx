@@ -46,7 +46,7 @@ export default function Error() {
     <>
       <Navbar />
       <StyledError>
-        <h1>{t('error')}</h1>
+        <h1>{t('utility.error')}</h1>
         <StyledArrow
           icon='fa-solid fa-arrow-left-long'
           size='5x'

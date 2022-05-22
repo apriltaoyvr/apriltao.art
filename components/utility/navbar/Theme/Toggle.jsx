@@ -1,25 +1,20 @@
 /* Libs */
 import { useState } from 'react';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
+import { useTranslation } from 'next-i18next';
 
 /* Components */
 import Modal from './Modal';
 import ThemeItem from './ThemeItem';
-import {
-  WindowIcon,
-  ContentWrapper,
-  ThemeGrid,
-} from './Toggle.styled';
+import { WindowIcon, ContentWrapper, ThemeGrid } from './Toggle.styled';
 import { StyledIcon } from '../Navbar.styled';
 
 /* Themes */
-import {
-  dracula,
-  pink,
-  nordDark
-} from '../../../styles/Themes';
+import { dracula, pink, nordDark } from '../../../styles/Themes';
 
 const ThemeToggle = ({ setTheme }) => {
+  const { t } = useTranslation('common');
+
   const [modalOpen, setModalOpen] = useState(false);
 
   const close = () => {
@@ -54,7 +49,7 @@ const ThemeToggle = ({ setTheme }) => {
                 />
               </motion.div>
 
-              <h4>Theme</h4>
+              <h4>{t('utility.themes')}</h4>
               <p style={{ userSelect: 'none' }}>⠀⠀</p>
             </ContentWrapper>
             <ThemeGrid>

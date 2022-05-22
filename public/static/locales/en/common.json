@@ -41,5 +41,8 @@
     "design": "Design",
     "loading": "Loading"
   },
-  "error": "Page Not Found"
+  "utility": {
+    "error": "Page Not Found",
+    "themes": "Themes"
+  }
 }
