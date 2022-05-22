@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
-import { langContainer, langChild } from '../../../utility/framer';
+import { langContainer, langChild } from '../../framer';
 
 import {
   LangWrapper,
@@ -10,7 +10,7 @@ import {
   OptionWrapper,
   Divider,
   Flag,
-} from './LangMenu.styled';
+} from './Menu.styled';
 
 const countryCodes = {
   en: 'us',

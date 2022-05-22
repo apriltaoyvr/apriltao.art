@@ -12,7 +12,7 @@ import {
   ContentWrapper,
   LangHolder,
 } from './Navbar.styled';
-import LangMenu from './LangMenu/LangMenu';
+import LangMenu from './Lang/Menu';
 
 const Navbar = () => {
   const { t } = useTranslation('common');
