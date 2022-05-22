@@ -23,9 +23,10 @@ export const ClosedNav = styled(motion.nav)`
   justify-content: space-between;
   padding: 1rem;
 
-  background: hsla(234, 14%, 13%, 0.5);
+  background: hsla(234, 14%, 13%, 0.75);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--bgSecondary);
+  box-shadow: 2px 0 8px hsla(234, 14%, 13%, 0.75);
 
   &:hover {
     border-color: var(--accent);
@@ -46,8 +47,9 @@ export const OpenNav = styled(motion.div)`
   justify-content: space-between;
   gap: 3rem;
 
-  background: hsla(234, 14%, 13%, 0.1);
+  background: hsla(234, 14%, 13%, 0.75);
   border-right: 1px solid var(--bgSecondary);
+  box-shadow: 0 2px 8px hsla(234, 14%, 13%, 0.75);
   backdrop-filter: blur(8px);
 
   &:hover {
