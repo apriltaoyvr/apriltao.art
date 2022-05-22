@@ -16,7 +16,7 @@ const SkillSection = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        <motion.h3 variants={slideItem}>{t('skills.title')}</motion.h3>
+        <motion.h4 variants={slideItem}>{t('skills.title')}</motion.h4>
         <SkillWrapper>
           {t('skills.skillList', { returnObjects: true }).map(
             (skill, index) => (

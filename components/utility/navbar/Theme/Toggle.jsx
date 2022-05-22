@@ -9,19 +9,14 @@ import {
   WindowIcon,
   ContentWrapper,
   ThemeGrid,
-  ThemeIcon,
 } from './Toggle.styled';
 import { StyledIcon } from '../Navbar.styled';
 
 /* Themes */
 import {
-  red,
-  purple,
-  blue,
-  green,
-  orange,
+  dracula,
   pink,
-  yellow,
+  nordDark
 } from '../../../styles/Themes';
 
 const ThemeToggle = ({ setTheme }) => {
@@ -59,56 +54,28 @@ const ThemeToggle = ({ setTheme }) => {
                 />
               </motion.div>
 
-              <h6>Theme</h6>
+              <h4>Theme</h4>
               <p style={{ userSelect: 'none' }}>⠀⠀</p>
             </ContentWrapper>
             <ThemeGrid>
               <ThemeItem
                 icon='fa-solid fa-circle'
                 size='3x'
-                style={{ color: 'hsl(10, 100%, 75%)' }}
-                setTheme={setTheme}
-                color={red}
-              />
-              <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(35, 100%, 75%)' }}
-                setTheme={setTheme}
-                color={orange}
-              />
-              <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(60, 100%, 75%)' }}
-                setTheme={setTheme}
-                color={yellow}
-              />
-              <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(115, 100%, 75%)' }}
-                setTheme={setTheme}
-                color={green}
-              />
-              <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(170, 100%, 75%)' }}
-                setTheme={setTheme}
-                color={blue}
-              />
-              <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
                 style={{ color: 'hsl(250, 100%, 75%)' }}
                 setTheme={setTheme}
-                color={purple}
+                color={dracula}
               />
               <ThemeItem
                 icon='fa-solid fa-circle'
                 size='3x'
-                style={{ color: 'hsl(330, 100%, 75%)' }}
+                style={{ color: 'hsl(193, 43%, 67%)' }}
+                setTheme={setTheme}
+                color={nordDark}
+              />
+              <ThemeItem
+                icon='fa-solid fa-circle'
+                size='3x'
+                style={{ color: 'hsl(14, 50%, 75%)' }}
                 setTheme={setTheme}
                 color={pink}
               />

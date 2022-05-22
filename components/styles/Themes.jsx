@@ -1,4 +1,5 @@
-export const purple = {
+/* Dracula */
+export const dracula = {
   main: {
     fg: 'hsl(60, 30%, 96%)',
     bg: 'hsl(234, 14%, 13%)',
@@ -12,86 +13,32 @@ export const purple = {
   },
 };
 
-export const blue = {
-  main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(170, 100%, 75%)',
-    accentSecondary: 'hsl(170, 100%, 90%)',
-  },
-  nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
-  },
-};
-
-export const green = {
-  main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(115, 100%, 75%)',
-    accentSecondary: 'hsl(115, 100%, 90%)',
-  },
-  nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
-  },
-};
-
-export const orange = {
-  main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(35, 100%, 75%);',
-    accentSecondary: 'hsl(35, 100%, 90%)',
-  },
-  nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
-  },
-};
-
+/* Blue and Pink */
 export const pink = {
   main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(330, 100%, 75%)',
-    accentSecondary: 'hsl(330, 100%, 90%)',
+    fg: 'hsl(50, 21%, 94%)',
+    bg: 'hsl(240, 27%, 18%)',
+    bgSecondary: 'hsl(232, 17%, 35%)',
+    bgTertiary: 'hsl(308, 6%, 57%)',
+    accent: 'hsl(14, 50%, 75%)',
+    accentSecondary: 'hsl(14, 50%, 90%)',
   },
   nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
+    bg: 'hsla(240, 27%, 18%, 0.75)',
   },
 };
 
-export const red = {
+/* Nord */
+export const nordDark = {
   main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(10, 100%, 75%)',
-    accentSecondary: 'hsl(10, 100%, 90%)',
+    fg: 'hsl(218, 27%, 94%)',
+    bg: 'hsl(221, 16%, 19%)',
+    bgSecondary: 'hsl(222, 16%, 28%)',
+    bgTertiary: 'hsl(220, 16%, 36%)',
+    accent: 'hsl(193, 43%, 67%)',
+    accentSecondary: 'hsl(179, 25%, 65%)',
   },
   nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
-  },
-};
-
-export const yellow = {
-  main: {
-    fg: 'hsl(60, 30%, 96%)',
-    bg: 'hsl(234, 14%, 13%)',
-    bgSecondary: 'hsl(230, 15%, 30%)',
-    bgTertiary: 'hsl(230, 15%, 50%)',
-    accent: 'hsl(60, 100%, 75%)',
-    accentSecondary: 'hsl(60, 100%, 90%)',
-  },
-  nav: {
-    bg: 'hsla(234, 14%, 13%, 0.75)',
+    bg: 'hsla(221, 16%, 19%, 0.75)',
   },
 };

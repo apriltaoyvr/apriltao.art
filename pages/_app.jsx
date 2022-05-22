@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 /* Styled Components */
 import { ThemeProvider } from 'styled-components';
 import Global from '../components/styles/globalStyles';
-import { purple } from '../components/styles/Themes';
+import { dracula } from '../components/styles/Themes';
 
 /* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -15,6 +15,8 @@ import {
   faArrowLeftLong,
   faPalette,
   faCircle,
+  faSunBright,
+  faMoon,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -24,11 +26,12 @@ library.add(
   faX,
   faArrowLeftLong,
   faPalette,
-  faCircle
+  faCircle,
+  faMoon
 );
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(purple);
+  const [theme, setTheme] = useState(dracula);
 
   return (
     <ThemeProvider theme={theme}>

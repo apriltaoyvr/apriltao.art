@@ -21,7 +21,7 @@ export const StyledModal = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: clamp(25%, 500px, 90%);
-  height: min(50%, 400px);
+  height: min(30%, 400px);
 
   margin: auto;
   padding: 1rem;
@@ -31,10 +31,10 @@ export const StyledModal = styled(motion.div)`
   border: 1px solid ${({ theme }) => theme.main.accent};
 `;
 
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled.hgroup`
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 `;
@@ -49,14 +49,18 @@ export const WindowIcon = styled(FontAwesomeIcon)`
   }
 `;
 
+export const ThemeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+`;
+
 export const ThemeGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(3, minmax(25px, 1fr));
   gap: 2rem;
-
-  & .theme-wrapper:last-child {
-    grid-column-start: 2;
-  }
 `;
 
 export const ThemeIcon = styled(FontAwesomeIcon)`

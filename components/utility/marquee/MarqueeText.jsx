@@ -8,7 +8,7 @@ import {
 const MarqueeText = ({ speed, text }) => {
   return (
     <MarqueeLine
-      gradientColor={[29, 29, 38]}
+      gradient={false}
       speed={speed}
       pauseOnHover={true}
     >
