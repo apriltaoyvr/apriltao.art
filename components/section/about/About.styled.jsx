@@ -53,7 +53,7 @@ export const CaptionWrapper = styled(motion.figcaption)`
 export const ImageWrapper = styled(motion.figure)`
   aspect-ratio: 1749 / 2737;
   margin: 1rem;
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
 
   background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
   background-size: contain;
