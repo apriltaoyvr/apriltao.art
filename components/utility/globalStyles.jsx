@@ -88,6 +88,13 @@ const Global = createGlobalStyle`
     }
   }
 
+  /* Text Select */
+  ::selection { 
+    color: var(--bg);
+    background: hsl(250, 100%, 90%);
+  }
+
+
   /* Font Import */
   @font-face {
     font-family: 'Vartek';
