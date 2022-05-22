@@ -50,7 +50,7 @@ export const OpenNav = styled(motion.div)`
   background: hsla(234, 14%, 13%, 0.1);
   border-right: 1px solid var(--bgSecondary);
   backdrop-filter: blur(8px);
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     border-color: var(--accent);
@@ -89,7 +89,6 @@ export const Tabs = styled(motion.ul)`
 export const Tab = styled(motion.li)`
   position: relative;
   font-size: 24px;
-  transition: color 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
     font-size: 36px;
@@ -97,6 +96,7 @@ export const Tab = styled(motion.li)`
 
   & a {
     color: var(--fg);
+    transition: color 0.15s ease-in-out;
   }
 
   &:hover a {
