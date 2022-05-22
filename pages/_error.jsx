@@ -30,6 +30,7 @@ const StyledError = styled.main`
 `;
 
 const StyledArrow = styled(FontAwesomeIcon)`
+  color: var(--bgSecondary);
   transition: color 0.3s ease-in-out;
   &:hover {
     color: var(--accent);
