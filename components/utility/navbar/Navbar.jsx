@@ -59,7 +59,9 @@ const Navbar = () => {
                   <TabLink href='/'>{t('navigation.home')}</TabLink>
                 </Tab>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
-                  <TabLink href='/#projects'>{t('navigation.projects')}</TabLink>
+                  <TabLink href='/#projects'>
+                    {t('navigation.projects')}
+                  </TabLink>
                 </Tab>
                 <Tab onClick={closeNav} whileTap={{ scale: 0.9 }}>
                   <TabLink href='/#about'>{t('navigation.about')}</TabLink>

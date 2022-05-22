@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* FA Icons */
 export const StyledIcon = styled(FontAwesomeIcon)`
-  color: var(--fg);
+  color: ${({ theme }) => theme.main.fg};
   &:hover {
     cursor: pointer;
   }
@@ -23,13 +23,13 @@ export const ClosedNav = styled(motion.nav)`
   justify-content: space-between;
   padding: 1rem;
 
-  background: hsla(234, 14%, 13%, 0.75);
+  background: ${({ theme }) => theme.nav.bg};
   backdrop-filter: blur(4px);
-  border-bottom: 1px solid var(--bgSecondary);
-  box-shadow: 2px 0 8px hsla(234, 14%, 13%, 0.75);
+  border-bottom: 1px solid ${({ theme }) => theme.main.bgSecondary};
+  box-shadow: 2px 0 8px ${({ theme }) => theme.nav.bg};
 
   &:hover {
-    border-color: var(--accent);
+    border-color: ${({ theme }) => theme.main.accent};
   }
 `;
 
@@ -47,13 +47,13 @@ export const OpenNav = styled(motion.div)`
   justify-content: space-between;
   gap: 3rem;
 
-  background: hsla(234, 14%, 13%, 0.75);
-  border-right: 1px solid var(--bgSecondary);
-  box-shadow: 0 2px 8px hsla(234, 14%, 13%, 0.75);
+  background: ${({ theme }) => theme.nav.bg};
+  border-right: 1px solid ${({ theme }) => theme.main.bgSecondary};
+  box-shadow: 0 2px 8px ${({ theme }) => theme.nav.bg};
   backdrop-filter: blur(8px);
 
   &:hover {
-    border-color: var(--accent);
+    border-color: ${({ theme }) => theme.main.accent};
   }
 
   @media screen and (max-width: 768px) {
@@ -95,11 +95,11 @@ export const Tab = styled(motion.li)`
   }
 
   & a {
-    color: var(--fg);
+    color: ${({ theme }) => theme.main.fg};
   }
 
   &:hover a {
-    color: var(--accent);
+    color: ${({ theme }) => theme.main.accent};
   }
 `;
 

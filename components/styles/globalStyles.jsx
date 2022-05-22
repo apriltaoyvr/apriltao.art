@@ -64,34 +64,26 @@ const Global = createGlobalStyle`
   /** End of CSS Reset **/
 
   /** Global Styles **/
-  :root {
-    --bg: hsl(234, 14%, 13%);
-    --bgSecondary: hsl(230, 15%, 30%);
-    --fg: hsl(60, 30%, 96%);
-    --accent: hsl(250, 100%, 75%);
-    --disabled: hsl(230, 15%, 50%);
-  }
-
   body {
-    background: var(--bg);
-    color: var(--fg);
+    background: ${({ theme }) => theme.main.bg};
+    color: ${({ theme }) => theme.main.fg};
     font-family: 'IBM Plex Mono', 'Fira Code', 'Consolas', monospace;
   }
 
   /* Scrollbar */
   ::-webkit-scrollbar {
-    background: var(--bg);
+    background: ${({ theme }) => theme.main.bg};
     width: 5px;
 
     &-thumb  {
-      background: var(--accent);
+      background: ${({ theme }) => theme.main.accent};
     }
   }
 
   /* Text Select */
   ::selection { 
-    color: var(--bg);
-    background: hsl(250, 100%, 90%);
+    color: ${({ theme }) => theme.main.bg};
+    background: ${({ theme }) => theme.main.accentSecondary};
   }
 
 
@@ -111,7 +103,7 @@ const Global = createGlobalStyle`
   /* Text */
   h1, h2, h3, h4 {
     text-align: center;
-    color: var(--accent);
+    color: ${({ theme }) => theme.main.accent};
     margin-bottom: 1rem;
   } 
   
@@ -132,14 +124,14 @@ const Global = createGlobalStyle`
     font-weight: bold;
     font-size: 48px;
     color: transparent;
-    -webkit-text-stroke: 1.5px var(--accent);
+    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
   }
 
   h4 {
     font-family: 'Vartek';
     font-size: 34px;
     color: transparent;
-    -webkit-text-stroke: 1.5px var(--accent);
+    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
 }
 
   h5 {
@@ -155,7 +147,7 @@ const Global = createGlobalStyle`
   }
 
   a, span, em, strong {
-    color: var(--accent);
+    color: ${({ theme }) => theme.main.accent};
     text-decoration: none;
   }
 

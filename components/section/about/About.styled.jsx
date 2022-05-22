@@ -53,11 +53,11 @@ export const CaptionWrapper = styled(motion.figcaption)`
 export const ImageWrapper = styled(motion.figure)`
   aspect-ratio: 1749 / 2737;
   margin: 1rem;
-  border: 1px solid var(--accent);
+  border: 1px solid ${({ theme }) => theme.main.accent};
 
   background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
   background-size: contain;
-  box-shadow: 7px 7px var(--bg), 7px 7px 0 1px var(--accent);
+  box-shadow: 7px 7px ${({ theme }) => theme.main.bg}, 7px 7px 0 1px ${({ theme }) => theme.main.accent};
 `;
 
 export const SkillWrapper = styled(motion.div)`
@@ -73,7 +73,7 @@ export const SkillWrapper = styled(motion.div)`
 `;
 
 export const StyledCard = styled(motion.div)`
-  border: 1px solid var(--disabled);
+  border: 1px solid ${({ theme }) => theme.main.bgTertiary};
   padding: 1rem;
   width: 250px;
   text-align: center;

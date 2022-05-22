@@ -31,12 +31,12 @@ export const TextWrapper = styled(motion.hgroup)`
 export const SolidText = styled(motion.h1)`
   font-size: clamp(5.5rem, 5.1538rem + 1.5385vw, 9rem);
   overflow: hidden;
-  color: var(--accent);
+  color: ${({ theme }) => theme.main.accent};
 `;
 
 export const HollowText = styled(motion.h1)`
   font-size: clamp(5.5rem, 5.1538rem + 1.5385vw, 9rem);
   overflow: hidden;
   color: transparent;
-  -webkit-text-stroke: 1.5px var(--accent);
+  -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
 `;

@@ -30,10 +30,10 @@ const StyledError = styled.main`
 `;
 
 const StyledArrow = styled(FontAwesomeIcon)`
-  color: var(--bgSecondary);
+  color: ${({ theme }) => theme.main.bgSecondary};
   transition: color 0.3s ease-in-out;
   &:hover {
-    color: var(--accent);
+    color: ${({ theme }) => theme.main.accent};
     cursor: pointer;
   }
 `;

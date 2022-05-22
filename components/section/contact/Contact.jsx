@@ -17,7 +17,7 @@ const SocialWrapper = styled(motion.div)`
     transition: color 0.5s ease-in-out;
 
     &:hover {
-      color: var(--accent);
+      color: ${({ theme }) => theme.main.accent};
       cursor: pointer;
     }
   }

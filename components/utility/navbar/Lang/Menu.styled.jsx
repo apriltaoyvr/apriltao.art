@@ -24,7 +24,7 @@ export const Flag = styled(CircleFlag)`
 
 export const Divider = styled(motion.hr)`
   border: none;
-  border-left: 1px solid var(--disabled);
+  border-left: 1px solid ${({ theme }) => theme.main.bgTertiary};
 `;
 
 export const StyledMenu = styled(motion.div)`
