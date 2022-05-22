@@ -30,6 +30,5 @@ export const Divider = styled(motion.hr)`
 export const StyledMenu = styled(motion.div)`
   display: flex;
   flex-direction: row;
-  transition: all 0.3s ease-out;
   gap: 1rem;
 `;
