@@ -10,7 +10,10 @@ class MyDocument extends Document {
             content='Web design, development, and modelling'
           />
           <link rel='icon' href='/static/image/heart.svg' />
-          <link rel='image_src' href='/static/image/preview.png' />
+          <link
+            rel='image_src'
+            href='https://user-images.githubusercontent.com/95392008/168454973-fb5b4042-dad2-4784-b118-7cbc8df1110d.png'
+          />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link
             rel='preconnect'
