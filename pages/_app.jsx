@@ -14,9 +14,7 @@ import {
   faX,
   faArrowLeftLong,
   faPalette,
-  faCircle,
-  faSunBright,
-  faMoon,
+  faCircle
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -27,7 +25,6 @@ library.add(
   faArrowLeftLong,
   faPalette,
   faCircle,
-  faMoon
 );
 
 function MyApp({ Component, pageProps }) {
