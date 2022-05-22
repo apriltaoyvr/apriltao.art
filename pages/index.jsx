@@ -1,13 +1,13 @@
 /* Libs */
-import Head from 'next/head'
+import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
 import Navbar from '../components/utility/navbar/Navbar';
 import Hero from '../components/section/hero/Hero';
-import Projects from '../components/section/projects/Projects'
-import About from '../components/section/about/About'
-import Contact from '../components/section/contact/Contact'
+import Projects from '../components/section/projects/Projects';
+import About from '../components/section/about/About';
+import Contact from '../components/section/contact/Contact';
 
 /* next-i18next */
 export async function getServerSideProps({ locale }) {
@@ -18,17 +18,17 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default function Home() {
+export default function Home({ setTheme }) {
   return (
     <>
       <Head>
         <title>April Tao</title>
       </Head>
-      <Navbar />
+      <Navbar setTheme={setTheme} />
       <Hero />
       <Projects />
       <About />
       <Contact />
     </>
-  )
+  );
 }

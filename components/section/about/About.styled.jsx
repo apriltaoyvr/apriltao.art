@@ -57,7 +57,8 @@ export const ImageWrapper = styled(motion.figure)`
 
   background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
   background-size: contain;
-  box-shadow: 7px 7px ${({ theme }) => theme.main.bg}, 7px 7px 0 1px ${({ theme }) => theme.main.accent};
+  box-shadow: 7px 7px ${({ theme }) => theme.main.bg},
+    7px 7px 0 1px ${({ theme }) => theme.main.accent};
 `;
 
 export const SkillWrapper = styled(motion.div)`
@@ -73,8 +74,11 @@ export const SkillWrapper = styled(motion.div)`
 `;
 
 export const StyledCard = styled(motion.div)`
-  border: 1px solid ${({ theme }) => theme.main.bgTertiary};
+  border: 1px solid ${({ theme }) => theme.main.accentSecondary};
   padding: 1rem;
   width: 250px;
   text-align: center;
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.main.accent};
+  }
 `;
