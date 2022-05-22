@@ -21,7 +21,12 @@
   "skills": {
     "title": "Skills",
     "skillList": [
-      "NextJS", "ReactJS", "Styled Components", "Sass", "Adobe Photoshop", "Adobe Premiere"
+      "NextJS",
+      "ReactJS",
+      "Styled Components",
+      "Sass",
+      "Adobe Photoshop",
+      "Adobe Premiere"
     ]
   },
   "contact": {
@@ -32,5 +37,6 @@
     "development": "Development",
     "design": "Design",
     "loading": "Loading"
-  }
+  },
+  "error": "Page Not Found"
 }

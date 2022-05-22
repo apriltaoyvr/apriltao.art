@@ -37,5 +37,6 @@
     "development": "Sviluppo",
     "design": "Design",
     "loading": "Caricamento"
-  }
+  },
+  "error": "Pagina non trovata"
 }

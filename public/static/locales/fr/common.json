@@ -18,17 +18,17 @@
     ],
     "photoCredit": "La photo a été prise par Franck Sala"
   },
-    "skills": {
-      "title": "Compétences",
-      "skillList": [
-        "NextJS",
-        "ReactJS",
-        "Styled Components",
-        "Sass",
-        "Adobe Photoshop",
-        "Adobe Premiere"
-      ]
-    },
+  "skills": {
+    "title": "Compétences",
+    "skillList": [
+      "NextJS",
+      "ReactJS",
+      "Styled Components",
+      "Sass",
+      "Adobe Photoshop",
+      "Adobe Premiere"
+    ]
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Prendre contact"
@@ -37,5 +37,6 @@
     "development": "Développement",
     "design": "Dessin",
     "loading": "Chargement de la page"
-  }
+  },
+  "error": "Page non trouvée"
 }
