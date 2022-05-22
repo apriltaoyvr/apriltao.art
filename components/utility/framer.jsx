@@ -50,7 +50,7 @@ export const langContainer = {
     transition: {
       type: 'spring',
       stiffness: 25,
-      staggerChildren: 0.5,
+      staggerChildren: 0.25,
       staggerDirection: -1,
     },
   },
