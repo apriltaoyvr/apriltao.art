@@ -34,7 +34,7 @@ const Navbar = () => {
             initial={{ y: '-25%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '-50%', opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 100, delay: 0.1 }}
+            transition={{ type: 'spring', stiffness: 200, delay: 0.1 }}
             key='closed'
           >
             <StyledIcon icon='fa-solid fa-bars' size='xl' onClick={toggleNav} />
@@ -47,7 +47,7 @@ const Navbar = () => {
             initial={{ x: '-25%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: '-25%', opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 100, delay: 0.1 }}
+            transition={{ type: 'spring', stiffness: 200, delay: 0.1 }}
             key='open'
           >
             <div>

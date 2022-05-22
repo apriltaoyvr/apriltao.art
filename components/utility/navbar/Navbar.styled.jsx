@@ -96,7 +96,6 @@ export const Tab = styled(motion.li)`
 
   & a {
     color: var(--fg);
-    transition: color 0.15s ease-in-out;
   }
 
   &:hover a {
