@@ -13,11 +13,11 @@ const ProjectLink = ({ href, src, video, alt }) => {
             autoPlay
             muted
             loop
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.9 }}
           />
         ) : (
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.9 }}>
             <Image
               src={src}
               alt={alt}
