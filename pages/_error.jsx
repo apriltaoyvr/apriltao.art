@@ -15,8 +15,8 @@ export default function Error() {
   return (
     <StyledError>
       <h1>Page Not Found</h1>
-      <Link href='/'>
-        <a>Go back home</a>
+      <Link href='/' passHref>
+        Go back home
       </Link>
     </StyledError>
   );
