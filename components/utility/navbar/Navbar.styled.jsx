@@ -26,7 +26,6 @@ export const ClosedNav = styled(motion.nav)`
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--bgSecondary);
-  transition: 0.2s ease-in-out;
 
   &:hover {
     border-color: var(--accent);
@@ -50,7 +49,6 @@ export const OpenNav = styled(motion.div)`
   background: hsla(234, 14%, 13%, 0.1);
   border-right: 1px solid var(--bgSecondary);
   backdrop-filter: blur(8px);
-  transition: 0.3s ease-in-out;
 
   &:hover {
     border-color: var(--accent);
@@ -106,5 +104,4 @@ export const Tab = styled(motion.li)`
 
 export const TabLink = styled(Link)`
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 `;

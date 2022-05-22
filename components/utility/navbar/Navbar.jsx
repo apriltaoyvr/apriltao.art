@@ -31,10 +31,10 @@ const Navbar = () => {
       <AnimatePresence>
         {!isOpen ? (
           <ClosedNav
-            initial={{ y: '-150%', opacity: 0 }}
+            initial={{ y: '-25%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: '-200%', opacity: 0 }}
-            transition={{ type: 'spring', duration: 0.2, delay: 0.1 }}
+            exit={{ y: '-50%', opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 100, delay: 0.1 }}
             key='closed'
           >
             <StyledIcon icon='fa-solid fa-bars' size='xl' onClick={toggleNav} />
