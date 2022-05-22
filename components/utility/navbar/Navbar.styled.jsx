@@ -16,7 +16,6 @@ export const ClosedNav = styled(motion.nav)`
   position: fixed;
   width: 100%;
   z-index: 3;
-  transition: 0.2s ease-in-out;
 
   display: flex;
   align-content: center;
@@ -27,6 +26,7 @@ export const ClosedNav = styled(motion.nav)`
   background: hsla(234, 14%, 13%, 0.5);
   backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--bgSecondary);
+  transition: 0.2s ease-in-out;
 
   &:hover {
     border-color: var(--accent);
@@ -48,8 +48,13 @@ export const OpenNav = styled(motion.div)`
   gap: 3rem;
 
   background: hsla(234, 14%, 13%, 0.1);
-  border-right: 1px solid var(--accent);
+  border-right: 1px solid var(--bgSecondary);
   backdrop-filter: blur(8px);
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--accent);
+  }
 
   @media screen and (max-width: 768px) {
     width: 100vw;
