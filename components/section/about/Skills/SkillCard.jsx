@@ -1,4 +1,4 @@
-import { StyledCard } from '../About.styled.jsx';
+import { StyledCard } from '../index.styled.jsx';
 import { motion } from 'framer-motion';
 import { slideItem } from '../../../utility/framer';
 

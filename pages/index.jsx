@@ -4,10 +4,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
 import Navbar from '../components/utility/navbar/index';
-import Hero from '../components/section/hero/Hero';
-import Projects from '../components/section/projects/Projects';
-import About from '../components/section/about/About';
-import Contact from '../components/section/contact/Contact';
+import Hero from '../components/section/hero/index';
+import Projects from '../components/section/projects';
+import About from '../components/section/about';
+import Contact from '../components/section/contact';
 
 /* next-i18next */
 export async function getServerSideProps({ locale }) {

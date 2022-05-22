@@ -2,10 +2,10 @@ import { useTranslation } from 'next-i18next';
 import { motion, MotionConfig } from 'framer-motion';
 import { slideSubContainer, slideItem } from '../../../utility/framer';
 
-import { SkillWrapper } from '../About.styled';
+import { SkillWrapper } from '../index.styled';
 import SkillCard from './SkillCard';
 
-const SkillSection = () => {
+const Skills = () => {
   const { t } = useTranslation('common');
 
   return (
@@ -29,4 +29,4 @@ const SkillSection = () => {
   );
 };
 
-export default SkillSection;
+export default Skills;

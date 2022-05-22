@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { LinkWrapper } from './Projects.styled.';
+import { LinkWrapper } from './index.styled';
 import { slideItem } from '../../utility/framer';
 
 const ProjectLink = ({ href, src, video, alt }) => {

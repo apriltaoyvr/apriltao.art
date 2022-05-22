@@ -17,6 +17,8 @@ export async function getServerSideProps({ locale }) {
 
 /* Components */
 import Navbar from '../components/utility/navbar/index';
+import MarqueeText from '../components/utility/marquee/MarqueeText';
+import { StyledMarquee } from '../components/utility/marquee/Marquee.styled';
 
 /* Styles */
 const StyledError = styled.main`
@@ -46,7 +48,10 @@ export default function Error() {
     <>
       <Navbar />
       <StyledError>
-        <h1>{t('utility.error')}</h1>
+        <MarqueeText speed={15} text={t('utility.error')} />
+        <MarqueeText speed={5} text={t('utility.error')} />
+        <MarqueeText speed={15} text={t('utility.error')} />
+        <MarqueeText speed={5} text={t('utility.error')} />
         <StyledArrow
           icon='fa-solid fa-arrow-left-long'
           size='5x'

@@ -8,7 +8,7 @@ import {
   ParagraphWrapper,
   ImageWrapper,
   CaptionWrapper,
-} from './About.styled';
+} from './index.styled';
 
 const Biography = () => {
   const { t } = useTranslation('common');

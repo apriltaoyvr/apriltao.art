@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 /* Components */
 import ProjectLink from './ProjectLink';
-import { WorkWrapper, ProjectWrapper } from './Projects.styled.';
+import { WorkWrapper, ProjectWrapper } from './index.styled';
 import {
   slideContainer,
   slideSubContainer,
