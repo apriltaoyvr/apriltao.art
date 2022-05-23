@@ -1,14 +1,13 @@
 /* Libs */
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import React, { useState, useEffect } from 'react';
 
 /* Components */
 import Navbar from '../components/utility/navbar/index';
-import Hero from '../components/section/hero/index';
-import Projects from '../components/section/projects';
-import About from '../components/section/about';
-import Contact from '../components/section/contact';
+import Hero from '../components/home/hero/index';
+import Projects from '../components/home/projects';
+import About from '../components/home/about';
+import Contact from '../components/home/contact';
 
 /* next-i18next */
 export async function getServerSideProps({ locale }) {
