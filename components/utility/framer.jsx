@@ -1,3 +1,5 @@
+/* General */
+/* Sliding */
 export const slideContainer = {
   hidden: { opacity: 0, y: 100 },
   visible: {
@@ -37,6 +39,32 @@ export const slideItem = {
   },
 };
 
+/* Fading */
+export const fadeContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 25,
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+export const fadeItem = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+    },
+  },
+};
+
+
+/* Component Specific */
 export const langContainer = {
   hidden: {
     transition: {
@@ -62,29 +90,6 @@ export const langChild = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 100,
-    },
-  },
-};
-
-export const fadeContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      type: 'spring',
-      stiffness: 25,
-      staggerChildren: 0.25,
-    },
-  },
-};
-
-export const fadeItem = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
     transition: {
       type: 'spring',
       stiffness: 100,
