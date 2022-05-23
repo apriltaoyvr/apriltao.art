@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export const StyledMain = styled(motion.main)`

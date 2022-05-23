@@ -7,7 +7,7 @@ export const WorkWrapper = styled(motion.main)`
   align-items: center;
 `;
 
-export const ProjectWrapper = styled(motion.div)`
+export const ProjectWrapper = styled(motion.section)`
   display: grid;
   grid-template-columns: 1fr;
   max-width: 80%;
@@ -20,7 +20,7 @@ export const ProjectWrapper = styled(motion.div)`
   }
 `;
 
-export const LinkWrapper = styled(motion.div)`
+export const LinkWrapper = styled(motion.figure)`
   filter: opacity(0.9);
   
   &:hover {

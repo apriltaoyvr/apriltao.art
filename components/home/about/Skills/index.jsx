@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <MotionConfig reducedMotion='user'>
-      <motion.main
+      <motion.section
         variants={slideSubContainer}
         initial='hidden'
         whileInView='visible'
@@ -24,7 +24,7 @@ const Skills = () => {
             )
           )}
         </SkillWrapper>
-      </motion.main>
+      </motion.section>
     </MotionConfig>
   );
 };

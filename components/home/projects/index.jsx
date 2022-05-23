@@ -36,7 +36,7 @@ const Projects = () => {
         >
           <ProjectLink
             title='AmbrosiaLab'
-            href='https://www.ambrosialab.it'
+            href='/projects/ambrosialab'
             src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570265/April%20Tao/Projects/AmbrosiaLab/2022-05-14_16-16-35_skywsw.mp4'
             video
           />
