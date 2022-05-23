@@ -1,6 +1,6 @@
 /* Libs */
 import { appWithTranslation } from 'next-i18next';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 /* Styled Components */
@@ -29,17 +29,27 @@ library.add(
 );
 
 /* Components */
-import Layout from '../components/utility/layout';
+import Layout from '../components/utility/Layout';
+import LoadingScreen from '../components/utility/LoadingScreen';
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(dracula);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2500);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      <Layout setTheme={setTheme}>
-        <Component {...pageProps} />
-      </Layout>
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <Layout setTheme={setTheme}>
+          <Component {...pageProps} />
+        </Layout>
+      )}
     </ThemeProvider>
   );
 }
