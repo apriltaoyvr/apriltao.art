@@ -1,10 +1,7 @@
 /* Libs */
 import { appWithTranslation } from 'next-i18next';
-import React, { useState, useEffect } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
-
-/* Components */
-import LoadingScreen from '../components/utility/LoadingScreen';
 
 /* Styled Components */
 import Global from '../components/styles/globalStyles';
@@ -31,22 +28,21 @@ library.add(
   faCircle
 );
 
+/* Components */
+import Layout from '../components/utility/layout';
+
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(dracula);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 6000);
-  }, []);
+  const themeContext = createContext();
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      {loading === false ? (
-        <Component {...pageProps} setTheme={setTheme} />
-      ) : (
-        <LoadingScreen />
-      )}
+      <themeContext.Provider value={{ theme, setTheme }}>
+        <Layout setTheme={setTheme}>
+          <Component {...pageProps} />
+        </Layout>
+      </themeContext.Provider>
     </ThemeProvider>
   );
 }

@@ -24,7 +24,6 @@ export default function Home({ setTheme }) {
       <Head>
         <title>April Tao</title>
       </Head>
-      <Navbar setTheme={setTheme} />
       <Hero />
       <Projects />
       <About />

@@ -1,0 +1,7 @@
+const AmbrosiaLab = () => {
+  return (
+    <>
+      <Projects />
+    </>
+  );
+};

@@ -1,11 +1,6 @@
-import Projects from '../../components/home/projects';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'])),
-  },
-});
+import Projects from '../../components/home/projects';
 
 const ProjectsPage = () => {
   return (
@@ -14,3 +9,11 @@ const ProjectsPage = () => {
     </>
   );
 };
+
+export default ProjectsPage;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+});
