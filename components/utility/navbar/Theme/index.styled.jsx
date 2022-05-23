@@ -21,7 +21,7 @@ export const StyledModal = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: clamp(25%, 500px, 90%);
-  height: min(30%, 400px);
+  height: min(30%, 300px);
 
   margin: auto;
   padding: 1rem;
