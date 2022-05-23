@@ -28,12 +28,12 @@ const Navbar = ({ setTheme }) => {
 
   return (
     <MotionConfig reducedMotion='user'>
-      <AnimatePresence >
+      <AnimatePresence initial={false}>
         {!isOpen ? (
           <ClosedNav
-            initial={{ y: '-25%', opacity: 0 }}
+            initial={{ y: '-5%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: '-50%', opacity: 0 }}
+            exit={{ y: '-25%', opacity: 0 }}
             transition={{ type: 'spring', stiffness: 150, delay: 0.1 }}
             key='closed'
           >
@@ -47,9 +47,9 @@ const Navbar = ({ setTheme }) => {
           </ClosedNav>
         ) : (
           <OpenNav
-            initial={{ x: '-25%', opacity: 0 }}
+            initial={{ x: '-5%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '-50%', opacity: 0 }}
+            exit={{ x: '-25%', opacity: 0 }}
             transition={{ type: 'spring', stiffness: 150, delay: 0.1 }}
             key='open'
           >

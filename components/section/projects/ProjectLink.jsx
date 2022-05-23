@@ -10,9 +10,10 @@ const ProjectLink = ({ href, src, video, alt }) => {
         {video ? (
           <motion.video
             src={src}
-            autoPlay
             muted
             loop
+            onMouseOver={(event) => event.target.play()}
+            onMouseOut={(event) => event.target.pause()}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.9 }}
           />
