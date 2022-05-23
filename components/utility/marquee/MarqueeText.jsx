@@ -11,7 +11,7 @@ const MarqueeText = ({ speed, text }) => {
       <TextWrapper>
         <SolidText>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
-        <SolidText>{text}</SolidText>
+        <SolidText aria-hidden='true'>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
         <SolidText aria-hidden='true'>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
