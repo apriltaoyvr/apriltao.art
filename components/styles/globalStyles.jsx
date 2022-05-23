@@ -151,7 +151,7 @@ const Global = createGlobalStyle`
     text-decoration: none;
   }
 
-  section {
+  main {
     padding: 5rem 0;
   }
 `;

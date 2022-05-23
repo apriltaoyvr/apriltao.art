@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export const StyledSection = styled(motion.section)`
+export const StyledMain = styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,13 +1,13 @@
 import Biography from './Biography';
 import Skills from './Skills';
-import { StyledSection } from './index.styled';
+import { StyledMain } from './index.styled';
 
 const About = () => {
   return (
-    <StyledSection id='about'>
+    <StyledMain id='about'>
       <Biography />
       <Skills />
-    </StyledSection>
+    </StyledMain>
   );
 };
 

@@ -1,7 +1,9 @@
 const AmbrosiaLab = () => {
   return (
-    <>
-      <Projects />
-    </>
+    <main>
+      <h1>AmbrosiaLab</h1>
+    </main>
   );
 };
+
+export default AmbrosiaLab;

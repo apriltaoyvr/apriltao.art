@@ -1,6 +1,6 @@
 /* Libs */
 import { appWithTranslation } from 'next-i18next';
-import React, { useState, createContext, useContext } from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 /* Styled Components */
@@ -33,16 +33,13 @@ import Layout from '../components/utility/layout';
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(dracula);
-  const themeContext = createContext();
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      <themeContext.Provider value={{ theme, setTheme }}>
-        <Layout setTheme={setTheme}>
-          <Component {...pageProps} />
-        </Layout>
-      </themeContext.Provider>
+      <Layout setTheme={setTheme}>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }

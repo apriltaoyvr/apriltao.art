@@ -27,7 +27,7 @@ const Contact = () => {
   const { t } = useTranslation('common');
 
   return (
-    <motion.section
+    <motion.main
       id='contact'
       variants={fadeContainer}
       initial='hidden'
@@ -47,7 +47,7 @@ const Contact = () => {
           icon='behance'
         />
       </SocialWrapper>
-    </motion.section>
+    </motion.main>
   );
 };
 
