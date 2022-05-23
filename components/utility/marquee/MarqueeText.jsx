@@ -7,12 +7,9 @@ import {
 
 const MarqueeText = ({ speed, text }) => {
   return (
-    <MarqueeLine
-      gradient={false}
-      speed={speed}
-      pauseOnHover={true}
-    >
+    <MarqueeLine gradient={false} speed={speed} pauseOnHover={true}>
       <TextWrapper>
+        <SolidText>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
         <SolidText>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
@@ -20,7 +17,6 @@ const MarqueeText = ({ speed, text }) => {
         <HollowText aria-hidden='true'>{text}</HollowText>
         <SolidText aria-hidden='true'>{text}</SolidText>
         <HollowText aria-hidden='true'>{text}</HollowText>
-        <SolidText aria-hidden='true'>{text}</SolidText>
       </TextWrapper>
     </MarqueeLine>
   );

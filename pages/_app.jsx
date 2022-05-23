@@ -1,8 +1,12 @@
+/* Libs */
 import { appWithTranslation } from 'next-i18next';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from 'styled-components';
+
+/* Components */
+import LoadingScreen from '../components/utility/LoadingScreen';
 
 /* Styled Components */
-import { ThemeProvider } from 'styled-components';
 import Global from '../components/styles/globalStyles';
 import { dracula } from '../components/styles/Themes';
 
@@ -14,7 +18,7 @@ import {
   faX,
   faArrowLeftLong,
   faPalette,
-  faCircle
+  faCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -24,16 +28,25 @@ library.add(
   faX,
   faArrowLeftLong,
   faPalette,
-  faCircle,
+  faCircle
 );
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(dracula);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 6000);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      <Component {...pageProps} setTheme={setTheme} />
+      {loading === false ? (
+        <Component {...pageProps} setTheme={setTheme} />
+      ) : (
+        <LoadingScreen />
+      )}
     </ThemeProvider>
   );
 }

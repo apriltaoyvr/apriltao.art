@@ -8,12 +8,12 @@ const LoadingScreen = () => {
 
   return (
     <StyledMarquee>
-      <MarqueeText speed={5} text={t('marquee.loading')} />
-      <MarqueeText speed={10} text={t('marquee.loading')} />
-      <MarqueeText speed={5} text={t('marquee.loading')} />
-      <MarqueeText speed={10} text={t('marquee.loading')} />
-      <MarqueeText speed={5} text={t('marquee.loading')} />
-      <MarqueeText speed={10} text={t('marquee.loading')} />
+      <MarqueeText speed={45} text={t('marquee.loading')} />
+      <MarqueeText speed={50} text={t('marquee.loading')} />
+      <MarqueeText speed={45} text={t('marquee.loading')} />
+      <MarqueeText speed={50} text={t('marquee.loading')} />
+      <MarqueeText speed={45} text={t('marquee.loading')} />
+      <MarqueeText speed={50} text={t('marquee.loading')} />
     </StyledMarquee>
   );
 };
