@@ -1,4 +1,4 @@
-import Navbar from './navbar/index';
+import Navbar from './Navbar/index';
 
 export default function Layout({ setTheme, children }) {
   return (

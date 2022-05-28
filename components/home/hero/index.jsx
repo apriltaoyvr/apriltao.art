@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 
-import MarqueeText from '../../utility/marquee/MarqueeText';
-import { StyledMarquee } from '../../utility/marquee/Marquee.styled';
+import MarqueeText from '../../utility/Marquee/MarqueeText';
+import { StyledMarquee } from '../../utility/Marquee/Marquee.styled';
 
 const Hero = () => {
   const { t } = useTranslation('common');
@@ -13,11 +13,11 @@ const Hero = () => {
     transition={{duration: 2}}
     style={{paddingTop: '4rem'}}>
       <MarqueeText speed={5} text={'April Tao'} />
-      <MarqueeText speed={10} text={t('marquee.development')} />
-      <MarqueeText speed={5} text={t('marquee.design')} />
+      <MarqueeText speed={10} text={t('Marquee.development')} />
+      <MarqueeText speed={5} text={t('Marquee.design')} />
       <MarqueeText speed={10} text={'April Tao'} />
-      <MarqueeText speed={5} text={t('marquee.development')} />
-      <MarqueeText speed={10} text={t('marquee.design')} />
+      <MarqueeText speed={5} text={t('Marquee.development')} />
+      <MarqueeText speed={10} text={t('Marquee.design')} />
     </StyledMarquee>
   );
 };

@@ -4,8 +4,8 @@ import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 
 /* Components */
-import Modal from './Modal';
-import ThemeItem from './Modal/ThemeItem';
+import Modal from '../../Modal/index';
+import ThemeItem from './ThemeItem';
 import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 

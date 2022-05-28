@@ -1,5 +1,5 @@
-import { StyledModal } from '../index.styled';
-import Backdrop from './Backdrop';
+import { StyledModal } from './index.styled';
+import Backdrop from './/Backdrop';
 
 const Modal = ({ handleClose, children }) => {
   return (

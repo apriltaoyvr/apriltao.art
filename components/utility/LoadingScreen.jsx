@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 
-import MarqueeText from './marquee/MarqueeText';
-import { StyledMarquee } from './marquee/Marquee.styled';
+import MarqueeText from './Marquee/MarqueeText';
+import { StyledMarquee } from './Marquee/Marquee.styled';
 
 const LoadingScreen = () => {
   const { t } = useTranslation('common');

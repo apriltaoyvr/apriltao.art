@@ -11,9 +11,9 @@ import {
   LangHolder,
 } from './index.styled';
 
-import LangMenu from './lang';
+import LangMenu from './LangMenu';
 import Links from './Links';
-import ThemeToggle from './theme';
+import ThemeToggle from './ThemeMenu';
 
 const Navbar = ({ setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
