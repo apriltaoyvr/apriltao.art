@@ -16,9 +16,7 @@ export async function getServerSideProps({ locale }) {
 }
 
 /* Components */
-import Navbar from '../components/utility/Navbar/index';
 import MarqueeText from '../components/utility/Marquee/MarqueeText';
-import { StyledMarquee } from '../components/utility/Marquee/Marquee.styled';
 
 /* Styles */
 const StyledError = styled.main`
@@ -31,11 +29,17 @@ const StyledError = styled.main`
   width: 100vw;
 `;
 
+const StyledButton = styled.button`
+  background: transparent;
+  border: 1px solid ${({ theme }) => theme.main.bgSecondary};
+  min-width: 200px;
+`;
+
 const StyledArrow = styled(FontAwesomeIcon)`
-  color: ${({ theme }) => theme.main.bgSecondary};
-  transition: color 0.3s ease-in-out;
+  color: ${({ theme }) => theme.main.accent};
+  transition: color 0.2s ease-in-out;
   &:hover {
-    color: ${({ theme }) => theme.main.accent};
+    color: ${({ theme }) => theme.main.accentSecondary};
     cursor: pointer;
   }
 `;
@@ -49,12 +53,16 @@ export default function Error() {
       <MarqueeText speed={15} text={t('utility.error')} />
       <MarqueeText speed={5} text={t('utility.error')} />
       <MarqueeText speed={15} text={t('utility.error')} />
+      <StyledButton>
+        <StyledArrow
+          icon='fa-solid fa-arrow-left-long'
+          size='5x'
+          onClick={() => router.back()}
+        />
+      </StyledButton>
       <MarqueeText speed={5} text={t('utility.error')} />
-      <StyledArrow
-        icon='fa-solid fa-arrow-left-long'
-        size='5x'
-        onClick={() => router.back()}
-      />
+      <MarqueeText speed={15} text={t('utility.error')} />
+      <MarqueeText speed={5} text={t('utility.error')} />
     </StyledError>
   );
 }
