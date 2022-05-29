@@ -3,8 +3,9 @@ import {
   TextWrapper,
   HollowText,
   SolidText,
-} from './Marquee.styled';
+} from './index.styled';
 
+/* Remember to use StyledMarquee from index.styled.jsx as a wrapper when imported */
 const MarqueeText = ({ speed, text }) => {
   return (
     <MarqueeLine gradient={false} speed={speed} pauseOnHover={true}>

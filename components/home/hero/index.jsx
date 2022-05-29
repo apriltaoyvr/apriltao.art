@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 
-import MarqueeText from '../../utility/Marquee/MarqueeText';
-import { StyledMarquee } from '../../utility/Marquee/Marquee.styled';
+import MarqueeText from '../../utility/Marquee';
+import { StyledMarquee } from '../../utility/Marquee/index.styled';
 
 const Hero = () => {
   const { t } = useTranslation('common');
