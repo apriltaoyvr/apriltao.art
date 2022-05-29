@@ -1,15 +1,18 @@
 import { Circle } from './index.styled';
 
 const ThemeItem = (props) => {
-  const setTheme = (theme) => {
-    props.setTheme(theme);
+  const setTheme = (palette) => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('theme', JSON.stringify(palette));
+    }
+    props.setTheme(palette);
   };
 
   return (
     <Circle
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      onClick={() => setTheme(props.theme)}
+      onClick={() => setTheme(props.palette)}
       background={props.background}
       border={props.border}
     ></Circle>

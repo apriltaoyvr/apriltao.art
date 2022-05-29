@@ -1,9 +1,9 @@
 import Navbar from './Navbar';
 
-export default function Layout({ setTheme, children }) {
+export default function Layout({ theme, setTheme, children }) {
   return (
     <>
-      <Navbar setTheme={setTheme} />
+      <Navbar setTheme={setTheme} theme={theme} />
       {children}
     </>
   );

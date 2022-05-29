@@ -42,7 +42,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href='{`/${router.locale}/#contact`}'>
+        <TabLink href={`/${router.locale}/#contact`}>
           {t('navigation.contact')}
         </TabLink>
       </Tab>

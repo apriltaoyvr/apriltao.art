@@ -13,9 +13,9 @@ import {
 
 import LangMenu from './LangMenu';
 import Links from './Links';
-import ThemeToggle from './ThemeMenu';
+import ThemeMenu from './ThemeMenu';
 
-const Navbar = ({ setTheme }) => {
+const Navbar = ({ setTheme}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -42,7 +42,7 @@ const Navbar = ({ setTheme }) => {
             </motion.div>
             <StyledFooter>
               <LangMenu />
-              <ThemeToggle setTheme={setTheme} />
+              <ThemeMenu setTheme={setTheme}/>
             </StyledFooter>
           </ClosedNav>
         ) : (
@@ -55,7 +55,7 @@ const Navbar = ({ setTheme }) => {
           >
             <StyledHeader>
               <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
-              <ThemeToggle setTheme={setTheme} />
+              <ThemeMenu setTheme={setTheme}/>
             </StyledHeader>
             <ContentWrapper>
               <Links closeNav={closeNav} />

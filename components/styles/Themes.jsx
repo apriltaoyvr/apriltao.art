@@ -43,17 +43,16 @@ export const pink = {
   },
 };
 
-/* Shrouded Isle's Sacramental Wine */
-export const wine = {
+export const neon = {
   main: {
-    fg: 'hsl(224, 33%, 62.5%)',
-    bg: 'hsl(332, 68%, 15%)',
-    bgSecondary: 'hsl(344, 73%, 14.5%)',
-    bgTertiary: 'hsl(336, 69%, 9%)',
-    accent: 'hsl(225, 33%, 62.5%)',
-    accentSecondary: 'hsl(225, 22%, 55%)',
+    fg: 'hsl(220, 3%, 78%)',
+    bg: 'hsl(228, 19%, 5%)',
+    bgSecondary: 'hsl(215, 23%, 16%)',
+    bgTertiary: 'hsl(214, 23%, 41%)',
+    accent: 'hsl(176, 96%, 69%)',
+    accentSecondary: 'hsl(178, 40%, 45%)',
   },
   nav: {
-    bg: 'hsla(332, 68%, 15%, 0.5)',
+    bg: 'hsla(228, 19%, 5%, 0.5)',
   },
 };

@@ -10,9 +10,9 @@ import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
-import { dracula, pink, nordDark, wine } from '../../../styles/Themes';
+import { dracula, pink, nordDark, neon } from '../../../styles/Themes';
 
-const ThemeToggle = ({ setTheme }) => {
+const ThemeMenu = ({ setTheme }) => {
   const { t } = useTranslation('common');
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -55,7 +55,7 @@ const ThemeToggle = ({ setTheme }) => {
             <ThemeGrid>
               <ThemeItem
                 setTheme={setTheme}
-                theme={dracula}
+                palette={dracula}
                 background='hsl(234, 14%, 13%)'
                 border='hsl(250, 100%, 75%)'
               />
@@ -63,19 +63,19 @@ const ThemeToggle = ({ setTheme }) => {
                 background='hsl(221, 16%, 19%)'
                 border='hsl(193, 43%, 67%)'
                 setTheme={setTheme}
-                theme={nordDark}
+                palette={nordDark}
               />
               <ThemeItem
                 background='hsl(240, 27%, 18%)'
                 border='hsl(14, 50%, 75%)'
                 setTheme={setTheme}
-                theme={pink}
+                palette={pink}
               />
               <ThemeItem
-                background='hsl(332, 68%, 15%)'
-                border='hsl(225, 33%, 62.5%)'
+                background='hsl(228, 19%, 5%)'
+                border='hsl(176, 96%, 69%)'
                 setTheme={setTheme}
-                theme={wine}
+                palette={neon}
               />
             </ThemeGrid>
           </Modal>
@@ -85,4 +85,4 @@ const ThemeToggle = ({ setTheme }) => {
   );
 };
 
-export default ThemeToggle;
+export default ThemeMenu;
