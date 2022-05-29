@@ -43,7 +43,7 @@ const TheRipper93 = () => {
         viewport={{ once: true }}
       >
         <motion.p variants={fadeItem}>{t('theripper93.paragraph.0')}</motion.p>
-        <motion.p variants={fadeItem}>{t('theripper93.paragraph.0')}</motion.p>
+        <motion.p variants={fadeItem}>{t('theripper93.paragraph.1')}</motion.p>
         <Gallery variants={fadeItem}>
           <Image
             alt='A screenshot of the modules list, showing the items in a grid'

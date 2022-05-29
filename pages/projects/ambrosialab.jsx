@@ -96,7 +96,7 @@ const AmbrosiaLab = () => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'ambrosialab'])),
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
     },
   };
 }
