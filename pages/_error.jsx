@@ -1,7 +1,8 @@
 /* Libs */
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 /* next-i18next */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -29,19 +30,19 @@ const StyledError = styled.main`
   width: 100vw;
 `;
 
-const StyledButton = styled.button`
-  background: transparent;
-  border: 1px solid ${({ theme }) => theme.main.bgSecondary};
+const StyledButton = styled(motion.button)`
   min-width: 200px;
+  background: ${({ theme }) => theme.main.accent};
+  border: 1px solid transparent;
+  transition: filter 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+  }
 `;
 
 const StyledArrow = styled(FontAwesomeIcon)`
-  color: ${({ theme }) => theme.main.accent};
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.main.accentSecondary};
-    cursor: pointer;
-  }
+  color: ${({ theme }) => theme.main.bg};
 `;
 
 export default function Error() {
@@ -53,12 +54,12 @@ export default function Error() {
       <MarqueeText speed={15} text={t('utility.error')} />
       <MarqueeText speed={5} text={t('utility.error')} />
       <MarqueeText speed={15} text={t('utility.error')} />
-      <StyledButton>
-        <StyledArrow
-          icon='fa-solid fa-arrow-left-long'
-          size='5x'
-          onClick={() => router.back()}
-        />
+      <StyledButton
+        whileHover={{ scale: 1.025 }}
+        whileTap={{ scale: 0.96 }}
+        onClick={() => router.back()}
+      >
+        <StyledArrow icon='fa-solid fa-arrow-left-long' size='5x' />
       </StyledButton>
       <MarqueeText speed={5} text={t('utility.error')} />
       <MarqueeText speed={15} text={t('utility.error')} />
