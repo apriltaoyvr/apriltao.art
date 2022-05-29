@@ -54,32 +54,28 @@ const ThemeToggle = ({ setTheme }) => {
             </ContentWrapper>
             <ThemeGrid>
               <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(250, 100%, 75%)' }}
                 setTheme={setTheme}
-                color={dracula}
+                theme={dracula}
+                background='hsl(234, 14%, 13%)'
+                border='hsl(250, 100%, 75%)'
               />
               <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(193, 43%, 67%)' }}
+                background='hsl(221, 16%, 19%)'
+                border='hsl(193, 43%, 67%)'
                 setTheme={setTheme}
-                color={nordDark}
+                theme={nordDark}
               />
               <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: 'hsl(14, 50%, 75%)' }}
+                background='hsl(240, 27%, 18%)'
+                border='hsl(14, 50%, 75%)'
                 setTheme={setTheme}
-                color={pink}
+                theme={pink}
               />
               <ThemeItem
-                icon='fa-solid fa-circle'
-                size='3x'
-                style={{ color: '#490215' }}
+                background='hsl(332, 68%, 15%)'
+                border='hsl(225, 33%, 62.5%)'
                 setTheme={setTheme}
-                color={wine}
+                theme={wine}
               />
             </ThemeGrid>
           </Modal>

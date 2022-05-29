@@ -1,27 +1,14 @@
-import styled from 'styled-components';
+/* Libraries */
 import { useTranslation } from 'next-i18next';
-import { motion } from 'framer-motion';
-import { fadeContainer, fadeItem } from '../../utility/framer';
 import Link from 'next/link';
 
-import ContactIcon from './ContactIcon';
+/* Framer */
+import { motion } from 'framer-motion';
+import { fadeContainer, fadeItem } from '../../utility/framer';
 
-const SocialWrapper = styled(motion.div)`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-
-  & svg {
-    transition: color 0.5s ease-in-out;
-
-    &:hover {
-      color: ${({ theme }) => theme.main.accent};
-      cursor: pointer;
-    }
-  }
-`;
+/* Components */
+import IconLink from '../../utility/IconLink';
+import { IconFooter } from '../../utility/IconLink/index.styled';
 
 const Contact = () => {
   const { t } = useTranslation('common');
@@ -40,13 +27,16 @@ const Contact = () => {
 
         <motion.h3 variants={fadeItem}>{t('contact.subtitle')}</motion.h3>
       </motion.hgroup>
-      <SocialWrapper>
-        <ContactIcon href='https://github.com/apriltaoyvr' icon='github' />
-        <ContactIcon
-          href='https://www.behance.net/apriltaoyvr'
-          icon='behance'
+      <IconFooter>
+        <IconLink
+          href='https://github.com/apriltaoyvr'
+          icon='fa-brands fa-github'
         />
-      </SocialWrapper>
+        <IconLink
+          href='https://www.behance.net/apriltaoyvr'
+          icon='fa-brands fa-behance'
+        />
+      </IconFooter>
     </motion.main>
   );
 };

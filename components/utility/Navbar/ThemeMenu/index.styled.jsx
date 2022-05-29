@@ -12,7 +12,7 @@ export const ContentWrapper = styled.hgroup`
 
 export const WindowIcon = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.main.accent};
-  transition: all 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 
   &:hover {
     filter: brightness(1.2);
@@ -34,11 +34,14 @@ export const ThemeGrid = styled(motion.div)`
   gap: 2rem;
 `;
 
-export const ThemeIcon = styled(FontAwesomeIcon)`
-  transition: all 0.2s ease-in-out;
+export const Circle = styled(motion.div)`
+  background: ${(props) => props.background};
+  border: 1px solid ${(props) => props.border};
+
+  aspect-ratio: 1;
+  min-width: 50px;
 
   &:hover {
     cursor: pointer;
-    filter: brightness(1.2);
   }
 `;

@@ -30,6 +30,8 @@ export const ClosedNav = styled(motion.nav)`
   border-bottom: 1px solid ${({ theme }) => theme.main.bgSecondary};
   box-shadow: 2px 0 8px ${({ theme }) => theme.nav.bg};
 
+  transition: border-color 0.2s ease-in-out;
+
   &:hover {
     border-color: ${({ theme }) => theme.main.accent};
   }
@@ -49,10 +51,12 @@ export const OpenNav = styled(motion.div)`
   justify-content: space-between;
   gap: 3rem;
 
+  
   background: ${({ theme }) => theme.nav.bg};
   border-right: 1px solid ${({ theme }) => theme.main.bgSecondary};
   box-shadow: 0 2px 8px ${({ theme }) => theme.nav.bg};
   backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease-in-out;
 
   &:hover {
     border-color: ${({ theme }) => theme.main.accent};

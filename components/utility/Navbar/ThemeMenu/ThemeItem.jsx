@@ -1,24 +1,18 @@
-import { motion } from 'framer-motion';
-import { ThemeIcon } from './index.styled';
+import { Circle } from './index.styled';
 
 const ThemeItem = (props) => {
-  const setTheme = (color) => {
-    props.setTheme(color);
+  const setTheme = (theme) => {
+    props.setTheme(theme);
   };
 
   return (
-    <motion.div
+    <Circle
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className='theme-wrapper'
-    >
-      <ThemeIcon
-        icon='fa-solid fa-circle'
-        size='3x'
-        style={props.style}
-        onClick={() => setTheme(props.color)}
-      ></ThemeIcon>
-    </motion.div>
+      onClick={() => setTheme(props.theme)}
+      background={props.background}
+      border={props.border}
+    ></Circle>
   );
 };
 
