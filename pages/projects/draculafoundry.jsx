@@ -1,5 +1,6 @@
 /* Libs */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -12,6 +13,8 @@ import { StyledArticle, Gallery } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
 const draculafoundry = () => {
+  const { t } = useTranslation('projects');
+
   return (
     <motion.main
       variants={fadeContainer}
@@ -37,13 +40,10 @@ const draculafoundry = () => {
           />
         </motion.figure>
         <motion.p variants={fadeItem}>
-          A module I created for Foundry Virtual Tabletop. I wanted a dark UI
-          for the program and have a strong love for the Dracula palette.
+          {t('draculafoundry.paragraph.0')}
         </motion.p>
         <motion.p variants={fadeItem}>
-          TyphonJS guided me through the creation of the module. He had also
-          introduced and taught me Sass/SCSS. From there, I was able to create
-          the theme for Foundry.
+          {t('draculafoundry.paragraph.1')}
         </motion.p>
         <Gallery variants={fadeItem}>
           <Image
@@ -83,7 +83,7 @@ const draculafoundry = () => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
     },
   };
 }

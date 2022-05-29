@@ -1,8 +1,10 @@
 import { useTranslation } from 'next-i18next';
 import { Tabs, Tab, TabLink } from './index.styled';
+import { useRouter } from 'next/router';
 
 const Links = ({ closeNav }) => {
   const { t } = useTranslation('common');
+  const router = useRouter();
 
   return (
     <Tabs>
@@ -12,7 +14,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href='/'>{t('navigation.home')}</TabLink>
+        <TabLink href={`/${router.locale}`}>{t('navigation.home')}</TabLink>
       </Tab>
       <Tab
         onClick={closeNav}
@@ -20,7 +22,9 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href='/#projects'>{t('navigation.projects')}</TabLink>
+        <TabLink href={`/${router.locale}/#projects`}>
+          {t('navigation.projects')}
+        </TabLink>
       </Tab>
       <Tab
         onClick={closeNav}
@@ -28,7 +32,9 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href='/#about'>{t('navigation.about')}</TabLink>
+        <TabLink href={`/${router.locale}/#about`}>
+          {t('navigation.about')}
+        </TabLink>
       </Tab>
       <Tab
         onClick={closeNav}
@@ -36,7 +42,9 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href='/#contact'>{t('navigation.contact')}</TabLink>
+        <TabLink href='{`/${router.locale}/#contact`}'>
+          {t('navigation.contact')}
+        </TabLink>
       </Tab>
     </Tabs>
   );

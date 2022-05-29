@@ -1,5 +1,6 @@
 /* Libs */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -15,6 +16,8 @@ import {
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
 const AmbrosiaLab = () => {
+  const { t } = useTranslation('projects');
+
   return (
     <motion.main
       variants={fadeContainer}
@@ -39,17 +42,10 @@ const AmbrosiaLab = () => {
         viewport={{ once: true }}
       >
         <motion.p variants={fadeItem}>
-          A website created and redesigned for Italian research and development
-          company, AmbrosiaLab. Their primary focus is on cosmetics and food
-          research, so the idea of using flowers and warm, natural colours came
-          to me immediately.
+          {t('ambrosialab.paragraph.0')}
         </motion.p>
         <motion.p variants={fadeItem}>
-          AmbrosiaLab&#39;s research is primarily on cosmetics and food. They
-          also pride themselves on being a primarily female-staffed company. I
-          wanted something feminine but with an emphasis of nature and beauty to
-          it as well. So the idea of using flowers and peachy colours came to
-          me.
+          {(t('ambrosialab.paragraph.1'))}
         </motion.p>
         <motion.figure variants={fadeItem}>
           <Image
@@ -61,11 +57,7 @@ const AmbrosiaLab = () => {
           />
         </motion.figure>
 
-        <motion.p variants={fadeItem}>
-          To give the site a fresh feeling, I created a vertical navigation bar
-          on the right-hand side of the site (for desktop users) in lieu of a
-          standard horizontal navigation bar.
-        </motion.p>
+        <motion.p variants={fadeItem}>{t('ambrosialab.paragraph.2')}</motion.p>
 
         <motion.figure variants={fadeItem}>
           <Image
@@ -77,11 +69,7 @@ const AmbrosiaLab = () => {
           />
         </motion.figure>
 
-        <motion.p variants={fadeItem}>
-          Because of their international reach and partners, I included
-          localization via i18n. The site is available in English and Italian
-          and there is the framework for including future languages as well.
-        </motion.p>
+        <motion.p variants={fadeItem}>{t('ambrosialab.paragraph.3')} </motion.p>
       </StyledArticle>
       <IconFooter
         variants={fadeContainer}
@@ -108,7 +96,7 @@ const AmbrosiaLab = () => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'ambrosialab'])),
     },
   };
 }

@@ -8,14 +8,6 @@ import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  };
-}
-
 /* Components */
 import MarqueeText from '../components/utility/Marquee/index';
 
@@ -74,4 +66,13 @@ export default function Error() {
       <MarqueeText speed={5} text={t('utility.error')} />
     </StyledError>
   );
+}
+
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }

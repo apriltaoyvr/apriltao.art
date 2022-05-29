@@ -1,5 +1,6 @@
 /* Libs */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -11,11 +12,13 @@ import { IconFooter } from '../../components/utility/IconLink/index.styled';
 import {
   StyledArticle,
   StyledVideo,
-  Gallery
+  Gallery,
 } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
 const theripper93 = () => {
+  const { t } = useTranslation('projects');
+
   return (
     <motion.main
       variants={fadeContainer}
@@ -39,17 +42,8 @@ const theripper93 = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        <motion.p variants={fadeItem}>
-          theripper93 is a programmer and developer who specialises in modules
-          for Foundry Virtual Tabletop. With over 40 modules, there was plenty
-          to design and accomodate for. The primary focus was showcasing the
-          diversity of his work in an easy to access manner.
-        </motion.p>
-        <motion.p variants={fadeItem}>
-          He requested a minimal and simple design for his website. For the
-          colours, I decided on browns and honey golds to create an earthly,
-          professional, but eyecatching website.
-        </motion.p>
+        <motion.p variants={fadeItem}>{t('theripper93.paragraph.0')}</motion.p>
+        <motion.p variants={fadeItem}>{t('theripper93.paragraph.0')}</motion.p>
         <Gallery variants={fadeItem}>
           <Image
             alt='A screenshot of the modules list, showing the items in a grid'
@@ -92,7 +86,7 @@ const theripper93 = () => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
     },
   };
 }

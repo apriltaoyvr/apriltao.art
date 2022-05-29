@@ -42,5 +42,6 @@
     "loading": "Chargement de la page"
   },
   "utility.error": "Page non trouvée",
-  "utility.themes": "Thèmes"
+  "utility.themes": "Thèmes",
+  "paragraph[__i18n_ally_root__][1]": "Les recherches d'AmbrosiaLab portent principalement sur les cosmétiques et l'alimentation. \nIls sont également fiers d'être une entreprise principalement composée de femmes. \nJe voulais quelque chose de féminin mais avec une emphase sur la nature et la beauté aussi. \nAlors l'idée d'utiliser des fleurs et des couleurs pêche m'est venue."
 }

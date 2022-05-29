@@ -1,5 +1,6 @@
 /* Libs */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -15,6 +16,8 @@ import {
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
 const levels101 = () => {
+  const { t } = useTranslation('projects');
+
   return (
     <motion.main
       variants={fadeContainer}
@@ -38,15 +41,8 @@ const levels101 = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        <motion.p variants={fadeItem}>
-          My first page. I created it to explain the concepts of the Levels
-          Foundry Virtual Tabletop module.
-        </motion.p>
-        <motion.p variants={fadeItem}>
-          It was an experiment in shapes, lines, and colour. I created a
-          colour-blind safe palette to represent highest, middle, and lowest
-          levels in an example scenario. It was a joy to work on.
-        </motion.p>
+        <motion.p variants={fadeItem}>{t('levels101.paragraph.0')}</motion.p>
+        <motion.p variants={fadeItem}>{t('levels101.paragraph.1')}</motion.p>
         <motion.div variants={fadeItem}>
           <Image
             alt='A screenshot of intro section'
@@ -86,7 +82,7 @@ const levels101 = () => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'projects'])),
     },
   };
 }
