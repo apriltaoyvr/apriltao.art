@@ -16,7 +16,7 @@ import {
 } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
-const theripper93 = () => {
+const TheRipper93 = () => {
   const { t } = useTranslation('projects');
 
   return (
@@ -91,4 +91,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default theripper93;
+export default TheRipper93;

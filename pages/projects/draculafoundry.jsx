@@ -12,7 +12,7 @@ import { IconFooter } from '../../components/utility/IconLink/index.styled';
 import { StyledArticle, Gallery } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
-const draculafoundry = () => {
+const DraculaFoundry = () => {
   const { t } = useTranslation('projects');
 
   return (
@@ -88,4 +88,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default draculafoundry;
+export default DraculaFoundry;

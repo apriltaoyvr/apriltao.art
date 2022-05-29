@@ -15,7 +15,7 @@ import {
 } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
-const levels101 = () => {
+const Levels101 = () => {
   const { t } = useTranslation('projects');
 
   return (
@@ -87,4 +87,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default levels101;
+export default Levels101;
