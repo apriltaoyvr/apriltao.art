@@ -110,36 +110,36 @@ const Global = createGlobalStyle`
   h1 {
     font-family: 'Vartek';
     font-weight: bolder;
-    font-size: 96px;
+    font-size: clamp(3rem, 2.5055rem + 2.1978vw, 8rem);
   }
   
   h2 {
     font-family: 'Vartek';
     font-weight: bolder;
-    font-size: 60px;
+    font-size: clamp(3rem, 2.9011rem + 0.4396vw, 4rem);
   }
 
   h3 {
     font-family: 'Vartek';
     font-weight: bold;
-    font-size: 48px;
+    font-size: clamp(2rem, 1.9011rem + 0.4396vw, 3rem);
     color: transparent;
     -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
   }
 
   h4 {
     font-family: 'Vartek';
-    font-size: 34px;
+    font-size: clamp(1.875rem, 1.8503rem + 0.1099vw, 2.125rem);
     color: transparent;
     -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
 }
 
   h5 {
-    font-size: 24px;
-  }
+    font-size: clamp(1.25rem, 1.2253rem + 0.1099vw, 1.5rem);
+  }-
 
   h6 {
-    font-size: 20px;
+    font-size: clamp(1rem, 0.9753rem + 0.1099vw, 1.25rem);
   }
 
   p {
@@ -157,6 +157,7 @@ const Global = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
   
   section {
