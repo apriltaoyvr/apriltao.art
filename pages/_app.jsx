@@ -16,16 +16,18 @@ import {
   faArrowLeftLong,
   faPalette,
   faCircle,
+  faGlobe,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
-  faGithub,
-  faBehance,
   faBars,
   faX,
   faArrowLeftLong,
   faPalette,
-  faCircle
+  faCircle,
+  faBehance,
+  faGithub,
+  faGlobe
 );
 
 /* Components */

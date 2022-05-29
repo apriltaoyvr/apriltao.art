@@ -17,7 +17,7 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default function Home({ setTheme }) {
+export default function Home() {
   return (
     <>
       <Head>
