@@ -5,7 +5,7 @@ export const StyledMain = styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2rem;
 `;
 
 export const AboutWrapper = styled(motion.div)`
@@ -16,7 +16,8 @@ export const AboutWrapper = styled(motion.div)`
   gap: 0.5rem;
 
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 1fr;
   }
 `;
 
@@ -26,7 +27,6 @@ export const ParagraphWrapper = styled(motion.div)`
   margin-top: 1rem;
   gap: 1rem;
   padding: 1rem;
-  max-width: 90%;
   text-align: justify;
 `;
 
@@ -52,6 +52,7 @@ export const CaptionWrapper = styled(motion.figcaption)`
 export const ImageWrapper = styled(motion.figure)`
   aspect-ratio: 1749 / 2737;
   margin: 1rem;
+
   border: 1px solid ${({ theme }) => theme.main.accent};
 
   background: url('https://res.cloudinary.com/dsbhmynmq/image/upload/v1652577967/April%20Tao/Images/me_erdq0n.png');
