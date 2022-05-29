@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
 }
 
 /* Components */
-import MarqueeText from '../components/utility/Marquee/MarqueeText';
+import MarqueeText from '../components/utility/Marquee/index';
 
 /* Styles */
 const StyledError = styled.main`
