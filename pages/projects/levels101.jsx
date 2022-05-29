@@ -11,11 +11,10 @@ import { IconFooter } from '../../components/utility/IconLink/index.styled';
 import {
   StyledArticle,
   StyledVideo,
-  Gallery
 } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
-const theripper93 = () => {
+const levels101 = () => {
   return (
     <motion.main
       variants={fadeContainer}
@@ -24,10 +23,10 @@ const theripper93 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>theripper93</h1>
+        <h1>Levels 101</h1>
       </motion.header>
       <StyledVideo
-        src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570268/April%20Tao/Projects/theripper93/2022-05-14_16-15-31_bdlkkc.mp4'
+        src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1653795805/April%20Tao/Projects/levels101/2022-05-28_20-42-36_ujj6fe.mp4'
         muted
         loop
         autoPlay
@@ -40,32 +39,32 @@ const theripper93 = () => {
         viewport={{ once: true }}
       >
         <motion.p variants={fadeItem}>
-          theripper93 is a programmer and developer who specialises in modules
-          for Foundry Virtual Tabletop. With over 40 modules, there was plenty
-          to design and accomodate for. The primary focus was showcasing the
-          diversity of his work in an easy to access manner.
+          My first page. I created it to explain the concepts of the Levels
+          Foundry Virtual Tabletop module.
         </motion.p>
         <motion.p variants={fadeItem}>
-          He requested a minimal and simple design for his website. For the
-          colours, I decided on browns and honey golds to create an earthly,
-          professional, but eyecatching website.
+          It was an experiment in shapes, lines, and colour. I created a
+          colour-blind safe palette to represent highest, middle, and lowest
+          levels in an example scenario. It was a joy to work on.
         </motion.p>
-        <Gallery variants={fadeItem}>
+        <motion.div variants={fadeItem}>
           <Image
-            alt='A screenshot of the modules list, showing the items in a grid'
+            alt='A screenshot of intro section'
             height='973'
             width='1920'
             layout='responsive'
-            src='https://user-images.githubusercontent.com/95392008/170850380-8fe67f93-d483-4557-b7cb-e40dc8227734.png'
+            src='https://user-images.githubusercontent.com/95392008/147842084-f1860bc3-3db4-4908-ab0b-926dbd840b99.png'
           />
+        </motion.div>
+        <motion.div variants={fadeItem}>
           <Image
-            alt='A screenshot of the contact page in a honey gold'
+            alt='A screenshot of basics section with multiple coloured rectangles'
             height='973'
             width='1920'
             layout='responsive'
-            src='https://user-images.githubusercontent.com/95392008/170850387-b07a8778-a685-4105-ab23-54e92cf93589.png'
+            src='https://user-images.githubusercontent.com/95392008/147842087-944ae2e6-5dd2-40f8-b6c8-8ea8e7aef1c1.png'
           />
-        </Gallery>
+        </motion.div>
         <IconFooter
           variants={fadeContainer}
           initial='hidden'
@@ -73,12 +72,7 @@ const theripper93 = () => {
           viewport={{ once: true }}
         >
           <IconLink
-            href='https://theripper93.com/'
-            icon='fa-solid fa-globe'
-            variants={fadeItem}
-          />
-          <IconLink
-            href='https://github.com/theripper93/theripper93.com'
+            href='https://github.com/apriltaoyvr/levels-101'
             icon='fa-brands fa-github'
             variants={fadeItem}
           />
@@ -97,4 +91,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default theripper93;
+export default levels101;

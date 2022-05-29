@@ -42,18 +42,19 @@ const Projects = () => {
           />
           <ProjectLink
             title='theripper93'
-            href='https://www.theripper93.com'
+            href='/projects/theripper93'
             src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570268/April%20Tao/Projects/theripper93/2022-05-14_16-15-31_bdlkkc.mp4'
             video
           />
           <ProjectLink
             title='Levels 101'
-            href='https://github.com/apriltaoyvr/levels-101'
+            href='/projects/levels101'
             src='https://user-images.githubusercontent.com/95392008/147842087-944ae2e6-5dd2-40f8-b6c8-8ea8e7aef1c1.png'
+            alt='A screenshot of Levels101'
           />
           <ProjectLink
             title='Dracula Foundry'
-            href='https://github.com/apriltaoyvr/dracula-foundry'
+            href='/projects/draculafoundry'
             src='https://user-images.githubusercontent.com/95392008/147394179-6777840b-3554-4e9c-b4c3-50cd99616ee2.png'
             alt='A screenshot of Dracula Foundry in FoundryVTT'
           />

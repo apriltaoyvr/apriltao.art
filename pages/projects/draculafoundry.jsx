@@ -8,14 +8,10 @@ import IconLink from '../../components/utility/IconLink/index';
 import { IconFooter } from '../../components/utility/IconLink/index.styled';
 
 /* Styles */
-import {
-  StyledArticle,
-  StyledVideo,
-  Gallery
-} from '../../components/subpage/index.styled';
+import { StyledArticle, Gallery } from '../../components/subpage/index.styled';
 import { fadeContainer, fadeItem } from '../../components/utility/framer';
 
-const theripper93 = () => {
+const draculafoundry = () => {
   return (
     <motion.main
       variants={fadeContainer}
@@ -24,46 +20,46 @@ const theripper93 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>theripper93</h1>
+        <h1>Dracula Foundry</h1>
       </motion.header>
-      <StyledVideo
-        src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570268/April%20Tao/Projects/theripper93/2022-05-14_16-15-31_bdlkkc.mp4'
-        muted
-        loop
-        autoPlay
-        variants={fadeItem}
-      />
       <StyledArticle
         variants={fadeContainer}
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true }}
       >
+        <motion.figure variants={fadeItem}>
+          <Image
+            alt='A screenshot of Dracula Foundry with multiple windows open'
+            height='1035'
+            width='2005'
+            src='https://user-images.githubusercontent.com/95392008/147394179-6777840b-3554-4e9c-b4c3-50cd99616ee2.png'
+          />
+        </motion.figure>
         <motion.p variants={fadeItem}>
-          theripper93 is a programmer and developer who specialises in modules
-          for Foundry Virtual Tabletop. With over 40 modules, there was plenty
-          to design and accomodate for. The primary focus was showcasing the
-          diversity of his work in an easy to access manner.
+          A module I created for Foundry Virtual Tabletop. I wanted a dark UI
+          for the program and have a strong love for the Dracula palette.
         </motion.p>
         <motion.p variants={fadeItem}>
-          He requested a minimal and simple design for his website. For the
-          colours, I decided on browns and honey golds to create an earthly,
-          professional, but eyecatching website.
+          TyphonJS guided me through the creation of the module. He had also
+          introduced and taught me Sass/SCSS. From there, I was able to create
+          the theme for Foundry.
         </motion.p>
         <Gallery variants={fadeItem}>
           <Image
-            alt='A screenshot of the modules list, showing the items in a grid'
+            alt='A screenshot of Dracula Foundry with other windows open'
             height='973'
             width='1920'
             layout='responsive'
-            src='https://user-images.githubusercontent.com/95392008/170850380-8fe67f93-d483-4557-b7cb-e40dc8227734.png'
+            src='https://user-images.githubusercontent.com/95392008/147394076-a2fa6013-f8e8-4d28-9328-6f24df0a2763.png'
           />
+
           <Image
-            alt='A screenshot of the contact page in a honey gold'
+            alt='A screenshot of Dracula Foundry with the chatbox and combat portraits visible'
             height='973'
             width='1920'
             layout='responsive'
-            src='https://user-images.githubusercontent.com/95392008/170850387-b07a8778-a685-4105-ab23-54e92cf93589.png'
+            src='https://user-images.githubusercontent.com/95392008/147394182-0cb0a781-4d84-4b28-958e-0c2ed6526b4d.png'
           />
         </Gallery>
         <IconFooter
@@ -73,12 +69,7 @@ const theripper93 = () => {
           viewport={{ once: true }}
         >
           <IconLink
-            href='https://theripper93.com/'
-            icon='fa-solid fa-globe'
-            variants={fadeItem}
-          />
-          <IconLink
-            href='https://github.com/theripper93/theripper93.com'
+            href='https://github.com/apriltaoyvr/levels-101'
             icon='fa-brands fa-github'
             variants={fadeItem}
           />
@@ -97,4 +88,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default theripper93;
+export default draculafoundry;
