@@ -35,7 +35,19 @@ import Layout from '../components/utility/Layout';
 import LoadingScreen from '../components/utility/LoadingScreen';
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(dracula);
+  // Default to Dracula theme
+  let savedTheme = dracula;
+
+  // Check if theme is saved in localStorage
+  if (typeof window !== 'undefined') {
+    try {
+      savedTheme = window.localStorage.getItem('theme');
+      if (savedTheme) savedTheme = JSON.parse(savedTheme);
+    } catch {
+      window.localStorage.removeItem('theme');
+    }
+  }
+  const [theme, setTheme] = useState(savedTheme ?? dracula);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
