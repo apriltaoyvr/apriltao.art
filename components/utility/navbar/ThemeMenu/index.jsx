@@ -10,7 +10,7 @@ import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
-import { dracula, pink, nordDark } from '../../../styles/Themes';
+import { dracula, pink, nordDark, wine } from '../../../styles/Themes';
 
 const ThemeToggle = ({ setTheme }) => {
   const { t } = useTranslation('common');
@@ -73,6 +73,13 @@ const ThemeToggle = ({ setTheme }) => {
                 style={{ color: 'hsl(14, 50%, 75%)' }}
                 setTheme={setTheme}
                 color={pink}
+              />
+              <ThemeItem
+                icon='fa-solid fa-circle'
+                size='3x'
+                style={{ color: '#490215' }}
+                setTheme={setTheme}
+                color={wine}
               />
             </ThemeGrid>
           </Modal>

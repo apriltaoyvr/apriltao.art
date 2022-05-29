@@ -13,6 +13,21 @@ export const dracula = {
   },
 };
 
+/* Nord */
+export const nordDark = {
+  main: {
+    fg: 'hsl(218, 27%, 94%)',
+    bg: 'hsl(221, 16%, 19%)',
+    bgSecondary: 'hsl(222, 16%, 28%)',
+    bgTertiary: 'hsl(220, 16%, 36%)',
+    accent: 'hsl(193, 43%, 67%)',
+    accentSecondary: 'hsl(179, 25%, 65%)',
+  },
+  nav: {
+    bg: 'hsla(221, 16%, 19%, 0.75)',
+  },
+};
+
 /* Blue and Pink */
 export const pink = {
   main: {
@@ -28,17 +43,17 @@ export const pink = {
   },
 };
 
-/* Nord */
-export const nordDark = {
+/* Shrouded Isle's Sacramental Wine */
+export const wine = {
   main: {
-    fg: 'hsl(218, 27%, 94%)',
-    bg: 'hsl(221, 16%, 19%)',
-    bgSecondary: 'hsl(222, 16%, 28%)',
-    bgTertiary: 'hsl(220, 16%, 36%)',
-    accent: 'hsl(193, 43%, 67%)',
-    accentSecondary: 'hsl(179, 25%, 65%)',
+    fg: 'hsl(224, 33%, 62.5%)',
+    bg: 'hsl(332, 68%, 15%)',
+    bgSecondary: 'hsl(344, 73%, 14.5%)',
+    bgTertiary: 'hsl(336, 69%, 9%)',
+    accent: 'hsl(225, 33%, 62.5%)',
+    accentSecondary: 'hsl(225, 22%, 55%)',
   },
   nav: {
-    bg: 'hsla(221, 16%, 19%, 0.75)',
+    bg: 'hsla(332, 68%, 15%, 0.5)',
   },
 };

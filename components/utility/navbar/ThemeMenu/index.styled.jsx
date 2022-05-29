@@ -30,7 +30,7 @@ export const ThemeWrapper = styled.div`
 
 export const ThemeGrid = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(3, minmax(25px, 1fr));
+  grid-template-columns: repeat(4, minmax(25px, 1fr));
   gap: 2rem;
 `;
 
