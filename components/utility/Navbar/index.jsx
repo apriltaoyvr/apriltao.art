@@ -34,7 +34,7 @@ const Navbar = ({ setTheme}) => {
             initial={{ y: '-5%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '-25%', opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 150, delay: 0.1 }}
+            transition={{ type: 'spring', stiffness: 150 }}
             key='closed'
           >
             <motion.div whileTap={{ scale: 0.95 }} onClick={toggleNav}>
@@ -42,20 +42,20 @@ const Navbar = ({ setTheme}) => {
             </motion.div>
             <StyledFooter>
               <LangMenu />
-              <ThemeMenu setTheme={setTheme}/>
+              <ThemeMenu setTheme={setTheme} />
             </StyledFooter>
           </ClosedNav>
         ) : (
           <OpenNav
-            initial={{ x: '-2%', opacity: 0 }}
+            initial={{ x: '-25%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: '-25%', opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 150, delay: 0.1 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 50 }}
             key='open'
           >
             <StyledHeader>
               <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
-              <ThemeMenu setTheme={setTheme}/>
+              <ThemeMenu setTheme={setTheme} />
             </StyledHeader>
             <ContentWrapper>
               <Links closeNav={closeNav} />
