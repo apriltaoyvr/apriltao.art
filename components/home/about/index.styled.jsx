@@ -10,7 +10,7 @@ export const StyledMain = styled(motion.main)`
 
 export const AboutWrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 500px;
   justify-items: center;
   justify-content: center;
   gap: 0.5rem;
