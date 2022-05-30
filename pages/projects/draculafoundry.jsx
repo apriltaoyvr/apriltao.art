@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -23,7 +24,9 @@ const DraculaFoundry = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>Dracula Foundry</h1>
+        <Link href='https://github.com/apriltaoyvr/dracula-foundry' passHref>
+          <h1>Dracula Foundry</h1>
+        </Link>
       </motion.header>
       <StyledArticle
         variants={fadeContainer}
@@ -69,7 +72,7 @@ const DraculaFoundry = () => {
           viewport={{ once: true }}
         >
           <IconLink
-            href='https://github.com/apriltaoyvr/levels-101'
+            href='https://github.com/apriltaoyvr/dracula-foundry'
             icon='fa-brands fa-github'
             variants={fadeItem}
           />

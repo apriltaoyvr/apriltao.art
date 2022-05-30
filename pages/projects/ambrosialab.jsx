@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -26,7 +27,9 @@ const AmbrosiaLab = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>AmbrosiaLab</h1>
+        <Link href='http://www.ambrosialab.it/' passHref>
+          <h1>AmbrosiaLab</h1>
+        </Link>
       </motion.header>
       <StyledVideo
         variants={fadeItem}
@@ -41,12 +44,8 @@ const AmbrosiaLab = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        <motion.p variants={fadeItem}>
-          {t('ambrosialab.paragraph.0')}
-        </motion.p>
-        <motion.p variants={fadeItem}>
-          {(t('ambrosialab.paragraph.1'))}
-        </motion.p>
+        <motion.p variants={fadeItem}>{t('ambrosialab.paragraph.0')}</motion.p>
+        <motion.p variants={fadeItem}>{t('ambrosialab.paragraph.1')}</motion.p>
         <motion.figure variants={fadeItem}>
           <Image
             alt='A screenshot of the research page, showing the items in a grid with a peach gradient background'

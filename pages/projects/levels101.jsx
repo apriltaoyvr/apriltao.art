@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -26,7 +27,9 @@ const Levels101 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>Levels 101</h1>
+        <Link href='https://github.com/apriltaoyvr/levels-101' passHref>
+          <h1>Levels 101</h1>
+        </Link>
       </motion.header>
       <StyledVideo
         src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1653795805/April%20Tao/Projects/levels101/2022-05-28_20-42-36_ujj6fe.mp4'

@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -27,7 +28,9 @@ const TheRipper93 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <h1>theripper93</h1>
+        <Link href='https://theripper93.com/' passHref>
+          <h1>Dracula Foundry</h1>
+        </Link>
       </motion.header>
       <StyledVideo
         src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570268/April%20Tao/Projects/theripper93/2022-05-14_16-15-31_bdlkkc.mp4'
