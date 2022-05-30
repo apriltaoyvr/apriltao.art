@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { motion, MotionConfig } from 'framer-motion';
 import { slideSubContainer, slideItem } from '../../../utility/framer';
 
-import { SkillWrapper } from '../index.styled';
+import { SkillWrapper } from './index.styled';
 import SkillCard from './SkillCard';
 
 const Skills = () => {

@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import Link from 'next/link';
 
-import { slideContainer, slideItem } from '../../utility/framer';
+import { slideContainer, slideItem } from '../../../utility/framer';
 import {
   AboutWrapper,
   ParagraphWrapper,

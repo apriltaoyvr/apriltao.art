@@ -1,6 +1,6 @@
-import Biography from './Biography';
-import Skills from './Skills';
-import { StyledMain } from './index.styled';
+import Biography from './Biography/index';
+import Skills from './Skills/index';
+import {StyledMain} from './index.styled';
 
 const About = () => {
   return (
