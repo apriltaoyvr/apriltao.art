@@ -101,10 +101,13 @@ const Global = createGlobalStyle`
   }
   
   /* Text */
-  h1, h2 {
+  h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: ${({ theme }) => theme.main.accent};
     margin-bottom: 1rem;
+  }
+  
+  h1, h2 {
+    color: ${({ theme }) => theme.main.accent};
   } 
   
   h1 {
