@@ -10,7 +10,7 @@ import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
-import { dracula, pink, nordDark, neon } from '../../../styles/Themes';
+import { dracula, pink, nordDark, nordLight } from '../../../styles/Themes';
 
 const ThemeMenu = ({ setTheme }) => {
   const { t } = useTranslation('common');
@@ -70,12 +70,6 @@ const ThemeMenu = ({ setTheme }) => {
                 border='hsl(14, 50%, 75%)'
                 setTheme={setTheme}
                 palette={pink}
-              />
-              <ThemeItem
-                background='hsl(228, 19%, 5%)'
-                border='hsl(176, 96%, 69%)'
-                setTheme={setTheme}
-                palette={neon}
               />
             </ThemeGrid>
           </Modal>

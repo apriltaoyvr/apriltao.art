@@ -66,7 +66,7 @@ const Global = createGlobalStyle`
   /** Global Styles **/
   body {
     background: ${({ theme }) => theme.main.bg};
-    color: ${({ theme }) => theme.main.fg};
+    color: ${({ theme }) => theme.main.fgSecondary};
     font-family: 'IBM Plex Mono', 'Fira Code', 'Consolas', monospace;
   }
 
@@ -101,7 +101,7 @@ const Global = createGlobalStyle`
   }
   
   /* Text */
-  h1, h2, h3, h4 {
+  h1, h2 {
     text-align: center;
     color: ${({ theme }) => theme.main.accent};
     margin-bottom: 1rem;
@@ -124,21 +124,23 @@ const Global = createGlobalStyle`
     font-weight: bold;
     font-size: clamp(2rem, 1.9011rem + 0.4396vw, 3rem);
     color: transparent;
-    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
+    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accentSecondary};
   }
 
   h4 {
     font-family: 'Vartek';
     font-size: clamp(1.875rem, 1.8503rem + 0.1099vw, 2.125rem);
     color: transparent;
-    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
+    -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accentSecondary};
 }
 
   h5 {
+    color: ${({ theme }) => theme.main.accentSecondary};
     font-size: clamp(1.25rem, 1.2253rem + 0.1099vw, 1.5rem);
-  }-
+  }
 
   h6 {
+    color: ${({ theme }) => theme.main.accentSecondary};
     font-size: clamp(1rem, 0.9753rem + 0.1099vw, 1.25rem);
   }
 
