@@ -48,7 +48,6 @@ const ThemeMenu = ({ setTheme }) => {
                   style={{ alignSelf: 'flex-start' }}
                 />
               </motion.div>
-
               <h4>{t('utility.themes')}</h4>
               <p style={{ userSelect: 'none' }}>⠀⠀</p>
             </ContentWrapper>

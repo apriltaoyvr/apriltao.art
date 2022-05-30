@@ -6,10 +6,10 @@ const Modal = ({ handleClose, children }) => {
     <Backdrop onClick={handleClose}>
       <StyledModal
         onClick={(e) => e.stopPropagation()}
-        initial={{ y: '-100%', opacity: 0 }}
+        initial={{ y: '-75%', opacity: 0 }}
         animate={{ y: '0', opacity: 1 }}
         exit={{ y: '75%', opacity: 0 }}
-        transition={{ type: 'spring', stiffness: 200 }}
+        transition={{ type: 'spring', bounciness: 0, duration: 0.66}}
       >
         {children}
       </StyledModal>
