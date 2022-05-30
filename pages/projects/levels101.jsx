@@ -27,9 +27,11 @@ const Levels101 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <Link href='https://github.com/apriltaoyvr/levels-101' passHref>
-          <h1>Levels 101</h1>
-        </Link>
+        <h1>
+          <Link href='https://github.com/apriltaoyvr/levels-101' passHref>
+            Levels 101
+          </Link>
+        </h1>
       </motion.header>
       <StyledVideo
         src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1653795805/April%20Tao/Projects/levels101/2022-05-28_20-42-36_ujj6fe.mp4'

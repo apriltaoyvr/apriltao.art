@@ -24,9 +24,11 @@ const DraculaFoundry = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <Link href='https://github.com/apriltaoyvr/dracula-foundry' passHref>
-          <h1>Dracula Foundry</h1>
-        </Link>
+        <h1>
+          <Link href='https://github.com/apriltaoyvr/dracula-foundry' passHref>
+            Dracula Foundry
+          </Link>
+        </h1>
       </motion.header>
       <StyledArticle
         variants={fadeContainer}

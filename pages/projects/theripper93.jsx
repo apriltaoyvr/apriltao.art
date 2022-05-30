@@ -28,9 +28,11 @@ const TheRipper93 = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <Link href='https://theripper93.com/' passHref>
-          <h1>Dracula Foundry</h1>
-        </Link>
+        <h1>
+          <Link href='https://theripper93.com/' passHref>
+            Dracula Foundry
+          </Link>
+        </h1>
       </motion.header>
       <StyledVideo
         src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652570268/April%20Tao/Projects/theripper93/2022-05-14_16-15-31_bdlkkc.mp4'

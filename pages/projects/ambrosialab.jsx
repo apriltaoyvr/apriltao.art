@@ -27,9 +27,11 @@ const AmbrosiaLab = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-        <Link href='http://www.ambrosialab.it/' passHref>
-          <h1>AmbrosiaLab</h1>
-        </Link>
+          <h1>
+            <Link href='http://www.ambrosialab.it/' passHref>
+              AmbrosiaLab
+            </Link>
+          </h1>
       </motion.header>
       <StyledVideo
         variants={fadeItem}
