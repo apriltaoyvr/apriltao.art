@@ -77,6 +77,10 @@ const Global = createGlobalStyle`
 
     &-thumb  {
       background: ${({ theme }) => theme.main.accent};
+
+      &:hover {
+        background: ${({ theme }) => theme.main.accentSecondary};
+      }
     }
   }
 
