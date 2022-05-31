@@ -21,11 +21,11 @@ export const StyledModal = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: clamp(25%, 500px, 90%);
-  height: min(30%, 300px);
+  height: min-content;
 
   margin: auto;
-  padding: 1rem;
-  gap: 4rem;
+  padding: 1rem 1rem 2rem 1rem;
+  gap: 1rem;
 
   background: ${({ theme }) => theme.main.bg};
   border: 1px solid ${({ theme }) => theme.main.accent};
@@ -34,17 +34,16 @@ export const StyledModal = styled(motion.div)`
 export const WindowBar = styled.hgroup`
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 `;
 
 export const WindowIcon = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.main.accent};
-  transition: filter 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
-    filter: brightness(1.2);
+    color: ${({ theme }) => theme.main.accentSecondary};
     cursor: pointer;
   }
 `;
