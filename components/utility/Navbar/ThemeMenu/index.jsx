@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next';
 /* Components */
 import Modal from '../../Modal/index';
 import ThemeItem from './ThemeItem';
-import { WindowIcon, ContentWrapper, ThemeGrid } from './index.styled';
+import { ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
@@ -26,7 +26,7 @@ const ThemeMenu = ({ setTheme }) => {
   };
 
   return (
-    <MotionConfig reducedMotion='user'>
+    <MotionConfig>
       <AnimatePresence>
         <motion.div
           whileTap={{ scale: 0.95 }}
@@ -35,22 +35,12 @@ const ThemeMenu = ({ setTheme }) => {
           <StyledIcon icon='fa-solid fa-palette' size='xl' />
         </motion.div>
         {modalOpen && (
-          <Modal modalOpen={modalOpen} handleClose={close} key='modal'>
-            <ContentWrapper>
-              <motion.div
-                whileTap={{ scale: 0.95 }}
-                onClick={() => (modalOpen ? close() : open())}
-              >
-                <WindowIcon
-                  icon='fa-solid fa-x'
-                  size='xl'
-                  onClick={() => (modalOpen ? close() : open())}
-                  style={{ alignSelf: 'flex-start' }}
-                />
-              </motion.div>
-              <h4>{t('utility.themes')}</h4>
-              <p style={{ userSelect: 'none' }}>⠀⠀</p>
-            </ContentWrapper>
+          <Modal
+            modalOpen={modalOpen}
+            handleClose={close}
+            title={t('utility.themes')}
+            key='theme modal'
+          >
             <ThemeGrid>
               <ThemeItem
                 setTheme={setTheme}

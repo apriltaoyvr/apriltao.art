@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const StyledBackdrop = styled(motion.div)`
   position: absolute;
@@ -28,4 +29,26 @@ export const StyledModal = styled(motion.div)`
 
   background: ${({ theme }) => theme.main.bg};
   border: 1px solid ${({ theme }) => theme.main.accent};
+`;
+
+export const WindowBar = styled.hgroup`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const WindowIcon = styled(FontAwesomeIcon)`
+  color: ${({ theme }) => theme.main.accent};
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+`;
+
+export const StyledH3 = styled.h3`
+  -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
 `;

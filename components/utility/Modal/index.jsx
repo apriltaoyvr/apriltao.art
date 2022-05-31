@@ -1,7 +1,8 @@
-import { StyledModal } from './index.styled';
-import Backdrop from './/Backdrop';
+import { motion } from 'framer-motion';
+import { StyledModal, WindowBar, WindowIcon, StyledH3 } from './index.styled';
+import Backdrop from './Backdrop';
 
-const Modal = ({ handleClose, children }) => {
+const Modal = ({ handleClose, title, children }) => {
   return (
     <Backdrop onClick={handleClose}>
       <StyledModal
@@ -9,8 +10,15 @@ const Modal = ({ handleClose, children }) => {
         initial={{ y: '-75%', opacity: 0 }}
         animate={{ y: '0', opacity: 1 }}
         exit={{ y: '75%', opacity: 0 }}
-        transition={{ type: 'spring', bounciness: 0, duration: 0.66}}
+        transition={{ type: 'spring', bounciness: 0, duration: 0.66 }}
       >
+        <WindowBar>
+          <motion.div whileTap={{ scale: 0.95 }} onClick={handleClose}>
+            <WindowIcon icon='fa-solid fa-x' size='xl' />
+          </motion.div>
+          <StyledH3>{title}</StyledH3>
+          <p style={{ userSelect: 'none' }}>⠀⠀</p>
+        </WindowBar>
         {children}
       </StyledModal>
     </Backdrop>
