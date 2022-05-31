@@ -15,7 +15,7 @@ export const IconWrapper = styled(motion.div)`
     transition: color 0.5s ease-in-out;
 
     &:hover {
-      color: ${({ theme }) => theme.main.fg};
+      color: ${({ theme }) => theme.main.accentSecondary};
       cursor: pointer;
     }
   }

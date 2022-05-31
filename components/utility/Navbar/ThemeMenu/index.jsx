@@ -10,7 +10,14 @@ import { ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
-import { dracula, pink, nordDark, nordLight } from '../../../styles/Themes';
+import {
+  dracula,
+  pink,
+  nordDark,
+  pastel,
+  nordLight,
+  fall,
+} from '../../../styles/Themes';
 
 const ThemeMenu = ({ setTheme }) => {
   const { t } = useTranslation('common');

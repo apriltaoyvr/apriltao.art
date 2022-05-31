@@ -52,19 +52,52 @@ export const pink = {
 
 
 /** Light **/
+export const pastel = {
+  main: {
+    fg: 'hsl(184, 40%, 10%)',
+    fgSecondary: 'hsl(184, 40%, 10%)',
+    bg: 'hsl(41, 94%, 93%)',
+    bgSecondary: 'hsl(41, 60%, 85%)',
+    bgTertiary: 'hsl(41, 60%, 80%)',
+    accent: 'hsl(184, 48%, 56%)',
+    accentSecondary: 'hsl(313, 42%, 68%)',
+    accentTertiary: 'hsl(138, 95%, 75%)',
+  },
+  nav: {
+    bg: 'hsla(41, 94%, 93%, 0.75)',
+  },
+};
+
 /* Nord */
 export const nordLight = {
   main: {
-    fg: 'hsl(209, 91%, 22%)',
-    fgSecondary: 'hsl(209, 91%, 22%)',
-    bg: 'hsl(146, 64%, 61%)',
-    bgSecondary: 'hsl(143, 62%, 72%)',
-    bgTertiary: 'hsl(143, 62%, 72%)',
-    accent: 'hsl(209, 91%, 22%)',
-    accentSecondary: 'hsl(143, 62%, 72%)',
-    accentTertiary: 'hsl(143, 62%, 72%)',
+    fg: 'hsl(220, 16%, 22%)',
+    fgSecondary: 'hsl(222, 16%, 28%)',
+    bg: 'hsl(218, 27%, 92%)',
+    bgSecondary: 'hsl(219, 28%, 88%)',
+    bgTertiary: 'hsl(219, 28%, 88%)',
+    accent: 'hsl(220, 16%, 36%)',
+    accentSecondary: 'hsl(220, 17%, 32%)',
+    accentTertiary: 'hsl(222, 16%, 28%)',
   },
   nav: {
-    bg: 'hsla(146, 64%, 61%, 0.75)',
+    bg: 'hsla(218, 27%, 94%, 0.75)',
   },
 };
+
+export const fall = {
+  main: {
+    fg: 'hsl(234, 19%, 29%)',
+    fgSecondary: 'hsl(222, 16%, 30%)',
+    bg: 'hsl(52, 50%, 91%)',
+    bgSecondary: 'hsl(52, 50%, 85%)',
+    bgTertiary: 'hsl(52, 50%, 80%)',
+    accent: 'hsl(12, 67%, 62%)',
+    accentSecondary: 'hsl(27, 50%, 62%)',
+    accentTertiary: 'hsl(150, 24%, 60%)',
+  },
+  nav: {
+    bg: 'hsla(52, 50%, 91%, 0.75)',
+  },
+};
+
