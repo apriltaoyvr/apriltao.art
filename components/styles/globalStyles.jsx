@@ -52,7 +52,9 @@ const Global = createGlobalStyle`
     8. Avoid text overflows
   */
   p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
     text-overflow: ellipsis;
   }
   /*

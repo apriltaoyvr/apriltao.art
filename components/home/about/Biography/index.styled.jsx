@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export const AboutWrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: 500px;
+  grid-template-columns: 1fr;
   justify-items: center;
   justify-content: center;
   gap: 0.5rem;
 
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 25vw);
     grid-template-rows: 1fr;
   }
 `;
@@ -21,6 +21,7 @@ export const ParagraphWrapper = styled(motion.div)`
   gap: 1rem;
   padding: 1rem;
   text-align: justify;
+  max-width: 80%;
 `;
 
 export const CaptionWrapper = styled(motion.figcaption)`
