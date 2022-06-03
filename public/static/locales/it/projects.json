@@ -1,28 +1,28 @@
 {
   "ambrosialab": {
     "paragraph": [
-      "La ricerca di AmbrosiaLab è principalmente su cosmesi e cibo. \nSono anche orgogliosi di essere un'azienda principalmente femminile. \nVolevo qualcosa di femminile ma con un'enfasi sulla natura e sulla bellezza. \nCosì mi è venuta l'idea di usare fiori e colori pesca.",
+      "La ricerca di AmbrosiaLab è principalmente su cosmesi e cibo. Sono anche orgogliosi di essere un'azienda principalmente femminile. Volevo qualcosa di femminile ma con un'enfasi sulla natura e sulla bellezza. Così mi è venuta l'idea di usare fiori e colori pesca.",
       "La ricerca di AmbrosiaLab è principalmente su cosmesi e cibo. Sono anche orgogliosi di essere un'azienda principalmente femminile. Volevo qualcosa di femminile ma con un'enfasi sulla natura e sulla bellezza. Così mi è venuta l'idea di usare fiori e colori pesca.",
       "Per dare al sito una sensazione di freschezza, ho creato una barra di navigazione verticale sul lato destro del sito (per utenti desktop) al posto di una barra di navigazione orizzontale standard.",
-      "A causa della loro portata internazionale e dei loro partner, ho incluso la localizzazione tramite i18n. \nIl sito è disponibile in inglese e italiano e c'è il framework per includere anche le lingue future"
+      "A causa della loro portata internazionale e dei loro partner, ho incluso la localizzazione tramite i18n. Il sito è disponibile in inglese e italiano e c'è il framework per includere anche le lingue future"
     ]
   },
   "levels101": {
     "paragraph": [
-      "La mia prima pagina. \nL'ho creato per spiegare i concetti del modulo Levels Foundry Virtual Tabletop.",
-      "È stato un esperimento di forme, linee e colori. \nHo creato una tavolozza sicura per daltonici per rappresentare i livelli più alto, medio e più basso in uno scenario di esempio. \nÈ stata una gioia lavorare su."
+      "La mia prima pagina. L'ho creato per spiegare i concetti del modulo Levels Foundry Virtual Tabletop.",
+      "È stato un esperimento di forme, linee e colori. Ho creato una tavolozza sicura per daltonici per rappresentare i livelli più alto, medio e più basso in uno scenario di esempio. È stata una gioia lavorare su."
     ]
   },
   "theripper93": {
     "paragraph": [
-      "theripper93 è un programmatore e sviluppatore specializzato in moduli per Foundry Virtual Tabletop. \nCon oltre 40 moduli, c'era molto da progettare e adattare. \nL'obiettivo principale era mostrare la diversità del suo lavoro in un modo di facile accesso.",
-      "Ha richiesto un design minimale e semplice per il suo sito web. \nPer i colori, ho scelto marroni e dorati miele per creare un sito web terreno, professionale ma accattivante."
+      "theripper93 è un programmatore e sviluppatore specializzato in moduli per Foundry Virtual Tabletop. Con oltre 40 moduli, c'era molto da progettare e adattare. L'obiettivo principale era mostrare la diversità del suo lavoro in un modo di facile accesso.",
+      "Ha richiesto un design minimale e semplice per il suo sito web. Per i colori, ho scelto marroni e dorati miele per creare un sito web terreno, professionale ma accattivante."
     ]
   },
   "draculafoundry": {
     "paragraph": [
-      "Un modulo che ho creato per Foundry Virtual Tabletop. \nVolevo un'interfaccia utente oscura per il programma e ho un forte amore per la tavolozza di Dracula.",
-      "TyphonJS mi ha guidato nella creazione del modulo. \nMi aveva anche introdotto e insegnato Sass/SCSS. \nDa lì, sono stato in grado di creare il tema per Foundry."
+      "Un modulo che ho creato per Foundry Virtual Tabletop. Volevo un'interfaccia utente oscura per il programma e ho un forte amore per la tavolozza di Dracula.",
+      "TyphonJS mi ha guidato nella creazione del modulo. Mi aveva anche introdotto e insegnato Sass/SCSS. Da lì, sono stato in grado di creare il tema per Foundry."
     ]
   }
 }
