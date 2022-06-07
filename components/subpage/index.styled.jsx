@@ -7,6 +7,7 @@ export const StyledArticle = styled(motion.article)`
   justify-content: center;
   gap: 2rem;
   width: min(80vw, 75%);
+  text-align: justify;
 `;
 
 export const StyledFooter = styled(motion.footer)`
