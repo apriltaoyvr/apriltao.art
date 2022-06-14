@@ -9,7 +9,7 @@ const IconLink = ({ href, icon }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
-      <a href={href} passHref>
+      <a href={href} passhref="true">
         <FontAwesomeIcon icon={icon} size='3x' />
       </a>
     </IconWrapper>

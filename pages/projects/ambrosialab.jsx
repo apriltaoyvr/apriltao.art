@@ -28,7 +28,7 @@ const AmbrosiaLab = () => {
     >
       <motion.header variants={fadeItem}>
           <h1>
-            <Link href='http://www.ambrosialab.it/' passHref>
+            <Link href='http://www.ambrosialab.it/' passhref="true">
               AmbrosiaLab
             </Link>
           </h1>

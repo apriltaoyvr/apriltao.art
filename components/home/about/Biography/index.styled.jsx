@@ -9,7 +9,7 @@ export const AboutWrapper = styled(motion.div)`
   gap: 0.5rem;
 
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(2, 25vw);
+    grid-template-columns: repeat(2, 25%);
     grid-template-rows: 1fr;
   }
 `;

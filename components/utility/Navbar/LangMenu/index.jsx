@@ -57,7 +57,7 @@ const LangMenu = () => {
                         onClick={() => router.reload()}
                         locale={key}
                         key={key}
-                        passHref
+                        passhref="true"
                       >
                         <Flag
                           countryCode={value}

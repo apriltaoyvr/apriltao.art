@@ -25,7 +25,7 @@ const DraculaFoundry = () => {
     >
       <motion.header variants={fadeItem}>
         <h1>
-          <Link href='https://github.com/apriltaoyvr/dracula-foundry' passHref>
+          <Link href='https://github.com/apriltaoyvr/dracula-foundry' passhref="true">
             Dracula Foundry
           </Link>
         </h1>
