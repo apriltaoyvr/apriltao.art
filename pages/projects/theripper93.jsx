@@ -30,7 +30,7 @@ const TheRipper93 = () => {
       <motion.header variants={fadeItem}>
         <h1>
           <Link href='https://theripper93.com/' passhref="true">
-            Dracula Foundry
+            theripper93
           </Link>
         </h1>
       </motion.header>
