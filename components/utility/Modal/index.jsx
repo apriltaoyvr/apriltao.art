@@ -1,5 +1,5 @@
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
-import { faX } from '@fortawesome/free-brands-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 import { StyledModal, WindowBar, WindowIcon, StyledH3 } from './index.styled';
 import Backdrop from './Backdrop';
