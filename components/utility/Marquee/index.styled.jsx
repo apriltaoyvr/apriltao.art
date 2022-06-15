@@ -11,6 +11,7 @@ export const StyledMarquee = styled(motion.div)`
 
 export const MarqueeLine = styled(Marquee)`
   user-select: none;
+  overflow-y: hidden;
 `;
 
 export const TextWrapper = styled(motion.hgroup)`
