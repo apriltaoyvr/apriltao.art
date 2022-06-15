@@ -1,7 +1,6 @@
 /* Libraries */
 import { useState } from 'react';
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
-import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 /* Styles */
 import {
@@ -19,7 +18,7 @@ import LangMenu from './LangMenu';
 import Links from './Links';
 import ThemeMenu from './ThemeMenu';
 
-const Navbar = ({ setTheme }) => {
+const Navbar = ({ setTheme}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -41,9 +40,9 @@ const Navbar = ({ setTheme }) => {
             transition={{ type: 'spring', stiffness: 150 }}
             key='closed'
           >
-            <motion.header whileTap={{ scale: 0.95 }} onClick={toggleNav}>
-              <StyledIcon icon={faBars} size='xl' />
-            </motion.header>
+            <motion.div whileTap={{ scale: 0.95 }} onClick={toggleNav}>
+              <StyledIcon icon='fa-solid fa-bars' size='xl' />
+            </motion.div>
             <StyledFooter>
               <LangMenu />
               {/* <ThemeMenu setTheme={setTheme} />
@@ -59,9 +58,8 @@ const Navbar = ({ setTheme }) => {
             key='open'
           >
             <StyledHeader>
-              <StyledIcon icon={faX} size='xl' onClick={toggleNav} />
-              {/* <ThemeMenu setTheme={setTheme} />
-               * Editing out while I make it work with SSR */}
+              <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
+              <ThemeMenu setTheme={setTheme} />
             </StyledHeader>
             <ContentWrapper>
               <Links closeNav={closeNav} />
