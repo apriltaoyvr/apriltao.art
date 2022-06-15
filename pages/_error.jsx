@@ -1,10 +1,9 @@
 /* Libs */
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-
-import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
 
 /* next-i18next */
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -24,16 +23,28 @@ const StyledError = styled.main`
   width: 100vw;
 `;
 
-const StyledButton = styled(motion.button)`
-  min-width: 200px;
-  background: transparent;
+const Window = styled(motion.div)`
+  position: absolute;
+  z-index: 3;
+  min-width: 50%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: ${({ theme }) => theme.nav.bg};
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  margin: auto;
   border: 1px solid ${({ theme }) => theme.main.accent};
-  transition: background 0.66s cubic-bezier(0.39, 0.58, 0.57, 1);
+`;
+
+const StyledButton = styled(motion.button)`
+  background: transparent;
+  border: 1px solid transparent;
 
   &:hover {
     cursor: pointer;
-    background: ${({ theme }) => theme.main.accent};
-    filter: brightness(1.1);
   }
 `;
 
@@ -41,9 +52,8 @@ const StyledArrow = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.main.accent};
   transition: color 0.66s cubic-bezier(0.39, 0.58, 0.57, 1);
 
-  ${StyledButton}:hover & {
-    color: ${({ theme }) => theme.main.bg};
-    filter: brightness(1.1);
+  &:hover {
+    filter: brightness(1.05);
   }
 `;
 
@@ -53,18 +63,23 @@ export default function Error() {
 
   return (
     <StyledError>
-      <MarqueeText speed={15} text={t('utility.error')} />
+      <Window>
+        <h1>{t('utility.error')}</h1>
+        <StyledButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <StyledArrow
+            icon={faArrowLeftLong}
+            size='5x'
+            onClick={() => router.back()}
+          />
+        </StyledButton>
+      </Window>
+      <MarqueeText speed={10} text={t('utility.error')} />
       <MarqueeText speed={5} text={t('utility.error')} />
-      <MarqueeText speed={15} text={t('utility.error')} />
-      <StyledButton
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => router.back()}
-      >
-        <StyledArrow icon={faArrowLeftLong} size='5x' />
-      </StyledButton>
+      <MarqueeText speed={10} text={t('utility.error')} />
       <MarqueeText speed={5} text={t('utility.error')} />
-      <MarqueeText speed={15} text={t('utility.error')} />
+      <MarqueeText speed={10} text={t('utility.error')} />
+      <MarqueeText speed={5} text={t('utility.error')} />
+      <MarqueeText speed={10} text={t('utility.error')} />
       <MarqueeText speed={5} text={t('utility.error')} />
     </StyledError>
   );

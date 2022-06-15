@@ -44,6 +44,7 @@ const LangMenu = () => {
                 exit='hidden'
                 key='lang-container'
               >
+                {/* Scale for multiple languages */}
                 {Object.entries(countryCodes)
                   .filter(([key]) => key !== router.locale)
                   .map(([key, value]) => (
@@ -57,7 +58,7 @@ const LangMenu = () => {
                         onClick={() => router.reload()}
                         locale={key}
                         key={key}
-                        passhref="true"
+                        passHref
                       >
                         <Flag
                           countryCode={value}

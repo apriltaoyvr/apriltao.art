@@ -1,7 +1,9 @@
+/* Libraries */
 import { useState } from 'react';
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
+/* Styles */
 import {
   StyledIcon,
   ClosedNav,
@@ -12,6 +14,7 @@ import {
   LangHolder,
 } from './index.styled';
 
+/* Components */
 import LangMenu from './LangMenu';
 import Links from './Links';
 import ThemeMenu from './ThemeMenu';
@@ -38,9 +41,9 @@ const Navbar = ({ setTheme }) => {
             transition={{ type: 'spring', stiffness: 150 }}
             key='closed'
           >
-            <motion.div whileTap={{ scale: 0.95 }} onClick={toggleNav}>
+            <motion.header whileTap={{ scale: 0.95 }} onClick={toggleNav}>
               <StyledIcon icon={faBars} size='xl' />
-            </motion.div>
+            </motion.header>
             <StyledFooter>
               <LangMenu />
               <ThemeMenu setTheme={setTheme} />

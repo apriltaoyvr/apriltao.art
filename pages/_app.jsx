@@ -1,4 +1,4 @@
-/* Libs */
+/* Libraries */
 import { appWithTranslation } from 'next-i18next';
 import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -8,13 +8,13 @@ import Global from '../components/styles/globalStyles';
 import { dracula } from '../components/styles/Themes';
 
 /* Font Awesome */
+// Config and autoAddCss to prevent FOCU
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 /* Components */
 import Layout from '../components/utility/Layout';
-import LoadingScreen from '../components/utility/LoadingScreen';
 
 function MyApp({ Component, pageProps }) {
   // Default to Dracula theme
@@ -34,11 +34,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Global />
-        <Layout setTheme={setTheme}>
-          <Component {...pageProps} />
-        </Layout>
+      {/* Drill setTheme into Layout */}
+      <Layout setTheme={setTheme}>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }
 
+// Wrap the App with the Translation provider
 export default appWithTranslation(MyApp);

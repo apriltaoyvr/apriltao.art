@@ -7,7 +7,7 @@ const ProjectLink = ({ href, src, video, alt }) => {
   return (
     <LinkWrapper variants={slideItem}>
       {video ? (
-        <motion.a href={href} passhref="true">
+        <motion.a href={href} passHref>
           <motion.video
             src={src}
             muted
@@ -20,7 +20,7 @@ const ProjectLink = ({ href, src, video, alt }) => {
         </motion.a>
       ) : (
         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.9 }}>
-          <motion.a href={href} passhref="true">
+          <motion.a href={href} passHref>
             <Image
               src={src}
               alt={alt}

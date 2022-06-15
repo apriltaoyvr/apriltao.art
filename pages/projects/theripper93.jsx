@@ -30,7 +30,7 @@ const TheRipper93 = () => {
     >
       <motion.header variants={fadeItem}>
         <h1>
-          <Link href='https://theripper93.com/' passhref="true">
+          <Link href='https://theripper93.com/' passHref>
             theripper93
           </Link>
         </h1>

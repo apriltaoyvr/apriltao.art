@@ -29,7 +29,7 @@ const Levels101 = () => {
     >
       <motion.header variants={fadeItem}>
         <h1>
-          <Link href='https://github.com/apriltaoyvr/levels-101' passhref="true">
+          <Link href='https://github.com/apriltaoyvr/levels-101' passHref>
             Levels 101
           </Link>
         </h1>

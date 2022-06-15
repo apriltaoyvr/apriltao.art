@@ -6,6 +6,9 @@ const Links = ({ closeNav }) => {
   const { t } = useTranslation('common');
   const router = useRouter();
 
+  /* All hrefs are structured like this for localization
+   ** `/${router.locale}/route`
+   ** This is to ensure that the hrefs are correct for the language */
   return (
     <Tabs>
       <Tab

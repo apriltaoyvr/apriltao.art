@@ -13,6 +13,7 @@ import { StyledIcon } from '../index.styled';
 /* Themes */
 import { dracula, pink, nordDark } from '../../../styles/Themes';
 
+{/* setTheme is drilled all the way from _app.jsx */}
 const ThemeMenu = ({ setTheme }) => {
   const { t } = useTranslation('common');
 
