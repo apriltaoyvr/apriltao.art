@@ -1,7 +1,6 @@
 /* Libraries */
 import { useState } from 'react';
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
-import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 /* Styles */
 import {
@@ -42,12 +41,11 @@ const Navbar = ({ setTheme }) => {
             key='closed'
           >
             <motion.header whileTap={{ scale: 0.95 }} onClick={toggleNav}>
-              <StyledIcon icon={faBars} size='xl' />
+              <StyledIcon icon='fa-solid fa-bars' size='xl' />
             </motion.header>
             <StyledFooter>
               <LangMenu />
-              {/* <ThemeMenu setTheme={setTheme} />
-               * Editing out while I make it work with SSR */}
+              <ThemeMenu setTheme={setTheme} />
             </StyledFooter>
           </ClosedNav>
         ) : (
@@ -59,9 +57,8 @@ const Navbar = ({ setTheme }) => {
             key='open'
           >
             <StyledHeader>
-              <StyledIcon icon={faX} size='xl' onClick={toggleNav} />
-              {/* <ThemeMenu setTheme={setTheme} />
-               * Editing out while I make it work with SSR */}
+              <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
+              <ThemeMenu setTheme={setTheme} />
             </StyledHeader>
             <ContentWrapper>
               <Links closeNav={closeNav} />

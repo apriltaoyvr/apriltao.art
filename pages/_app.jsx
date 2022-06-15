@@ -8,8 +8,11 @@ import Global from '../components/styles/globalStyles';
 import { dracula } from '../components/styles/Themes';
 
 /* Font Awesome */
-// Config and autoAddCss to prevent FOCU
-import { config } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+import { faX, faBars, faPalette} from '@fortawesome/free-solid-svg-icons';
+library.add(faX, faBars, faPalette);
+
+// autoAddCss to prevent FOCU
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
@@ -34,7 +37,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      {/* Drill setTheme into Layout */}
       <Layout setTheme={setTheme}>
         <Component {...pageProps} />
       </Layout>

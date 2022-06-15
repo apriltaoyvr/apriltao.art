@@ -9,9 +9,9 @@ export const IconFooter = styled(motion.footer)`
   padding: 2rem;
 `;
 
-export const IconWrapper = styled(motion.div)`
+export const IconWrapper = styled(motion.a)`
   & svg {
-    color: ${({ theme }) => theme.main.fgSecondary};
+    color: ${({ theme }) => theme.main.fg};
     transition: color 0.5s ease-in-out;
 
     &:hover {

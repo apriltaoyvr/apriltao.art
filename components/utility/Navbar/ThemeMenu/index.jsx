@@ -33,7 +33,7 @@ const ThemeMenu = ({ setTheme }) => {
         whileTap={{ scale: 0.95 }}
         onClick={() => (modalOpen ? close() : open())}
       >
-        <StyledIcon icon={ faPalette } size='xl' />
+        <StyledIcon icon='fa-solid fa-palette' size='xl' />
       </motion.div>
       <Modal
         modalOpen={modalOpen}
