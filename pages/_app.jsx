@@ -11,17 +11,16 @@ import { dracula } from '../components/styles/Themes';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faBehance } from '@fortawesome/free-brands-svg-icons';
 import {
-  faBars,
-  faX,
   faArrowLeftLong,
   faPalette,
   faCircle,
   faGlobe,
 } from '@fortawesome/free-solid-svg-icons';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 library.add(
-  faBars,
-  faX,
   faArrowLeftLong,
   faPalette,
   faCircle,
@@ -48,22 +47,13 @@ function MyApp({ Component, pageProps }) {
     }
   }
   const [theme, setTheme] = useState(savedTheme ?? dracula);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 750);
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-      {loading ? (
-        <LoadingScreen />
-      ) : (
         <Layout setTheme={setTheme}>
           <Component {...pageProps} />
         </Layout>
-      )}
     </ThemeProvider>
   );
 }

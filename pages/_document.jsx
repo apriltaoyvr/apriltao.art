@@ -28,6 +28,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          {/* White flash on load workaround https://www.joshwcomeau.com/react/dark-mode/ */}
+          <script> </script>
         </body>
       </Html>
     );
