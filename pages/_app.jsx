@@ -1,18 +1,15 @@
 /* Libraries */
 import { appWithTranslation } from 'next-i18next';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 /* Styled Components */
 import Global from '../components/styles/globalStyles';
 import { dracula } from '../components/styles/Themes';
 
-/* Font Awesome */
-import { library, config } from '@fortawesome/fontawesome-svg-core';
-import { faX, faBars, faPalette} from '@fortawesome/free-solid-svg-icons';
-library.add(faX, faBars, faPalette);
-
-// autoAddCss to prevent FOCU
+/* Font Awesome
+ * FOCU Workaround https://fontawesome.com/docs/web/use-with/react/use-with */
+import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 

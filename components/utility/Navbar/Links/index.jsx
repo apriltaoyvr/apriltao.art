@@ -17,7 +17,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href={`/${router.locale}`}>{t('navigation.home')}</TabLink>
+        <TabLink href={`/`}>{t('navigation.home')}</TabLink>
       </Tab>
       <Tab
         onClick={closeNav}
@@ -25,7 +25,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href={`/${router.locale}/#projects`}>
+        <TabLink href={`/#projects`}>
           {t('navigation.projects')}
         </TabLink>
       </Tab>
@@ -35,7 +35,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href={`/${router.locale}/#about`}>
+        <TabLink href={`/#about`}>
           {t('navigation.about')}
         </TabLink>
       </Tab>
@@ -45,7 +45,7 @@ const Links = ({ closeNav }) => {
           scale: 0.9,
         }}
       >
-        <TabLink href={`/${router.locale}/#contact`}>
+        <TabLink href={`/#contact`}>
           {t('navigation.contact')}
         </TabLink>
       </Tab>

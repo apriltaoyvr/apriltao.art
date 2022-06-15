@@ -1,7 +1,7 @@
 /* Libraries */
 import { useState } from 'react';
 import { motion, AnimatePresence, MotionConfig } from 'framer-motion';
-
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 /* Styles */
 import {
   StyledIcon,
@@ -41,7 +41,7 @@ const Navbar = ({ setTheme }) => {
             key='closed'
           >
             <motion.header whileTap={{ scale: 0.95 }} onClick={toggleNav}>
-              <StyledIcon icon='fa-solid fa-bars' size='xl' />
+              <StyledIcon icon={faBars} size='xl' />
             </motion.header>
             <StyledFooter>
               <LangMenu />
@@ -57,7 +57,7 @@ const Navbar = ({ setTheme }) => {
             key='open'
           >
             <StyledHeader>
-              <StyledIcon icon='fa-solid fa-x' size='xl' onClick={toggleNav} />
+              <StyledIcon icon={faX} size='xl' onClick={toggleNav} />
               <ThemeMenu setTheme={setTheme} />
             </StyledHeader>
             <ContentWrapper>
