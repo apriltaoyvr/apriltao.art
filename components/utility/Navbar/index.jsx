@@ -59,7 +59,8 @@ const Navbar = ({ setTheme }) => {
           >
             <StyledHeader>
               <StyledIcon icon={faX} size='xl' onClick={toggleNav} />
-              <ThemeMenu setTheme={setTheme} />
+              {/* <ThemeMenu setTheme={setTheme} />
+               * Editing out while I make it work with SSR */}
             </StyledHeader>
             <ContentWrapper>
               <Links closeNav={closeNav} />
