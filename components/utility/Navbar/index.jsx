@@ -46,7 +46,8 @@ const Navbar = ({ setTheme }) => {
             </motion.header>
             <StyledFooter>
               <LangMenu />
-              <ThemeMenu setTheme={setTheme} />
+              {/* <ThemeMenu setTheme={setTheme} />
+               * Editing out while I make it work with SSR */}
             </StyledFooter>
           </ClosedNav>
         ) : (
