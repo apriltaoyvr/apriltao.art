@@ -42,7 +42,7 @@ export const pink = {
     bgSecondary: 'hsl(232, 17%, 35%)',
     bgTertiary: 'hsl(308, 6%, 57%)',
     accent: 'hsl(14, 50%, 75%)',
-    accentSecondary: 'hsl(14, 50%, 90%)',
+    accentSecondary: 'hsl(10, 40%, 80%)',
     accentTertiary: 'hsl(14, 50%, 90%)',
   },
   nav: {
