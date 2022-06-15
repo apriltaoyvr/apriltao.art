@@ -1,6 +1,8 @@
 /* Libs */
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
+
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
@@ -59,7 +61,7 @@ export default function Error() {
         whileTap={{ scale: 0.9 }}
         onClick={() => router.back()}
       >
-        <StyledArrow icon='fa-solid fa-arrow-left-long' size='5x' />
+        <StyledArrow icon={faArrowLeftLong} size='5x' />
       </StyledButton>
       <MarqueeText speed={5} text={t('utility.error')} />
       <MarqueeText speed={15} text={t('utility.error')} />
@@ -67,7 +69,6 @@ export default function Error() {
     </StyledError>
   );
 }
-
 
 export async function getServerSideProps({ locale }) {
   return {

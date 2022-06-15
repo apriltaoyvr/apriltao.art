@@ -15,7 +15,7 @@ const ThemeItem = (props) => {
       onClick={() => setTheme(props.palette)}
       background={props.background}
       border={props.border}
-    ></Circle>
+    />
   );
 };
 

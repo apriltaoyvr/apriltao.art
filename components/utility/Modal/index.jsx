@@ -1,4 +1,6 @@
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
+import { faX } from '@fortawesome/free-brands-svg-icons';
+
 import { StyledModal, WindowBar, WindowIcon, StyledH3 } from './index.styled';
 import Backdrop from './Backdrop';
 
@@ -17,7 +19,7 @@ const Modal = ({ modalOpen, handleClose, title, children }) => {
             >
               <WindowBar>
                 <motion.div whileTap={{ scale: 0.95 }} onClick={handleClose}>
-                  <WindowIcon icon='fa-solid fa-x' size='xl' />
+                  <WindowIcon icon={faX} size='xl' />
                 </motion.div>
                 <StyledH3>{title}</StyledH3>
                 <p style={{ userSelect: 'none' }}>⠀⠀</p>

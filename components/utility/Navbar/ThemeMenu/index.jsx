@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
+import { faPalette } from '@fortawesome/free-solid-svg-icons';
 
 /* Components */
 import Modal from '../../Modal/index';
@@ -10,14 +11,7 @@ import { ThemeGrid } from './index.styled';
 import { StyledIcon } from '../index.styled';
 
 /* Themes */
-import {
-  dracula,
-  pink,
-  nordDark,
-  pastel,
-  nordLight,
-  fall,
-} from '../../../styles/Themes';
+import { dracula, pink, nordDark } from '../../../styles/Themes';
 
 const ThemeMenu = ({ setTheme }) => {
   const { t } = useTranslation('common');
@@ -38,7 +32,7 @@ const ThemeMenu = ({ setTheme }) => {
         whileTap={{ scale: 0.95 }}
         onClick={() => (modalOpen ? close() : open())}
       >
-        <StyledIcon icon='fa-solid fa-palette' size='xl' />
+        <StyledIcon icon={ faPalette } size='xl' />
       </motion.div>
       <Modal
         modalOpen={modalOpen}

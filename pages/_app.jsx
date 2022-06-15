@@ -8,26 +8,9 @@ import Global from '../components/styles/globalStyles';
 import { dracula } from '../components/styles/Themes';
 
 /* Font Awesome */
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faBehance } from '@fortawesome/free-brands-svg-icons';
-import {
-  faArrowLeftLong,
-  faPalette,
-  faCircle,
-  faGlobe,
-} from '@fortawesome/free-solid-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
-
-library.add(
-  faArrowLeftLong,
-  faPalette,
-  faCircle,
-  faBehance,
-  faGithub,
-  faGlobe
-);
 
 /* Components */
 import Layout from '../components/utility/Layout';

@@ -1,6 +1,7 @@
 /* Libraries */
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { faGithub, faBehance } from '@fortawesome/free-brands-svg-icons';
 
 /* Framer */
 import { motion } from 'framer-motion';
@@ -30,11 +31,11 @@ const Contact = () => {
       <IconFooter>
         <IconLink
           href='https://github.com/apriltaoyvr'
-          icon='fa-brands fa-github'
+          icon={faGithub}
         />
         <IconLink
           href='https://www.behance.net/apriltaoyvr'
-          icon='fa-brands fa-behance'
+          icon={faBehance}
         />
       </IconFooter>
     </motion.main>

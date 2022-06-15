@@ -2,8 +2,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { faGithub } from '@fortawesome/free-solid-svg-icons';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -75,7 +76,7 @@ const DraculaFoundry = () => {
         >
           <IconLink
             href='https://github.com/apriltaoyvr/dracula-foundry'
-            icon='fa-brands fa-github'
+            icon={faGithub}
             variants={fadeItem}
           />
         </IconFooter>

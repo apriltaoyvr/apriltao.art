@@ -2,8 +2,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { faGlobe, faGithub } from '@fortawesome/free-solid-svg-icons';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -73,12 +74,12 @@ const TheRipper93 = () => {
         >
           <IconLink
             href='https://theripper93.com/'
-            icon='fa-solid fa-globe'
+            icon={faGlobe}
             variants={fadeItem}
           />
           <IconLink
             href='https://github.com/theripper93/theripper93.com'
-            icon='fa-brands fa-github'
+            icon={faGithub}
             variants={fadeItem}
           />
         </IconFooter>

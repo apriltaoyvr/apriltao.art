@@ -2,8 +2,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { faGlobe, faGithub } from '@fortawesome/free-solid-svg-icons';
 
 /* Components */
 import IconLink from '../../components/utility/IconLink/index';
@@ -27,11 +28,11 @@ const AmbrosiaLab = () => {
       viewport={{ once: true }}
     >
       <motion.header variants={fadeItem}>
-          <h1>
-            <Link href='http://www.ambrosialab.it/' passhref="true">
-              AmbrosiaLab
-            </Link>
-          </h1>
+        <h1>
+          <Link href='http://www.ambrosialab.it/' passhref='true'>
+            AmbrosiaLab
+          </Link>
+        </h1>
       </motion.header>
       <StyledVideo
         variants={fadeItem}
@@ -80,12 +81,12 @@ const AmbrosiaLab = () => {
       >
         <IconLink
           href='http://www.ambrosialab.it/'
-          icon='fa-solid fa-globe'
+          icon={faGlobe}
           variants={fadeItem}
         />
         <IconLink
           href='https://github.com/apriltaoyvr/ambrosialab'
-          icon='fa-brands fa-github'
+          icon={faGithub}
           variants={fadeItem}
         />
       </IconFooter>
