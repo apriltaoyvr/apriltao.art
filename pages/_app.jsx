@@ -13,28 +13,6 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faBehance } from '@fortawesome/free-brands-svg-icons';
-import {
-  faBars,
-  faX,
-  faArrowLeftLong,
-  faPalette,
-  faCircle,
-  faGlobe,
-} from '@fortawesome/free-solid-svg-icons';
-
-library.add(
-  faBars,
-  faX,
-  faArrowLeftLong,
-  faPalette,
-  faCircle,
-  faBehance,
-  faGithub,
-  faGlobe
-);
-
 /* Components */
 import Layout from '../components/utility/Layout';
 
@@ -52,29 +30,14 @@ function MyApp({ Component, pageProps }) {
     }
   }
   const [theme, setTheme] = useState(savedTheme ?? dracula);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 750);
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <Global />
-<<<<<<< HEAD
       {/* Drill setTheme into Layout */}
       <Layout setTheme={setTheme}>
         <Component {...pageProps} />
       </Layout>
-=======
-      {loading ? (
-        <LoadingScreen />
-      ) : (
-        <Layout setTheme={setTheme}>
-          <Component {...pageProps} />
-        </Layout>
-      )}
->>>>>>> parent of e7fb23f (faArrowLeftLong)
     </ThemeProvider>
   );
 }
