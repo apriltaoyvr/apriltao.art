@@ -22,6 +22,7 @@ export const ProjectWrapper = styled(motion.section)`
 
 export const LinkWrapper = styled(motion.figure)`
   filter: opacity(0.9);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
   &:hover {
     filter: opacity(1);

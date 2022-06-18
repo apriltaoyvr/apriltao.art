@@ -18,6 +18,8 @@ export const StyledCard = styled(motion.div)`
   padding: 1rem;
   width: 250px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
   &:hover {
     border: 1px solid ${({ theme }) => theme.main.accent};
   }

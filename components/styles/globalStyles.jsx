@@ -110,6 +110,7 @@ const Global = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 1rem;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   
   h1, h2 {
