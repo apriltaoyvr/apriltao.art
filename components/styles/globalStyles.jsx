@@ -110,7 +110,7 @@ const Global = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 1rem;
-    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 1px;
   }
   
   h1, h2 {
@@ -121,6 +121,7 @@ const Global = createGlobalStyle`
     font-family: 'Vartek';
     font-weight: bolder;
     font-size: clamp(3rem, 2.5055rem + 2.1978vw, 8rem);
+    
   }
   
   h2 {
@@ -135,6 +136,7 @@ const Global = createGlobalStyle`
     font-size: clamp(2rem, 1.9011rem + 0.4396vw, 3rem);
     color: transparent;
     -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accentSecondary};
+    
   }
 
   h4 {

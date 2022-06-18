@@ -30,10 +30,12 @@ export const TextWrapper = styled(motion.hgroup)`
 export const SolidText = styled(motion.h1)`
   overflow: hidden;
   color: ${({ theme }) => theme.main.accent};
+  text-shadow: none;
 `;
 
 export const HollowText = styled(motion.h1)`
   overflow: hidden;
   color: transparent;
   -webkit-text-stroke: 1.5px ${({ theme }) => theme.main.accent};
+  text-shadow: none;
 `;
